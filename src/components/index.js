@@ -1,0 +1,11 @@
+export { Navbar } from './Navbar';
+export { Hero } from './Hero';
+export { About } from './About';
+export { Portfolio } from './Portfolio';
+export { Services } from './Services';
+export { Testimonials } from './Testimonials';
+export { DesignProcess } from './DesignProcess';
+export { Blog } from './Blog';
+export { Contact } from './Contact';
+export { Footer } from './Footer';
+export { ScrollProgressBar } from './ScrollProgressBar';
