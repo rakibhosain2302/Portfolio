@@ -1,4 +1,5 @@
 import { Navbar } from './components/Navbar';
+import Rakib from './components/Rakib';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Portfolio } from './components/Portfolio';
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="app">
       <ScrollProgressBar />
+      <Rakib />
       <Navbar />
       <Hero />
       <About />

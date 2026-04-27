@@ -193,3 +193,32 @@
     display: none;
   }
 }
+
+/* V2 */
+
+.hello{
+  font-size: 14px;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  border: 1px solid rgba(124, 126, 236, 0.3);
+  width: fit-content;
+  padding: 4px 12px;
+  border-radius: 50px;
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.A{
+  color:rgb(148 163 184/var(--tw-text-opacity,1));
+}
+
+.hero-imageV2{
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
+}
+
+
+
+
