@@ -2,7 +2,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Typewriter } from "react-simple-typewriter";
 import { MdShareLocation } from "react-icons/md";
-import { TbCircleDotted } from "react-icons/tb";
+import { TbBackground, TbCircleDotted } from "react-icons/tb";
+import { MdOutlineCloudDownload } from "react-icons/md";
+import { MdOutlineVisibility } from "react-icons/md";
+import { MdOutlineChat } from "react-icons/md";
+import { LuFacebook } from "react-icons/lu";
+import { FaGithub } from "react-icons/fa";
+import { LuLinkedin } from "react-icons/lu";
+
+
+
+
+
 
 
 
@@ -16,7 +27,7 @@ export default function Rakib() {
                     <Col md={7}>
                         <p className="hello">👋 HELLO, I'M</p>
                         <h1 className="fw-bold">Rakib Hosain</h1>
-                        {/* <h3 className="text-success"> <span className="A">A</span>
+                        <h3 className="text-success"> <span className="A">A</span>
                             <Typewriter
                                 words={[
                                     " Full Stack Developer",
@@ -30,7 +41,7 @@ export default function Rakib() {
                                 deleteSpeed={50}
                                 delaySpeed={1500}
                             />
-                        </h3> */}
+                        </h3>
                         <p className="mt-3">
                             Building modern web applications with React.js, Bootstrap, and other cutting-edge
                             technologies.
@@ -64,19 +75,26 @@ export default function Rakib() {
 
                         {/* Buttons */}
                         <div className="mt-4 d-flex gap-3">
-                            <Button variant="download-button">Download Resume</Button>
-                            <Button variant="explore-button">Explore My Work</Button>
-                            <Button variant="talk-button">Let's Talk</Button>
+                            <Button className="shine-button">
+                                <MdOutlineCloudDownload size={20} />
+                                Download Resume
+                            </Button>
+                            <Button className="shine-button">
+                                <MdOutlineVisibility size={20} />
+                                Explore My Work
+                            </Button>
+                            <Button className="shine-button">
+                                <MdOutlineChat size={20} />
+                                Let's Talk
+                            </Button>
                         </div>
 
+
                         {/* Social Links */}
-                        <div className="mt-4">
-                            <a href="https://github.com/yourusername" className="me-3 text-light">
-                                GitHub
-                            </a>
-                            <a href="https://linkedin.com/in/yourusername" className="text-light">
-                                LinkedIn
-                            </a>
+                        <div class="social-container mt-4">
+                            <a href="#"><LuFacebook  size={30} /></a>
+                            <a href="#"><FaGithub  size={30} /></a>
+                            <a href="#"><LuLinkedin size={30} /></a>
                         </div>
                     </Col>
 

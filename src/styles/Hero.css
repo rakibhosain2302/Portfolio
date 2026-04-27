@@ -318,8 +318,75 @@
   }
 }
 
-.experience p{
+.experience p {
   font-size: 16px;
   color: var(--text-primary);
   font-weight: 600;
+}
+
+.shine-button {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(120deg, #4e54c8, #8f94fb) !important;
+  box-shadow: 0 10px 30px rgba(6, 13, 31, 0.5) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 10px 20px !important;
+  transition: all 0s ease;
+}
+
+.shine-button:hover {
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3) !important;
+  transform: scale(1.02) !important;
+}
+
+.shine-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.09) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewY(-30deg);
+  transition: left 0.8s ease;
+}
+
+.shine-button:hover::before {
+  left: 125%; /* hover করলে ডানদিকে যাবে */
+}
+
+.shine-button:nth-child(2) {
+  background: rgba(99, 102, 241, 0.1) !important;
+  border: 1px solid rgba(99, 102, 241, 0.5) !important;
+}
+
+.shine-button:nth-child(3) {
+  background: rgba(99, 102, 241, 0.1) !important;
+  border: 1px solid rgba(99, 102, 241, 0.3) !important;
+}
+
+.social-container {
+  display: flex;
+  gap: 10px;
+}
+
+.social-container a {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.social-container a:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
