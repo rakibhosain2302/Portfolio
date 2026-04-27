@@ -2,18 +2,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Typewriter } from "react-simple-typewriter";
 import { MdShareLocation } from "react-icons/md";
-import { TbBackground, TbCircleDotted } from "react-icons/tb";
+import { TbCircleDotted } from "react-icons/tb";
 import { MdOutlineCloudDownload } from "react-icons/md";
 import { MdOutlineVisibility } from "react-icons/md";
 import { MdOutlineChat } from "react-icons/md";
-import { LuFacebook } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
-import { LuLinkedin } from "react-icons/lu";
-
-
-
-
-
+import { FiLinkedin } from "react-icons/fi";
 
 
 
@@ -31,8 +25,12 @@ export default function Rakib() {
                             <Typewriter
                                 words={[
                                     " Full Stack Developer",
-                                    " Crafting pixel-perfect web experiences",
-                                    " Specialized in scalable applications",
+                                    " PHP & Laravel Expert",
+                                    " JavaScript & React with API Integration", 
+                                    " Building Scalable Web Applications",
+                                    " Crafting Modern & Responsive UI",
+                                    " Clean Code & Performance Focused",
+                                    " Building Dynamic UI with React",
                                 ]}
                                 loop={true}
                                 cursor
@@ -43,8 +41,7 @@ export default function Rakib() {
                             />
                         </h3>
                         <p className="mt-3">
-                            Building modern web applications with React.js, Bootstrap, and other cutting-edge
-                            technologies.
+                            Full Stack Developer specializing in React.js and Laravel, focused on building fast, secure, and scalable web solutions.
                         </p>
 
                         {/* Experience Badges */}
@@ -92,9 +89,8 @@ export default function Rakib() {
 
                         {/* Social Links */}
                         <div class="social-container mt-4">
-                            <a href="#"><LuFacebook  size={30} /></a>
-                            <a href="#"><FaGithub  size={30} /></a>
-                            <a href="#"><LuLinkedin size={30} /></a>
+                            <a href="#"><FaGithub size={30} className="github" /> github</a>
+                            <a href="#"><FiLinkedin size={40} className="linkedin" /> linkedIn</a>
                         </div>
                     </Col>
 

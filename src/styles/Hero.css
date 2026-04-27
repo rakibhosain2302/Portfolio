@@ -230,7 +230,7 @@
 
 .hero-imageV2 {
   width: 100%;
-  max-width: 800px;
+  height: auto;
   border-radius: 20px;
   border: 2px solid rgba(99, 102, 241, 0.4);
   box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
@@ -377,16 +377,32 @@
 }
 
 .social-container a {
-  width: 80px;
-  height: 80px;
+  width: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 14px;
+  padding: 8px 12px;
+  color: var(--text-primary);
   transition: all 0.3s ease;
-  background: transparent;
+  background: rgba(99, 102, 241, 0.1);
+  box-shadow: 0 10px 30px rgba(6, 13, 31, 0.5);
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 .social-container a:hover {
-  color: #fff;
-  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+  transform: translateY(-2px);
+}
+
+.social-container a .github {
+  color: var(--text-primary);
+  margin-right: 5px;
+}
+
+.social-container a .linkedin {
+  color: var(--text-primary);
+  margin-right: 5px;
 }
