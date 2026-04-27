@@ -58,15 +58,15 @@ export default function Rakib() {
                     </Col>
 
                     {/* Right Side - Image */}
-                    <Col md={5} className="text-center">
+                    <Col md={5} className="text-center right-col">
                         <img 
                             src="/src/assets/hero.png"
                             alt="Rakib Hosain"
                             className="hero-imageV2"
                         />
                         <div className="mt-3">
-                            <span className="badge bg-success">Available for Work</span>
-                            <p className="mt-2">📍 Dhaka, Bangladesh</p>
+                            <span className="badge-work">Available for Work</span>
+                            <p className="mt-2 location">📍 Dhaka, Bangladesh</p>
                         </div>
                     </Col>
                 </Row>

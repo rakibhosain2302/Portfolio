@@ -215,9 +215,62 @@
   width: 100%;
   max-width: 800px;
   border-radius: 20px;
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  border: 3px solid rgba(99, 102, 241, 0.2);
   box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
 }
+
+.right-col{
+  position: relative;
+}
+
+.badge-work {
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  background: var(--bs-success);
+  border: 1px solid var(--bs-success);
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  animation: floatBadge 8s ease-in-out infinite;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@keyframes floatBadge {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.badge-work:hover {
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+}
+
+
+.location {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  border: 2px solid rgba(99, 102, 241, 0.2);
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: rgba(6, 13, 31, 0.5);
+  backdrop-filter: blur(10px);       
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  transition: all 0.4s ease;
+}
+
+.location:hover {
+  box-shadow: 0 10px 30px rgba(6, 13, 31, 0.5);
+}
+
+
 
 
 
