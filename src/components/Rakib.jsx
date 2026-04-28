@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import DotGrid from "./Dotgrid/DotGrid.jsx";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Typewriter } from "react-simple-typewriter";
 import { MdShareLocation } from "react-icons/md";
@@ -13,8 +14,20 @@ import { FiLinkedin } from "react-icons/fi";
 
 export default function Rakib() {
     return (
-        <div className="bg-dark text-light min-vh-100 d-flex align-items-center">
-            <Container>
+        <div className="bg-dark text-light min-vh-100 d-flex align-items-center" style={{ width: '100%', height: '600px', position: 'relative' }} >
+            <DotGrid
+                dotSize={5}
+                gap={15}
+                baseColor="#2F293A"
+                activeColor="#5227FF"
+                proximity={120}
+                shockRadius={250}
+                shockStrength={5}
+                resistance={750}
+                returnDuration={1.5}
+                className="dotgrid-bg"
+            />
+            <Container className="position-relative content-layer">
                 <Row className="align-items-center">
 
                     {/* Left Side - Text */}
@@ -26,7 +39,7 @@ export default function Rakib() {
                                 words={[
                                     " Full Stack Developer",
                                     " PHP & Laravel Expert",
-                                    " JavaScript & React with API Integration", 
+                                    " JavaScript & React with API Integration",
                                     " Building Scalable Web Applications",
                                     " Crafting Modern & Responsive UI",
                                     " Clean Code & Performance Focused",
@@ -88,7 +101,7 @@ export default function Rakib() {
 
 
                         {/* Social Links */}
-                        <div class="social-container mt-4">
+                        <div className="social-container mt-4">
                             <a href="#"><FaGithub size={30} className="github" /> github</a>
                             <a href="#"><FiLinkedin size={40} className="linkedin" /> linkedIn</a>
                         </div>

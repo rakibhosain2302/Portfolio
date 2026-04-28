@@ -11,12 +11,13 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ScrollProgressBar } from './components/ScrollProgressBar';
 import './styles/globals.css';
+import './styles/DotGrid.css';
 
 function App() {
   return (
     <div className="app">
-      <ScrollProgressBar />
       <Rakib />
+      <ScrollProgressBar />
       <Navbar />
       <Hero />
       <About />
