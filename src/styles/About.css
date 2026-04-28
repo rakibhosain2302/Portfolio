@@ -1,7 +1,7 @@
 .about-section .about-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
-  border: 2px solid rgba(99, 102, 241, 0.4);
+  border: 1px solid rgba(99, 102, 241, 0.4);
   box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
   border-radius: 50px;
   padding: 10px 20px;
@@ -63,4 +63,40 @@
 
 .shine-button:hover::before {
   left: 125%; /* hover করলে ডানদিকে যাবে */
+}
+
+.stats-section {
+  margin-top: 150px;
+}
+
+.stats-section .about-title {
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.stats-card{
+  width: 100%;
+  border: 2px solid rgba(99, 102, 241, 0.6);
+  box-shadow: 0 20px 20px rgba(99, 102, 241, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.stats-card h2{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.stats-card p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ab{
+background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.15), transparent 70%);
 }

@@ -1,6 +1,9 @@
 import { FaInfoCircle } from "react-icons/fa";
 import GradientText from "./GradientText/GradientText.jsx";
+import AuroraText from "./GradientText/AuroraText.jsx";
 import { GoProjectSymlink } from "react-icons/go";
+import { SiKnowledgebase } from "react-icons/si";
+
 
 
 export const About = () => {
@@ -33,35 +36,24 @@ export const About = () => {
         </section>
 
         {/* Stats Section */}
-        <section className="container py-5">
-          <h2 className="fw-bold mb-4">Let’s Get Introduced</h2>
-          <p className="text-muted">
+        <section className="container stats-section text-center">
+          <h6 className="about-title"> <SiKnowledgebase className="me-1 pop-up-icon" /> <span className="">Get to Know Me</span></h6>
+          <h1 className="fw-bold mb-4">Crafting <AuroraText>My Journey</AuroraText></h1>
+          <p className="text-white mx-auto" style={{ width: "40%" }}>
             Discover my journey and expertise through numbers that speak louder than words.
           </p>
-          <div className="row text-center mt-4">
-            <div className="col-md-3 mb-3">
-              <div className="stat-box p-3 bg-secondary rounded">
-                <h4>2+ Years</h4>
-                <p className="text-muted">Experience</p>
-              </div>
+          <div className="d-flex justify-content-center align-items-center text-center mt-4">
+            <div className="stat-box p-4 rounded stats-card me-4">
+              <h2>2+</h2>
+              <p className="text-white">Years Of Experience</p>
             </div>
-            <div className="col-md-3 mb-3">
-              <div className="stat-box p-3 bg-secondary rounded">
-                <h4>18+</h4>
-                <p className="text-muted">Completed Projects</p>
-              </div>
+            <div className="stat-box p-4 rounded stats-card me-4">
+              <h2>13+</h2>
+              <p className="text-white">Completed Projects</p>
             </div>
-            <div className="col-md-3 mb-3">
-              <div className="stat-box p-3 bg-secondary rounded">
-                <h4>5+</h4>
-                <p className="text-muted">Countries Worked</p>
-              </div>
-            </div>
-            <div className="col-md-3 mb-3">
-              <div className="stat-box p-3 bg-secondary rounded">
-                <h4>8+</h4>
-                <p className="text-muted">Happy Clients</p>
-              </div>
+            <div className="stats-card p-4 rounded">
+              <h2 className="mb-1">8+</h2>
+              <p className="text-white">Client Satisfaction</p>
             </div>
           </div>
         </section>
