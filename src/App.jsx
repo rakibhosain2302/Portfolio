@@ -1,5 +1,6 @@
 import DotGrid from './components/Dotgrid/DotGrid.jsx';
-import {About} from './components/About';          // default export হলে এভাবে
+import {About} from './components/About';
+import { MySkill } from './components/MySkills.jsx';
 import {Portfolio} from './components/Portfolio';
 import {Services} from './components/Services';
 import {Testimonials} from './components/Testimonials';
@@ -35,6 +36,7 @@ function App() {
       <div className="position-relative content-layer">
         <Hero />
         <About />
+        <MySkill />
         <Portfolio />
         <Services />
         <Testimonials />
