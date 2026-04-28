@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import DotGrid from "./Dotgrid/DotGrid.jsx";
+import GradientText from "./GradientText/GradientText.jsx";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Typewriter } from "react-simple-typewriter";
 import { MdShareLocation } from "react-icons/md";
@@ -34,25 +35,36 @@ export default function Rakib() {
                     <Col md={7}>
                         <p className="hello">👋 HELLO, I'M</p>
                         <h1 className="fw-bold">Rakib Hosain</h1>
-                        <h3 className="text-success"> <span className="A">A</span>
-                            <Typewriter
-                                words={[
-                                    " Full Stack Developer",
-                                    " PHP & Laravel Expert",
-                                    " JavaScript & React with API Integration",
-                                    " Building Scalable Web Applications",
-                                    " Crafting Modern & Responsive UI",
-                                    " Clean Code & Performance Focused",
-                                    " Building Dynamic UI with React",
-                                ]}
-                                loop={true}
-                                cursor
-                                cursorStyle="_"
-                                typeSpeed={70}
-                                deleteSpeed={50}
-                                delaySpeed={1500}
-                            />
+                        <h3 className="text-success d-flex align-items-center gap-2">
+                            <span className="A">A</span>
+                            <GradientText
+                                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                                animationSpeed={10}
+                                direction="horizontal"
+                                pauseOnHover={true}
+                                yoyo={true}
+                                showBorder={false}
+                                className="gradient-typewriter">
+                                <Typewriter
+                                    words={[
+                                        " Full Stack Developer",
+                                        " PHP & Laravel Expert",
+                                        " JavaScript & React with API Integration",
+                                        " Building Scalable Web Applications",
+                                        " Crafting Modern & Responsive UI",
+                                        " Clean Code & Performance Focused",
+                                        " Building Dynamic UI with React",
+                                    ]}
+                                    loop={true}
+                                    cursor
+                                    cursorStyle="_"
+                                    typeSpeed={70}
+                                    deleteSpeed={50}
+                                    delaySpeed={1500}
+                                />
+                            </GradientText>
                         </h3>
+
                         <p className="mt-3">
                             Full Stack Developer specializing in React.js and Laravel, focused on building fast, secure, and scalable web solutions.
                         </p>
