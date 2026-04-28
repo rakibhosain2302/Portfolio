@@ -1,107 +1,127 @@
-import { motion } from 'framer-motion';
-import { FiArrowRight } from 'react-icons/fi';
-import { fadeInUp, fadeInDown, scaleIn } from '../utils/animationVariants';
-import '../styles/Hero.css';
 
-export const Hero = () => {
-  return (
-    <section id="home" className="hero">
-      <div className="hero-container">
-        <motion.div
-          className="hero-content"
-          initial="hidden"
-          animate="visible"
-          variants={fadeInUp}
-        >
-          <motion.span
-            className="hero-subtitle"
-            variants={fadeInDown}
-          >
-            Welcome to my portfolio
-          </motion.span>
+import "bootstrap/dist/css/bootstrap.min.css";
+import GradientText from "./GradientText/GradientText.jsx";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { Typewriter } from "react-simple-typewriter";
+import { MdShareLocation } from "react-icons/md";
+import { TbCircleDotted } from "react-icons/tb";
+import { MdOutlineCloudDownload } from "react-icons/md";
+import { MdOutlineVisibility } from "react-icons/md";
+import { MdOutlineChat } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
+import { FiLinkedin } from "react-icons/fi";
 
-          <motion.h1
-            className="hero-title"
-            variants={fadeInUp}
-            transition={{ delay: 0.2 }}
-          >
-            I'm a <span className="gradient-text">Product Designer</span>
-            <br />& UI/UX Specialist
-          </motion.h1>
 
-          <motion.p
-            className="hero-description"
-            variants={fadeInUp}
-            transition={{ delay: 0.4 }}
-          >
-            Creating beautiful, functional designs that solve real problems and delight users. 
-            With 3+ years of experience in digital design and product strategy.
-          </motion.p>
 
-          <motion.div
-            className="hero-buttons"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-          >
-            <motion.button
-              className="btn btn-primary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              View My Work <FiArrowRight />
-            </motion.button>
-            <motion.button
-              className="btn btn-secondary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Get in Touch
-            </motion.button>
-          </motion.div>
-        </motion.div>
+export default function Rakib() {
+    return (
+        <section id="home" className="hero">
+            <div className="text-light min-vh-100 d-flex align-items-center" >
+                <Container>
+                    <Row className="align-items-center">
+                        {/* Left Side - Text */}
+                        <Col md={7}>
+                            <p className="hello">👋 HELLO, I'M</p>
+                            <h1 className="fw-bold">Rakib Hosain</h1>
+                            <h3 className="text-success d-flex align-items-center gap-2">
+                                <span className="A">A</span>
+                                <GradientText
+                                    colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                                    animationSpeed={10}
+                                    direction="horizontal"
+                                    pauseOnHover={true}
+                                    yoyo={true}
+                                    showBorder={false}
+                                    className="gradient-typewriter">
+                                    <Typewriter
+                                        words={[
+                                            " Full Stack Developer",
+                                            " PHP & Laravel Expert",
+                                            " JavaScript & React with API Integration",
+                                            " Building Scalable Web Applications",
+                                            " Crafting Modern & Responsive UI",
+                                            " Clean Code & Performance Focused",
+                                            " Building Dynamic UI with React",
+                                        ]}
+                                        loop={true}
+                                        cursor
+                                        cursorStyle="_"
+                                        typeSpeed={70}
+                                        deleteSpeed={50}
+                                        delaySpeed={1500}
+                                    />
+                                </GradientText>
+                            </h3>
 
-        <motion.div
-          className="hero-image"
-          initial="hidden"
-          animate="visible"
-          variants={scaleIn}
-          transition={{ delay: 0.3 }}
-        >
-          <div className="hero-image-wrapper">
-            <motion.div
-              className="floating-card"
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 4, repeat: Infinity }}
-            >
-              <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
-                alt="Profile"
-              />
-            </motion.div>
-            <motion.div
-              className="glow-circle"
-              animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.5, 0.8, 0.5]
-              }}
-              transition={{ duration: 4, repeat: Infinity }}
-            />
-          </div>
-        </motion.div>
-      </div>
+                            <p className="mt-3">
+                                Full Stack Developer specializing in React.js and Laravel, focused on building fast, secure, and scalable web solutions.
+                            </p>
 
-      <motion.div
-        className="scroll-indicator"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-        <div className="scroll-dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </motion.div>
-    </section>
-  );
-};
+                            {/* Experience Badges */}
+                            <div className="d-flex gap-4 mt-3 align-items-center flex-wrap experience">
+                                <div className="d-flex align-items-center gap-2">
+                                    <span className="rotate-icon icon-box">
+                                        <TbCircleDotted color="var(--bs-success)" size={20} />
+                                    </span>
+                                    <p className="mb-0">2+ Years Experience</p>
+                                </div>
+
+                                <div className="d-flex align-items-center gap-2">
+                                    <span className="rotate-icon icon-box">
+                                        <TbCircleDotted color="var(--bs-blue)" size={20} />
+                                    </span>
+                                    <p className="mb-0">12+ Projects Completed</p>
+                                </div>
+
+                                <div className="d-flex align-items-center gap-2">
+                                    <span className="rotate-icon icon-box">
+                                        <TbCircleDotted color="var(--bs-purple)" size={20} />
+                                    </span>
+                                    <p className="mb-0">Remote Friendly</p>
+                                </div>
+                            </div>
+
+
+
+                            {/* Buttons */}
+                            <div className="mt-4 d-flex gap-3">
+                                <Button className="shine-button">
+                                    <MdOutlineCloudDownload size={20} className="me-2"/>
+                                    Download Resume
+                                </Button>
+                                <Button className="shine-button">
+                                    <MdOutlineVisibility size={20} className="me-2"/>
+                                    Explore My Work
+                                </Button>
+                                <Button className="shine-button">
+                                    <MdOutlineChat size={20}  className="me-2"/>
+                                    Let's Talk
+                                </Button>
+                            </div>
+
+
+                            {/* Social Links */}
+                            <div className="social-container mt-4">
+                                <a href="#"><FaGithub size={30} className="github" /> github</a>
+                                <a href="#"><FiLinkedin size={40} className="linkedin" /> linkedIn</a>
+                            </div>
+                        </Col>
+
+                        {/* Right Side - Image */}
+                        <Col md={5} className="text-center right-col">
+                            <img
+                                src="/src/assets/hero.png"
+                                alt="Rakib Hosain"
+                                className="hero-imageV2"
+                            />
+                            <div className="mt-3">
+                                <span className="badge-work">Available for Work</span>
+                                <p className="mt-2 location"><span className="l-icon"><MdShareLocation size={25} /></span> Dhaka, Bangladesh</p>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+        </section>
+    );
+}

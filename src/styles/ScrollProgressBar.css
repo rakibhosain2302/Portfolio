@@ -1,6 +1,6 @@
 .scroll-progress-bar {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   height: 3px;
   background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 50%, var(--tertiary) 100%);
