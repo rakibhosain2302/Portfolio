@@ -8,6 +8,7 @@ import {ScrollProgressBar} from './components/ScrollProgressBar';
 import './styles/globals.css';
 import './styles/DotGrid.css';
 import './styles/Hero.css';
+import './styles/About.css';
 import Hero from './components/Hero.jsx';
 
 function App() {

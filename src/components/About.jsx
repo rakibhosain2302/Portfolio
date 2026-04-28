@@ -1,17 +1,34 @@
+import { FaInfoCircle } from "react-icons/fa";
+import GradientText from "./GradientText/GradientText.jsx";
+import { GoProjectSymlink } from "react-icons/go";
+
 
 export const About = () => {
   return (
     <div className="text-light">
       <div className="container">
         {/* Hero Section */}
-        <section className="text-center py-5">
-          <h1 className="fw-bold display-4 text-info">Crafting Digital Experiences</h1>
-          <p className="lead mt-3 text-muted">
+        <section className="text-center about-section">
+          <h2 className="about-title"> <FaInfoCircle className="me-2 pop-up-icon" /> <span className="">About Me</span></h2>
+          <div className="d-flex justify-content-center align-items-center">
+            <h1 className="fw-bold display-5">
+              <GradientText
+                animationSpeed={10}
+                direction="horizontal"
+                pauseOnHover={true}
+                yoyo={true}
+                showBorder={false}
+                className="text-gradient">
+                Creating Interactive Web Experiences
+              </GradientText>
+            </h1>
+          </div>
+
+          <p className="lead mt-1 text-white w-50 mx-auto">
             Passionate full-stack developer crafting digital experiences with modern technologies and creative solutions.
           </p>
           <div className="d-flex justify-content-center gap-3 mt-4">
-            <button className="btn btn-outline-info">Explore My Projects</button>
-            <button className="btn btn-success">My Services</button>
+            <button className="shine-button"> < GoProjectSymlink className="me-2 pop-up-icon" color="white" size={20} /> Explore My Projects</button>
           </div>
         </section>
 
