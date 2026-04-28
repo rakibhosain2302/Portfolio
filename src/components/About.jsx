@@ -1,9 +1,9 @@
+import CountUp from "./CounterUp/ConterUp.jsx";
 import { FaInfoCircle } from "react-icons/fa";
 import GradientText from "./GradientText/GradientText.jsx";
 import AuroraText from "./GradientText/AuroraText.jsx";
 import { GoProjectSymlink } from "react-icons/go";
 import { SiKnowledgebase } from "react-icons/si";
-
 
 
 export const About = () => {
@@ -43,34 +43,10 @@ export const About = () => {
             Discover my journey and expertise through numbers that speak louder than words.
           </p>
           <div className="d-flex justify-content-center align-items-center text-center mt-4">
-            <div className="stat-box p-4 rounded stats-card me-4">
-              <h2>2+</h2>
-              <p className="text-white">Years Of Experience</p>
-            </div>
-            <div className="stat-box p-4 rounded stats-card me-4">
-              <h2>13+</h2>
-              <p className="text-white">Completed Projects</p>
-            </div>
-            <div className="stats-card p-4 rounded">
-              <h2 className="mb-1">8+</h2>
-              <p className="text-white">Client Satisfaction</p>
-            </div>
+            <CountUp end={2} label="Years Of Experience" />
+            <CountUp end={13} label="Completed Projects" />
+            <CountUp end={8} label="Client Satisfaction" />
           </div>
-        </section>
-
-        {/* Video Section */}
-        <section className="container text-center py-5">
-          <div className="video-box position-relative d-inline-block">
-            <img
-              src="/assets/video-thumbnail.jpg"
-              alt="Anas Intro"
-              className="img-fluid rounded"
-            />
-            <button className="btn btn-danger position-absolute top-50 start-50 translate-middle rounded-circle">
-              ▶
-            </button>
-          </div>
-          <p className="mt-3 fw-bold">Ariyan Rahman Anas | Full</p>
         </section>
       </div>
     </div>
