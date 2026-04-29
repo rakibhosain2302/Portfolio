@@ -50,7 +50,7 @@ export const Milestones = () => {
                 {/* Education Section */}
                 <div className="col-md-6">
                     <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title w-25">
-                        <FaGraduationCap className="me-2 pop-up-icon" />
+                        <FaGraduationCap className="me-2 pop-up-icon" size={20} />
                         Education
                     </h3>
 
