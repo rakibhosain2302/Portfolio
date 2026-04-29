@@ -1,5 +1,6 @@
 import DotGrid from './components/Dotgrid/DotGrid.jsx';
 import Hero from './components/Hero.jsx';
+import Navbar from './components/Navbar.jsx';
 import {About} from './components/About';
 import { MySkill } from './components/MySkills.jsx';
 import {Milestones} from './components/Milestones.jsx';
@@ -35,6 +36,7 @@ function App() {
 
       {/* Foreground Content */}
       <div className="position-relative content-layer">
+        <Navbar />
         <Hero />
         <About />
         <MySkill />
