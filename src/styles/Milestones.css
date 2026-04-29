@@ -1,6 +1,62 @@
-.Career-text{
-    font-size: 18px;
-    width: 40%;
-    display: inline-block;
-    color: #fff;
+.Career-text {
+  font-size: 18px;
+  width: 40%;
+  display: inline-block;
+  color: #fff;
+}
+
+.custom-card {
+  width: 100%;
+  border: 1px solid rgba(99, 102, 241, 0.6);
+  box-shadow: 0 20px 20px rgba(99, 102, 241, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 18px;
+  transition: all 0.4s ease-in-out;
+}
+
+.custom-card:hover {
+  border: 1px solid var(--primary);
+  box-shadow: 0 10px 10px rgba(99, 102, 241, 0.4);
+  transform: scale(1.009);
+}
+
+.card-title-edu {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.card-gpa {
+  border: 1px solid var(--primary);
+  padding: 4px;
+  border-radius: 30px;
+  width: 23%;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+.text-white.p {
+  text-align: justify;
+}
+
+.duration{
+  border: 1px solid var(--primary);
+  padding: 8px;
+  border-radius: 30px;
+  width: 23%;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+.Present{
+  color: var(--bs-teal);
 }

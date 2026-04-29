@@ -1,9 +1,38 @@
 import AuroraText from "./GradientText/AuroraText";
 import { PiPathBold } from "react-icons/pi";
+import { FaGraduationCap } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
+
 import "../styles/Milestones.css"
 
+const startDate = "2025-05-01";
+
+const getDuration = (startDate) => {
+    const start = new Date(startDate);
+    const now = new Date();
+
+    let months =
+        (now.getFullYear() - start.getFullYear()) * 12 +
+        (now.getMonth() - start.getMonth());
+
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+
+    let result = "";
+
+    if (years > 0) {
+        result += `${years} yr${years > 1 ? "s" : ""} `;
+    }
+    if (remainingMonths > 0) {
+        result += `${remainingMonths} mo${remainingMonths > 1 ? "s" : ""}`;
+    }
+
+    return result || "0 mo";
+};
 
 export const Milestones = () => {
+
+
     return (
         <div className="container py-5">
             {/* Title */}
@@ -18,39 +47,34 @@ export const Milestones = () => {
             <div className="row">
                 {/* Education Section */}
                 <div className="col-md-6">
-                    <h3 className="text-info fw-bold mb-4">Education</h3>
+                    <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title w-25">
+                        <FaGraduationCap className="me-2 pop-up-icon" />
+                        Education
+                    </h3>
 
-                    <div className="card bg-dark text-white mb-3 shadow">
+
+                    <div className="custom-card text-white mb-4">
                         <div className="card-body">
-                            <h5 className="card-title fw-bold">
+                            <h5 className="card-title fw-bold mt-1 mb-2">
+                                BSc in Computer Science and Engineering (Ongoing)
+                            </h5>
+                            <p className="mb-1 card-title-edu">Northern University Bangladesh</p>
+                            <p className="mb-1 card-gpa">2025 - Present</p>
+                            <small className="text-white p">
+                                Currently pursuing a Bachelor’s degree in Computer Science and Engineering, focusing on software development, problem-solving, and modern web technologies.
+                            </small>
+                        </div>
+                    </div>
+
+                    <div className="custom-card text-white mb-3">
+                        <div className="card-body">
+                            <h5 className="card-title fw-bold mt-1 mb-2">
                                 Diploma in Engineering in Computer Science and Technology
                             </h5>
-                            <p className="mb-1">Chattogram Polytechnic Institute</p>
-                            <p className="mb-1">GPA: 3.82/4.00</p>
-                            <small className="text-muted">
-                                I completed my Diploma in Engineering in Computer Science and Technology from Chattogram Polytechnic Institute. This journey deepened my technical foundation and strengthened my problem-solving mindset.
-                            </small>
-                        </div>
-                    </div>
-
-                    <div className="card bg-dark text-white mb-3 shadow">
-                        <div className="card-body">
-                            <h5 className="card-title fw-bold">Dakhil (Secondary School Certificate)</h5>
-                            <p className="mb-1">Baitush Sharaf Ideal Kamil Madrasah, Chattogram</p>
-                            <p className="mb-1">GPA: 4.87/5.00</p>
-                            <small className="text-muted">
-                                I completed my Dakhil from Baitush Sharaf Ideal Kamil Madrasah, which nurtured both my academic growth and Islamic values.
-                            </small>
-                        </div>
-                    </div>
-
-                    <div className="card bg-dark text-white mb-3 shadow">
-                        <div className="card-body">
-                            <h5 className="card-title fw-bold">Complete Hifzul Quran</h5>
-                            <p className="mb-1">Iqra Islamic School And Madrasah, Cumilla</p>
-                            <p className="mb-1">GPA: 5.00/5.00</p>
-                            <small className="text-muted">
-                                By the mercy of Allah, I completed memorization of the Holy Qur’an (Hifz) in 2013.
+                            <p className="mb-1 card-title-edu">Chattogram Polytechnic Institute</p>
+                            <p className="mb-1 card-gpa">CGPA: 3.82/4.00</p>
+                            <small className="text-white p">
+                                I completed my Diploma in Computer Science and Technology from Chattogram Polytechnic Institute, where I strengthened my core technical skills and developed a practical problem-solving approach.
                             </small>
                         </div>
                     </div>
@@ -58,52 +82,34 @@ export const Milestones = () => {
 
                 {/* Experience Section */}
                 <div className="col-md-6">
-                    <h3 className="text-info fw-bold mb-4">Experience</h3>
 
-                    <div className="card bg-dark text-white mb-3 shadow">
+                    <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title w-25">
+                        <FaBriefcase className="me-2 pop-up-icon" />
+                        Experience
+                    </h3>
+
+                    <div className="custom-card text-white pb-4">
                         <div className="card-body">
-                            <h5 className="card-title fw-bold">Software Developer (MERN-PERN)</h5>
-                            <p className="mb-1">Neovlyze — Dhaka, Bangladesh</p>
-                            <p className="mb-1">Full-time | Hybrid</p>
-                            <small className="text-muted">September 2025 — Present</small>
+                            <h5 className="card-title fw-bold mb-2">Laravel Developer</h5>
+                            <p className="mb-1">Isotope IT Ltd. — Dhaka, Bangladesh</p>
+                            <div className="job-type">
+                                <p className="mb-3">Full-time</p>
+                                <p className="">Hybrid</p>
+                            </div>
+                            <small className="text-white duration">
+                                May 2025 — <span className="Present">Present · {getDuration(startDate)}</span>
+                            </small>
                         </div>
                     </div>
 
-                    <div className="card bg-dark text-white mb-3 shadow">
+                    {/* <div className="custom-card text-white mb-3 ">
                         <div className="card-body">
                             <h5 className="card-title fw-bold">Senior Web Instructor</h5>
                             <p className="mb-1">MIT Solution — Chattogram, Bangladesh</p>
                             <p className="mb-1">Part-time | On-site</p>
-                            <small className="text-muted">January 2025 — Present</small>
+                            <small className="text-white">January 2025 — Present</small>
                         </div>
-                    </div>
-
-                    <div className="card bg-dark text-white mb-3 shadow">
-                        <div className="card-body">
-                            <h5 className="card-title fw-bold">Frontend Engineer</h5>
-                            <p className="mb-1">Codenco IT — Dhaka, Bangladesh</p>
-                            <p className="mb-1">Full-time | Remote</p>
-                            <small className="text-muted">December 2024 — July 2025</small>
-                        </div>
-                    </div>
-
-                    <div className="card bg-dark text-white mb-3 shadow">
-                        <div className="card-body">
-                            <h5 className="card-title fw-bold">Frontend Web Developer</h5>
-                            <p className="mb-1">Loopx Academy — Dhaka, Bangladesh</p>
-                            <p className="mb-1">Contract | Remote</p>
-                            <small className="text-muted">February 2024 — December 2024</small>
-                        </div>
-                    </div>
-
-                    <div className="card bg-dark text-white mb-3 shadow">
-                        <div className="card-body">
-                            <h5 className="card-title fw-bold">Frontend Developer</h5>
-                            <p className="mb-1">Qwik IT — Saint John, NB, Canada</p>
-                            <p className="mb-1">Internship | Remote</p>
-                            <small className="text-muted">November 2023 — January 2024</small>
-                        </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
