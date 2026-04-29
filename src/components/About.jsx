@@ -12,7 +12,7 @@ export const About = () => {
       <div className="container">
         {/* Hero Section */}
         <section className="text-center about-section">
-          <h2 className="about-title"> <FaInfoCircle className="me-2 pop-up-icon" /> <span className="">About Me</span></h2>
+          <h2 className="header-title"> <FaInfoCircle className="me-2 pop-up-icon" /> <span className="">About Me</span></h2>
           <div className="d-flex justify-content-center align-items-center">
             <h1 className="fw-bold display-5">
               <GradientText
@@ -37,7 +37,7 @@ export const About = () => {
 
         {/* Stats Section */}
         <section className="container stats-section text-center">
-          <h6 className="about-title"> <SiKnowledgebase className="me-1 pop-up-icon" /> <span className="">Get to Know Me</span></h6>
+          <h6 className="header-title"> <SiKnowledgebase className="me-1 pop-up-icon" /> <span className="">Get to Know Me</span></h6>
           <h1 className="fw-bold mb-4">Crafting <AuroraText>My Journey</AuroraText></h1>
           <p className="text-white mx-auto" style={{ width: "40%" }}>
             Discover my journey and expertise through numbers that speak louder than words.

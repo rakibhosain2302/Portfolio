@@ -1,9 +1,10 @@
 import LogoLoop from './Logo/LogoLoop';
-import { SiReact, SiLaravel, SiPhp, SiBootstrap, SiJquery, SiJavascript, SiMysql, SiHtml5, SiCss, SiUbuntu, SiMariadb, SiGithub, SiGithubcopilot } from 'react-icons/si';
+import AuroraText from './GradientText/AuroraText';
+import { SiReact, SiLaravel, SiPhp, SiBootstrap, SiJquery, SiJavascript, SiMysql, SiHtml5, SiCss, SiUbuntu, SiMariadb, SiGithub, SiGithubcopilot, SiSecurityscorecard } from 'react-icons/si';
 
 const techLogos = [
     { node: <SiGithub color="#ffffff" />, title: "GitHub", href: "https://github.com" },
-    { node: <SiGithubcopilot color="#ffffff" />, title: "GitHub", href: "https://copilot.microsoft.com" },
+    { node: <SiGithubcopilot color="#ffffff" />, title: "Copilot", href: "https://copilot.microsoft.com" },
     { node: <SiPhp color="#777BB4" />, title: "PHP", href: "https://www.php.net" },
     { node: <SiLaravel color="#FF2D20" />, title: "Laravel", href: "https://laravel.com" },
     { node: <SiReact color="#61DAFB" />, title: "React", href: "https://react.dev" },
@@ -26,26 +27,47 @@ const techLogos = [
 
 export const MySkill = () => {
     return (
-        <div style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
-            {/* Basic horizontal loop */}
-            <LogoLoop
-                logos={techLogos}
-                speed={60}
-                direction="left"
-                logoHeight={60}
-                gap={60}
-                hoverSpeed={0}
-                scaleOnHover
-                fadeOut
-                fadeOutColor="#ffffff"
-                ariaLabel="Technology partners"
-            />
+        <>
+            <div className='myskills-section text-white text-center'>
+                <div className="container">
+                    <h1 className='header-title mb-3'><SiSecurityscorecard className='me-2 pop-up-icon' size={25} />My Tech Stack</h1>
+                    <h1 className="fw-bold mb-4">Skills & <AuroraText>Technologies</AuroraText></h1>
+                    <p className='content'>Building dynamic and scalable web applications using modern technologies like Laravel, React, and JavaScript.</p>
+                </div>
+            </div>
+            <div style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
+                {/* Basic horizontal loop */}
+                <LogoLoop
+                    logos={techLogos}
+                    speed={60}
+                    direction="left"
+                    logoHeight={60}
+                    gap={60}
+                    hoverSpeed={0}
+                    scaleOnHover
+                    fadeOut
+                    fadeOutColor="#ffffff"
+                    ariaLabel="Technology partners"
+                    renderItem={(item, key) => (
+                        <li key={key} className="relative group">
+                            <a href={item.href} target="_blank" rel="noreferrer">
+                                {item.node}
+                            </a>
 
-            {/* Vertical loop with deceleration on hover */}
-            {/* <LogoLoop
+                            {/* Tooltip */}
+                            <span className="tooltip">
+                                {item.title}
+                            </span>
+                        </li>
+                    )}
+                />
+
+                {/* Vertical loop with deceleration on hover */}
+                {/* <LogoLoop
         logos={techLogos}
   useCustomRender={true}
 /> */}
-        </div>
+            </div>
+        </>
     );
 }
