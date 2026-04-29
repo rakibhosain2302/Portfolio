@@ -2,6 +2,8 @@ import AuroraText from "./GradientText/AuroraText";
 import { PiPathBold } from "react-icons/pi";
 import { FaGraduationCap } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa";
+import { ImLocation } from "react-icons/im";
+
 
 import "../styles/Milestones.css"
 
@@ -90,11 +92,12 @@ export const Milestones = () => {
 
                     <div className="custom-card text-white pb-4">
                         <div className="card-body">
-                            <h5 className="card-title fw-bold mb-2">Laravel Developer</h5>
-                            <p className="mb-1">Isotope IT Ltd. — Dhaka, Bangladesh</p>
-                            <div className="job-type">
-                                <p className="mb-3">Full-time</p>
-                                <p className="">Hybrid</p>
+                            <h5 className="card-title fw-bold mb-1">Laravel Developer</h5>
+                            <p className="mb-1 companey">Isotope IT Ltd.</p>
+                            <p className="mb-1"><ImLocation color="#adb5bd" className="me-1"/>Dhaka, Bangladesh</p>
+                            <div className="d-flex">
+                                <p className="time me-2">Full-time</p>
+                                <p className="time">Hybrid</p>
                             </div>
                             <small className="text-white duration">
                                 May 2025 — <span className="Present">Present · {getDuration(startDate)}</span>
