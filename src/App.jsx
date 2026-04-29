@@ -1,6 +1,8 @@
 import DotGrid from './components/Dotgrid/DotGrid.jsx';
+import Hero from './components/Hero.jsx';
 import {About} from './components/About';
 import { MySkill } from './components/MySkills.jsx';
+import {Milestones} from './components/Milestones.jsx';
 import {Portfolio} from './components/Portfolio';
 import {Services} from './components/Services';
 import {Testimonials} from './components/Testimonials';
@@ -10,7 +12,6 @@ import './styles/globals.css';
 import './styles/DotGrid.css';
 import './styles/Hero.css';
 import './styles/About.css';
-import Hero from './components/Hero.jsx';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Hero />
         <About />
         <MySkill />
+        <Milestones />
         <Portfolio />
         <Services />
         <Testimonials />

@@ -39,7 +39,7 @@ export const MySkill = () => {
                 {/* Basic horizontal loop */}
                 <LogoLoop
                     logos={techLogos}
-                    speed={60}
+                    speed={0}
                     direction="left"
                     logoHeight={60}
                     gap={60}
