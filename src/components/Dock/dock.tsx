@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import '@/styles/dock.css'
 
 interface DockIconProps {
@@ -39,35 +40,69 @@ export function Dock({
 }
 
 export function DockIcon({ children, label, href, target }: DockIconProps) {
-  const [showLabel, setShowLabel] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
+  const content = (
+    <>
+      {children}
+    </>
+  )
+
   if (href) {
+    if (label) {
+      return (
+        <OverlayTrigger
+          placement="top"
+          overlay={<Tooltip id={`tooltip-${label}`}>{label}</Tooltip>}
+        >
+          <a
+            href={href}
+            target={target}
+            rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+            className="dock-icon"
+            ref={ref as any}
+          >
+            {children}
+          </a>
+        </OverlayTrigger>
+      )
+    }
+
     return (
       <a
         href={href}
         target={target}
         rel={target === '_blank' ? 'noopener noreferrer' : undefined}
         className="dock-icon"
-        onMouseEnter={() => setShowLabel(true)}
-        onMouseLeave={() => setShowLabel(false)}
         ref={ref as any}
       >
         {children}
-        {label && showLabel && <span className="dock-label">{label}</span>}
       </a>
+    )
+  }
+
+  if (label) {
+    return (
+      <OverlayTrigger
+        placement="top"
+        overlay={<Tooltip id={`tooltip-${label}`}>{label}</Tooltip>}
+      >
+        <div 
+          className="dock-icon"
+          ref={ref}
+        >
+          {children}
+        </div>
+      </OverlayTrigger>
     )
   }
 
   return (
     <div 
       className="dock-icon"
-      onMouseEnter={() => setShowLabel(true)}
-      onMouseLeave={() => setShowLabel(false)}
       ref={ref}
     >
       {children}
-      {label && showLabel && <span className="dock-label">{label}</span>}
     </div>
   )
 }

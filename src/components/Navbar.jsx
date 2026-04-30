@@ -1,10 +1,11 @@
 "use client"
 
 import { Dock, DockIcon } from "./Dock/dock"
-import { FaGithub, FaLinkedin, FaHome } from "react-icons/fa"
+import { FaGithub, FaHome } from "react-icons/fa"
 import { SiWikimediafoundation } from "react-icons/si"
 import { PiToolboxFill } from "react-icons/pi";
-import { RiMailSendFill } from "react-icons/ri";
+import { IoIosMailUnread } from "react-icons/io";
+
 
 
 import '../styles/dock.css'
@@ -18,24 +19,24 @@ export default function MyDock() {
         iconDistance={120}
         direction="middle"
       >
-        <DockIcon>
-          <FaHome size={20} />
+        <DockIcon label="Home">
+          <FaHome size={20}/>
         </DockIcon>
 
-        <DockIcon>
+        <DockIcon label="About Me">
           <SiWikimediafoundation size={20} />
         </DockIcon>
 
-        <DockIcon>
+        <DockIcon label="Project">
           <PiToolboxFill size={20} />
         </DockIcon>
 
-        <DockIcon>
+        <DockIcon label="Github">
           <FaGithub size={20} />
         </DockIcon>
 
-        <DockIcon>
-          <RiMailSendFill size={20} />
+        <DockIcon label="Contact">
+          <IoIosMailUnread size={20} />
         </DockIcon>
       </Dock>
     </div>
