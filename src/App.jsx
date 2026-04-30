@@ -4,6 +4,7 @@ import Navbar from './components/Navbar.jsx';
 import {About} from './components/About';
 import { MySkill } from './components/MySkills.jsx';
 import {Milestones} from './components/Milestones.jsx';
+import Project  from './components/Project.jsx';
 import {Portfolio} from './components/Portfolio';
 import {Services} from './components/Services';
 import {Testimonials} from './components/Testimonials';
@@ -41,6 +42,7 @@ function App() {
         <About />
         <MySkill />
         <Milestones />
+        <Project />
         <Portfolio />
         <Services />
         <Testimonials />
