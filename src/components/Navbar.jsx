@@ -2,7 +2,12 @@
 
 import { Dock, DockIcon } from "./Dock/dock"
 import { FaGithub, FaLinkedin, FaHome } from "react-icons/fa"
-import { SiReact, SiLaravel } from "react-icons/si"
+import { SiWikimediafoundation } from "react-icons/si"
+import { PiToolboxFill } from "react-icons/pi";
+import { RiMailSendFill } from "react-icons/ri";
+
+
+import '../styles/dock.css'
 
 export default function MyDock() {
   return (
@@ -18,11 +23,11 @@ export default function MyDock() {
         </DockIcon>
 
         <DockIcon>
-          <SiReact size={20} />
+          <SiWikimediafoundation size={20} />
         </DockIcon>
 
         <DockIcon>
-          <SiLaravel size={20} />
+          <PiToolboxFill size={20} />
         </DockIcon>
 
         <DockIcon>
@@ -30,7 +35,7 @@ export default function MyDock() {
         </DockIcon>
 
         <DockIcon>
-          <FaLinkedin size={20} />
+          <RiMailSendFill size={20} />
         </DockIcon>
       </Dock>
     </div>
