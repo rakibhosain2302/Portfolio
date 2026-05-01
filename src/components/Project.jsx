@@ -2,6 +2,10 @@ import { useState } from "react";
 import { Row, Col, Nav } from "react-bootstrap";
 import AuroraText from "./GradientText/AuroraText";
 import { SiGooglecloudcomposer } from "react-icons/si";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 
 // Import images
 import AytorImg from "../assets/Project/Aytor.png";
@@ -14,10 +18,10 @@ import "../styles/Project.css";
 
 const projectsData = {
     frontend: [
-        { image: AytorImg, title: "Aytor E-Commerce", tags: ["HTML", "CSS", "Bootstrap", "JavaScript","jQuery"], desc: "Aytor E‑Commerce is a shopping platform offering electronics, fashion, and daily essentials. It focuses on quality products, fast delivery, and customer satisfaction for a convenient and affordable experience." },
-        { image: JikerAppImg, title: "Ziker-App", tags: ["React", "CSS", "Bootstrap"], desc: "Ziker-App is a modern Islamic Tasbih & Zikr Counter application built with React. It helps users perform daily zikr, track progress, rotate duas, and maintain consistency with a clean and calming UI." },
-        { image: RestaurantImg, title: "Restaurant Web Design", tags: ["HTML","CSS","Bootstrap","JavaScript","jQuery"], desc: "Restaurant Web Design is a sleek, responsive layout that showcases menus, ambiance, and services with attractive visuals and easy navigation to boost customer engagement." },
-        { image: CompanyImg, title: "Modern Corporate Agency Design", tags: ["HTML", "CSS","Bootstrap"], desc: "Bizzency is a corporate agency template with a modern homepage, clear navigation, and a professional design. It emphasizes success, ambition, and client trust through bold branding, service highlights, and engaging visuals." },
+        { gitlink: "https://github.com/rakibhosain2302/RWD-Project-2024", liveLink: "https://rakibhosain2302.github.io/RWD-Project-2024/", image: AytorImg, title: "Aytor E-Commerce", tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"], desc: "Aytor E‑Commerce is a shopping platform offering electronics, fashion, and daily essentials. It focuses on quality products, fast delivery, and customer satisfaction for a convenient and affordable experience." },
+        { gitlink: "https://github.com/rakibhosain2302/Ziker-App", liveLink: "https://ziker-app.netlify.app/", image: JikerAppImg, title: "Ziker-App", tags: ["React", "CSS", "Bootstrap"], desc: "Ziker-App is a modern Islamic Tasbih & Zikr Counter application built with React. It helps users perform daily zikr, track progress, rotate duas, and maintain consistency with a clean and calming UI." },
+        { gitlink: "https://github.com/rakibhosain2302/Restaurant_Web_Design", liveLink: "https://rakibhosain2302.github.io/Restaurant_Web_Design/", image: RestaurantImg, title: "Restaurant Web Design", tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"], desc: "Restaurant Web Design is a sleek, responsive layout that showcases menus, ambiance, and services with attractive visuals and easy navigation to boost customer engagement." },
+        { gitlink: "https://github.com/rakibhosain2302/Modern-Corporate-Agency-Design", liveLink: "https://rakibhosain2302.github.io/Modern-Corporate-Agency-Design/", image: CompanyImg, title: "Modern Corporate Agency Design", tags: ["HTML", "CSS", "Bootstrap"], desc: "Bizzency is a corporate agency template with a modern homepage, clear navigation, and a professional design. It emphasizes success, ambition, and client trust through bold branding, service highlights, and engaging visuals." },
     ],
     fullstack: [
         { title: "Full Stack App", tags: ["React", "Node.js", "MongoDB"], desc: "Demo full stack project" },
@@ -39,11 +43,30 @@ const ProjectCard = ({ project }) => (
             </div>
 
             <div className="fw-bold text-start mt-4">{project.title}</div>
-            <div className=" text-start">
+            <div className="d-flex align-items-center mt-1 tech-Section">
+                <HiOutlineDesktopComputer className="me-2 icons" size={22} />
                 {project.tags.map((tag, idx) => (
-                    <span key={idx} className="badge bg-primary mt-2 me-2">{tag}</span>
+                    <span key={idx} className="tech-badge me-2 mt-2 mb-2">{tag}</span>
                 ))}
             </div>
+
+
+            <div className="link-section mt-3 d-flex gap-2">
+                <div className="flex-fill">
+                    <a className="link-button" href={project.gitlink}>
+                        <FaGithub className="me-2" size={25} />
+                        Github
+                    </a>
+                </div>
+                <div className="flex-fill">
+                    <a className="link-button" href={project.liveLink}>
+                        <FaExternalLinkAlt className="me-2" size={18} />
+                        Live
+                    </a>
+                </div>
+            </div>
+
+
         </div>
     </div>
 );
