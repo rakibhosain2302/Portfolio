@@ -14,10 +14,10 @@ import "../styles/Project.css";
 
 const projectsData = {
     frontend: [
-        { image: AytorImg, title: "The Tasbeeh", tags: ["HTML", "CSS", "JavaScript"], desc: "Digital counter interface" },
-        { image: JikerAppImg, title: "Calculator", tags: ["React", "CSS"], desc: "Simple calculator layout" },
-        { image: RestaurantImg, title: "Stop Watch", tags: ["React", "JavaScript"], desc: "Minimal stopwatch design" },
-        { image: CompanyImg, title: "Pioneer Bank", tags: ["React", "Bootstrap"], desc: "Login interface" },
+        { image: AytorImg, title: "Aytor E-Commerce", tags: ["HTML", "CSS", "Bootstrap", "JavaScript","jQuery"], desc: "Aytor E‑Commerce is a shopping platform offering electronics, fashion, and daily essentials. It focuses on quality products, fast delivery, and customer satisfaction for a convenient and affordable experience." },
+        { image: JikerAppImg, title: "Ziker-App", tags: ["React", "CSS", "Bootstrap"], desc: "Ziker-App is a modern Islamic Tasbih & Zikr Counter application built with React. It helps users perform daily zikr, track progress, rotate duas, and maintain consistency with a clean and calming UI." },
+        { image: RestaurantImg, title: "Restaurant Web Design", tags: ["HTML","CSS","Bootstrap","JavaScript","jQuery"], desc: "Restaurant Web Design is a sleek, responsive layout that showcases menus, ambiance, and services with attractive visuals and easy navigation to boost customer engagement." },
+        { image: CompanyImg, title: "Modern Corporate Agency Design", tags: ["HTML", "CSS","Bootstrap"], desc: "Bizzency is a corporate agency template with a modern homepage, clear navigation, and a professional design. It emphasizes success, ambition, and client trust through bold branding, service highlights, and engaging visuals." },
     ],
     fullstack: [
         { title: "Full Stack App", tags: ["React", "Node.js", "MongoDB"], desc: "Demo full stack project" },
@@ -28,20 +28,20 @@ const projectsData = {
 };
 
 const ProjectCard = ({ project }) => (
-    <div className="mb-4 shadow-sm">
-        <div>
-            {project.image && (
+    <div className="mb-5 project-card">
+        <div className="custom-card">
+            <div className="image-card" data-desc={project.desc}>
                 <img
                     src={project.image}
                     alt={project.title}
-                    className="img-fluid mb-2 project-img"
+                    className="img-fluid project-img"
                 />
-            )}
-            <div className="fw-bold">{project.title}</div>
-            <div>{project.desc}</div>
-            <div>
+            </div>
+
+            <div className="fw-bold text-start mt-4">{project.title}</div>
+            <div className=" text-start">
                 {project.tags.map((tag, idx) => (
-                    <span key={idx} className="badge bg-primary me-2">{tag}</span>
+                    <span key={idx} className="badge bg-primary mt-2 me-2">{tag}</span>
                 ))}
             </div>
         </div>

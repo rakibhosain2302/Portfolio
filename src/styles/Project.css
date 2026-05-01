@@ -8,18 +8,18 @@
 .nav-pills {
   border: 1px solid var(--primary);
   padding: 8px 12px;
-  border-radius: 16px; 
+  border-radius: 16px;
   display: flex;
   justify-content: center;
   gap: 10px;
   background: rgba(99, 102, 241, 0.05);
   box-shadow: 0 8px 10px rgba(99, 102, 241, 0.6);
-  width: fit-content; 
+  width: fit-content;
   margin: 0 auto;
 }
 
 .nav-pills .nav-link {
-  flex: 1; 
+  flex: 1;
   min-width: 120px;
   border-radius: 20px;
   padding: 8px 10px;
@@ -38,7 +38,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: -100%; 
+  left: -100%;
   width: 100%;
   height: 100%;
   transition: left 0.3s ease;
@@ -46,7 +46,7 @@
 }
 
 .nav-pills .nav-link.active::before {
-  left: 0; 
+  left: 0;
 }
 
 .nav-pills .nav-link.active {
@@ -59,12 +59,71 @@
   box-shadow: 0 0 10px rgba(156, 39, 176, 0.6);
 }
 
-.project-img{
-  width: 350px;
+.project-img {
+  width: 100%;
   height: 230px;
+  border-radius: 0px 20px;
   transition: all 0.6s ease;
 }
 
-.project-img:hover{
-  transform: scale(1.05);
+.project-card:hover .project-desc {
+  opacity: 1;
+}
+
+.project-card .custom-card {
+  height: 450px;
+}
+
+.project-card .custom-card:hover {
+  transform: scaleY(1.03);
+  color: var(--primary);
+}
+
+.image-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 230px;
+  border-radius: 0px 20px;
+  transition: all 0.6s ease;
+  display: block;
+}
+
+/* Shadow overlay with ::after */
+.image-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6); /* shadow overlay */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.image-card:hover::after {
+  opacity: 1;
+}
+
+/* Description overlay with ::before */
+.image-card::before {
+  content: attr(data-desc); /* dynamic description from data-desc */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding: 14px;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  z-index: 999;
+  text-align: justify;
+}
+
+.image-card:hover::before {
+  opacity: 1;
+  transform: translateY(0);
 }
