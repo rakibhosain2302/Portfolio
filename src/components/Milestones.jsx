@@ -74,7 +74,7 @@ export const Milestones = () => {
                                 Diploma in Engineering in Computer Science and Technology
                             </h5>
                             <p className="mb-1 card-title-edu">Chattogram Polytechnic Institute</p>
-                            <p className="mb-1 card-gpa">CGPA: 3.82/4.00</p>
+                            <p className="mb-1 card-gpa">CGPA: 3.43 / 4.00</p>
                             <small className="text-white p">
                                 I completed my Diploma in Computer Science and Technology from Chattogram Polytechnic Institute, where I strengthened my core technical skills and developed a practical problem-solving approach.
                             </small>

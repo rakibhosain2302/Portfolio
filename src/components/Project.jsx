@@ -1,18 +1,23 @@
 import { useState } from "react";
-import { Row, Col, Card, Nav } from "react-bootstrap";
+import { Row, Col, Nav } from "react-bootstrap";
 import AuroraText from "./GradientText/AuroraText";
 import { SiGooglecloudcomposer } from "react-icons/si";
-import "../styles/Project.css";
 
+// Import images
+import AytorImg from "../assets/Project/Aytor.png";
+import JikerAppImg from "../assets/Project/Jiker-app.png";
+import RestaurantImg from "../assets/Project/Restaurant.png";
+import CompanyImg from "../assets/Project/Company.png";
+
+import "../styles/Project.css";
 
 
 const projectsData = {
     frontend: [
-        { title: "The Tasbeeh", tags: ["HTML", "CSS", "JavaScript"], desc: "Digital counter interface" },
-        { title: "Calculator", tags: ["React", "CSS"], desc: "Simple calculator layout" },
-        { title: "Stop Watch", tags: ["React", "JavaScript"], desc: "Minimal stopwatch design" },
-        { title: "Pioneer Bank", tags: ["React", "Bootstrap"], desc: "Login interface" },
-        { title: "Online Exam System", tags: ["React", "CSS"], desc: "Colorful online test platform" },
+        { image: AytorImg, title: "The Tasbeeh", tags: ["HTML", "CSS", "JavaScript"], desc: "Digital counter interface" },
+        { image: JikerAppImg, title: "Calculator", tags: ["React", "CSS"], desc: "Simple calculator layout" },
+        { image: RestaurantImg, title: "Stop Watch", tags: ["React", "JavaScript"], desc: "Minimal stopwatch design" },
+        { image: CompanyImg, title: "Pioneer Bank", tags: ["React", "Bootstrap"], desc: "Login interface" },
     ],
     fullstack: [
         { title: "Full Stack App", tags: ["React", "Node.js", "MongoDB"], desc: "Demo full stack project" },
@@ -23,17 +28,24 @@ const projectsData = {
 };
 
 const ProjectCard = ({ project }) => (
-    <Card className="mb-4 shadow-sm">
-        <Card.Body>
-            <Card.Title>{project.title}</Card.Title>
-            <Card.Text>{project.desc}</Card.Text>
+    <div className="mb-4 shadow-sm">
+        <div>
+            {project.image && (
+                <img
+                    src={project.image}
+                    alt={project.title}
+                    className="img-fluid mb-2 project-img"
+                />
+            )}
+            <div className="fw-bold">{project.title}</div>
+            <div>{project.desc}</div>
             <div>
                 {project.tags.map((tag, idx) => (
                     <span key={idx} className="badge bg-primary me-2">{tag}</span>
                 ))}
             </div>
-        </Card.Body>
-    </Card>
+        </div>
+    </div>
 );
 
 const FeaturedProjects = () => {
@@ -44,7 +56,7 @@ const FeaturedProjects = () => {
             <h1 className="header-title mb-4"><SiGooglecloudcomposer className="me-2 pop-up-icon" size={18} />Recent Work</h1>
             <h2 className="text-center mb-3">Project <AuroraText>Showcase</AuroraText></h2>
             <p className="text-center p mb-4">
-                Passionate about exploring new technologies. Every project is a unique challenge that helps me push boundaries and grow as a developer.            
+                Passionate about exploring new technologies. Every project is a unique challenge that helps me push boundaries and grow as a developer.
             </p>
 
             <Nav variant="pills" className="justify-content-center mb-4">
