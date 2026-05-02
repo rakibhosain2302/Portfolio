@@ -16,7 +16,6 @@ import ClockImg from "../assets/Project/Clock.png";
 import CalculatorImg from "../assets/Project/Calculator.png";
 
 import "../styles/Project.css";
-import { image } from "framer-motion/m";
 
 
 const projectsData = {
@@ -27,7 +26,11 @@ const projectsData = {
         { gitlink: "https://github.com/rakibhosain2302/Modern-Corporate-Agency-Design", liveLink: "https://rakibhosain2302.github.io/Modern-Corporate-Agency-Design/", image: CompanyImg, title: "Modern Corporate Agency Design", tags: ["HTML", "CSS", "Bootstrap"], desc: "Bizzency is a corporate agency template with a modern homepage, clear navigation, and a professional design. It emphasizes success, ambition, and client trust through bold branding, service highlights, and engaging visuals." },
     ],
     fullstack: [
-        { title: "Full Stack App", tags: ["React", "Node.js", "MongoDB"], desc: "Demo full stack project" },
+        { title: "Blog Managment System", tags: ["Laravel", "JavaScript", "MySQL", "CSS"], desc: "Demo full stack project" },
+        { title: "Invoice Managment System", tags: ["Laravel", "JavaScript", "MySQL", "CSS"], desc: "Demo full stack project" },
+        { title: "Smart Product Ordering & Verification System", tags: ["Laravel", "React.js", "MySQL", "CSS", "RestFul-API"], desc: "Demo full stack project" },
+
+
     ],
     static: [
         { gitlink:"https://github.com/rakibhosain2302/Analog_and_Digital_Clock",liveLink:"https://rakibhosain2302.github.io/Analog_and_Digital_Clock/", image: ClockImg, title: "Analog & Digital Clock", tags: ["HTML", "CSS", "JavaScript"], desc: "A simple and responsive Analog & Digital Clock built using HTML, CSS, and JavaScript, displaying real-time updates with both classic analog design and modern digital format." },
