@@ -83,14 +83,14 @@ const FeaturedProjects = () => {
     const [activeTab, setActiveTab] = useState("frontend");
 
     return (
-        <div fluid className="container text-light text-center py-5">
+        <div fluid className="container text-light text-center py-5 mb-5">
             <h1 className="header-title mb-4"><SiGooglecloudcomposer className="me-2 pop-up-icon" size={18} />Recent Work</h1>
             <h2 className="text-center mb-3">Project <AuroraText>Showcase</AuroraText></h2>
             <p className="text-center p mb-4">
                 Passionate about exploring new technologies. Every project is a unique challenge that helps me push boundaries and grow as a developer.
             </p>
 
-            <Nav variant="pills" className="justify-content-center mb-4">
+            <Nav variant="pills" className="justify-content-center mb-5">
                 <Nav.Item>
                     <Nav.Link active={activeTab === "frontend"} onClick={() => setActiveTab("frontend")}>Front-End</Nav.Link>
                 </Nav.Item>

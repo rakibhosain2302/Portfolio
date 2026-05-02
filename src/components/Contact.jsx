@@ -1,146 +1,80 @@
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { FiMail, FiPhone, FiMapPin, FiCheck } from 'react-icons/fi';
-import { fadeInUp, staggerContainer, staggerItem } from '../utils/animationVariants';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import '../styles/Contact.css';
+import { Row, Col, Form, Button } from "react-bootstrap";
+import { PiTargetBold } from "react-icons/pi";
+import { MdAttachEmail } from "react-icons/md";
+import { BsTelephoneForwardFill } from "react-icons/bs";
+import { IoLocation } from "react-icons/io5";
 
-export const Contact = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [submitted, setSubmitted] = useState(false);
-  const [errors, setErrors] = useState({});
-  const { ref, isInView } = useScrollAnimation();
+import AuroraText from "./GradientText/AuroraText";
 
-  const validateForm = () => {
-    let newErrors = {};
-    if (!formData.name.trim()) newErrors.name = 'Name is required';
-    if (!formData.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) newErrors.email = 'Valid email is required';
-    if (!formData.message.trim()) newErrors.message = 'Message is required';
-    return newErrors;
-  };
+import "../styles/Contact.css";
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const newErrors = validateForm();
-    setErrors(newErrors);
-
-    if (Object.keys(newErrors).length === 0) {
-      setSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setSubmitted(false), 3000);
-    }
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    if (errors[name]) setErrors(prev => ({ ...prev, [name]: '' }));
-  };
-
+const Contact = () => {
   return (
-    <section id="contact" className="contact" ref={ref}>
-      <div className="contact-container">
-        <motion.div
-          className="contact-header"
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={fadeInUp}
-        >
-          <h2 className="section-title">Get in Touch</h2>
-          <p className="section-subtitle">Let's discuss your next project</p>
-        </motion.div>
+    <section className="contact-section text-center">
+      <div className="container">
+        <h1 className="header-title">
+          <PiTargetBold className="me-2 pop-up-icon" size={20} />
+          Get in Touch
+        </h1>
+        <Row className="text-center mb-5">
+          <Col>
+            <h1 className="contact-title">
+              Let’s <AuroraText>Contract Me</AuroraText>
+            </h1>
+            <p className="contact-subtitle">
+              Ready to build something great? Let’s collaborate and turn your
+              ideas into powerful digital solutions.{" "}
+            </p>
+          </Col>
+        </Row>
 
-        <motion.div
-          className="contact-content"
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={staggerContainer}
-        >
-          <motion.div className="contact-info" variants={staggerItem}>
-            <motion.div className="info-card" whileHover={{ y: -5 }}>
-              <FiMail size={24} />
-              <h4>Email</h4>
-              <p>rakib@example.com</p>
-            </motion.div>
-            <motion.div className="info-card" whileHover={{ y: -5 }}>
-              <FiPhone size={24} />
-              <h4>Phone</h4>
-              <p>+1 (555) 123-4567</p>
-            </motion.div>
-            <motion.div className="info-card" whileHover={{ y: -5 }}>
-              <FiMapPin size={24} />
-              <h4>Location</h4>
-              <p>New York, USA</p>
-            </motion.div>
-          </motion.div>
-
-          <motion.form
-            className="contact-form"
-            onSubmit={handleSubmit}
-            variants={staggerItem}
-          >
-            <motion.div className="form-group" variants={staggerItem}>
-              <label htmlFor="name">Your Name</label>
-              <motion.input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="John Doe"
-                className={errors.name ? 'error' : ''}
-                whileFocus={{ scale: 1.02 }}
-              />
-              {errors.name && <span className="error-message">{errors.name}</span>}
-            </motion.div>
-
-            <motion.div className="form-group" variants={staggerItem}>
-              <label htmlFor="email">Your Email</label>
-              <motion.input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="john@example.com"
-                className={errors.email ? 'error' : ''}
-                whileFocus={{ scale: 1.02 }}
-              />
-              {errors.email && <span className="error-message">{errors.email}</span>}
-            </motion.div>
-
-            <motion.div className="form-group full" variants={staggerItem}>
-              <label htmlFor="message">Your Message</label>
-              <motion.textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Tell me about your project..."
-                rows="5"
-                className={errors.message ? 'error' : ''}
-                whileFocus={{ scale: 1.02 }}
-              />
-              {errors.message && <span className="error-message">{errors.message}</span>}
-            </motion.div>
-
-            <motion.button
-              type="submit"
-              className="submit-btn"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {submitted ? (
-                <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                  <FiCheck size={20} /> Message Sent!
-                </motion.span>
-              ) : (
-                'Send Message'
-              )}
-            </motion.button>
-          </motion.form>
-        </motion.div>
+        <Row>
+          <div className="col-md-6 contact-info text-start">
+            <h4>Need More Info? I'd Love to hear From You!</h4>
+            <div className="custom-card mb-3">
+              <div>
+                <span>
+                  <MdAttachEmail className="me-4" />
+                </span>
+                <strong>Email:</strong> anasahibve@gmail.com
+              </div>
+            </div>
+            <div className="custom-card mb-3">
+              <span>
+                <BsTelephoneForwardFill className="me-4" />
+              </span>
+              <strong>Phone:</strong> +88 01601-139968
+            </div>
+            <div className="custom-card mb-3">
+              <span>
+                <IoLocation className="me-4" />
+              </span>
+              <strong>Location:</strong> Hathazari, Chattogram, Bangladesh
+            </div>
+          </div>
+          <Col md={6}>
+            <Form className="contact-form">
+              <Form.Group className="mb-3">
+                <Form.Control type="text" placeholder="Your Name" />
+              </Form.Group>
+              <Form.Group className="mb-3">
+                <Form.Control type="email" placeholder="Your Email" />
+              </Form.Group>
+              <Form.Group className="mb-3">
+                <Form.Control type="text" placeholder="Subject" />
+              </Form.Group>
+              <Form.Group className="mb-3">
+                <Form.Control as="textarea" rows={4} placeholder="Message" />
+              </Form.Group>
+              <Button className="send-btn" type="submit">
+                Send Message
+              </Button>
+            </Form>
+          </Col>
+        </Row>
       </div>
     </section>
   );
 };
+
+export default Contact;

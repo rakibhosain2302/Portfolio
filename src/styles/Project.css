@@ -75,7 +75,7 @@
 }
 
 .project-card .custom-card:hover {
-  transform: scaleY(1.03);
+  transform: translateY(-8px);
   color: var(--primary);
 }
 
