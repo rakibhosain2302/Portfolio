@@ -12,8 +12,11 @@ import AytorImg from "../assets/Project/Aytor.png";
 import JikerAppImg from "../assets/Project/Jiker-app.png";
 import RestaurantImg from "../assets/Project/Restaurant.png";
 import CompanyImg from "../assets/Project/Company.png";
+import ClockImg from "../assets/Project/Clock.png";
+import CalculatorImg from "../assets/Project/Calculator.png";
 
 import "../styles/Project.css";
+import { image } from "framer-motion/m";
 
 
 const projectsData = {
@@ -27,7 +30,9 @@ const projectsData = {
         { title: "Full Stack App", tags: ["React", "Node.js", "MongoDB"], desc: "Demo full stack project" },
     ],
     static: [
-        { title: "Static Portfolio", tags: ["HTML", "CSS"], desc: "Simple static portfolio" },
+        { gitlink:"https://github.com/rakibhosain2302/Analog_and_Digital_Clock",liveLink:"https://rakibhosain2302.github.io/Analog_and_Digital_Clock/", image: ClockImg, title: "Analog & Digital Clock", tags: ["HTML", "CSS", "JavaScript"], desc: "A simple and responsive Analog & Digital Clock built using HTML, CSS, and JavaScript, displaying real-time updates with both classic analog design and modern digital format." },
+        { gitlink:"https://github.com/rakibhosain2302/JS-Simple-Calculators",liveLink:"https://rakibhosain2302.github.io/JS-Simple-Calculators/", image: CalculatorImg, title: "Simple Scientific Calculator", tags: ["HTML", "CSS", "JavaScript"], desc: "A modern and responsive Scientific Calculator developed using HTML, CSS, and JavaScript, supporting advanced mathematical operations such as trigonometric functions, logarithms, factorials, powers, and real-time expression evaluation with an intuitive user interface." },
+
     ],
 };
 
