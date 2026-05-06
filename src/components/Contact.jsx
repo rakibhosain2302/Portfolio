@@ -30,26 +30,36 @@ const Contact = () => {
 
         <Row>
           <div className="col-md-6 contact-info text-start">
-            <h4>Need More Info? I'd Love to hear From You!</h4>
+            <div className="cont-title">
+              <strong>Need More Info?</strong>
+              <h4>I'd Love to hear From You!</h4>
+            </div>
             <div className="custom-card mb-3">
-              <div>
-                <span>
-                  <MdAttachEmail className="me-4" />
-                </span>
-                <strong>Email:</strong> anasahibve@gmail.com
+              <div class="info-item">
+                <div class="info-icon"><MdAttachEmail className="me-4" /></div>
+                <div className="mt-1">
+                  <strong>Email:</strong>
+                  <p><a href="mailto:rakibhosain.webdev@gmail.com">rakibhosain.webdev@gmail.com</a></p>
+                </div>
               </div>
             </div>
             <div className="custom-card mb-3">
-              <span>
-                <BsTelephoneForwardFill className="me-4" />
-              </span>
-              <strong>Phone:</strong> +88 01601-139968
+              <div class="info-item">
+                <div class="info-icon"><BsTelephoneForwardFill className="me-4" /></div>
+                <div className="mt-1">
+                  <strong>Phone:</strong>
+                  <p><a href="tel:+88 01648306577">+88 01648306577</a></p>
+                </div>
+              </div>
             </div>
             <div className="custom-card mb-3">
-              <span>
-                <IoLocation className="me-4" />
-              </span>
-              <strong>Location:</strong> Hathazari, Chattogram, Bangladesh
+              <div class="info-item">
+                <div class="info-icon"><IoLocation className="me-4" /></div>
+                <div className="mt-1">
+                  <strong>Address:</strong>
+                  <p><a href="">Hajj Camp, Airport, Dhaka, Bangladesh</a></p>
+                </div>
+              </div>
             </div>
           </div>
           <Col md={6}>
