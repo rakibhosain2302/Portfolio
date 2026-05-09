@@ -25,19 +25,21 @@
 }
 
 .custom-button {
-  background-color: #1b263b;
+  border: 1px solid var(--cm-border-color);
+  background-color: rgba(255, 255, 255, 0.08);
   color: #e0e1dd;
   font-weight: 500;
   border-radius: 6px;
+  transition: all 0.4s ease;
 }
 
 .custom-button:hover {
-  background-color: #00b4d8;
-  color: #fff;
+  border: 1px solid var(--primary) !important;
+  transform: scaleX(1.01);
 }
 
 .custom-body {
-  background-color: #1b263b;
+  background-color: rgba(255, 255, 255, 0.08);
   color: #e0e1dd;
   border-radius: 0 0 6px 6px;
 }
