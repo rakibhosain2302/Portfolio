@@ -37,14 +37,14 @@ function FAQ() {
                 </span>
                 <h2 className="mb-3 text-center">Frequently <AuroraText>Asked Questions (FAQ)</AuroraText></h2>
                 <p className="text-white subtitle">
-                    Answers to your most important questions before we begin.                
+                    Answers to your most important questions before we begin.
                 </p>
                 <div className="accordion" id="faqAccordion">
                     {faqData.map((item, index) => (
-                        <div className="accordion-item mb-2" key={index}>
+                        <div className="accordion-item custom-accordion" key={index}>
                             <h2 className="accordion-header" id={`heading${index}`}>
                                 <button
-                                    className="accordion-button collapsed"
+                                    className="accordion-button collapsed custom-button"
                                     type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target={`#collapse${index}`}
@@ -60,7 +60,7 @@ function FAQ() {
                                 aria-labelledby={`heading${index}`}
                                 data-bs-parent="#faqAccordion"
                             >
-                                <div className="accordion-body">{item.answer}</div>
+                                <div className="accordion-body custom-body">{item.answer}</div>
                             </div>
                         </div>
                     ))}
