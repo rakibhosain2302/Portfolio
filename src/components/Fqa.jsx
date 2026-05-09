@@ -1,5 +1,6 @@
 
 import { FaQuestionCircle } from "react-icons/fa";
+import AuroraText from "./GradientText/AuroraText";
 import "../styles/Fqa.css";
 
 const faqData = [
@@ -34,9 +35,9 @@ function FAQ() {
                     <FaQuestionCircle className="me-2 pop-up-icon" size={18} />
                     FAQ
                 </span>
-                <h2 className="mb-3 text-center">Common Questions</h2>
-                <p className="text-muted">
-                    Everything you need to know before we start working together.
+                <h2 className="mb-3 text-center">Frequently <AuroraText>Asked Questions (FAQ)</AuroraText></h2>
+                <p className="text-white subtitle">
+                    Answers to your most important questions before we begin.                
                 </p>
                 <div className="accordion" id="faqAccordion">
                     {faqData.map((item, index) => (
