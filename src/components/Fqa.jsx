@@ -1,4 +1,7 @@
 
+import { FaQuestionCircle } from "react-icons/fa";
+import "../styles/Fqa.css";
+
 const faqData = [
     {
         question: "How long does a typical project take?",
@@ -25,9 +28,13 @@ const faqData = [
 
 function FAQ() {
     return (
-        <section className="faq-section bg-dark text-light p-5">
+        <section className="faq-section text-center text-light p-5">
             <div className="container">
-                <h2 className="mb-3">Common Questions</h2>
+                <span className="header-title">
+                    <FaQuestionCircle className="me-2 pop-up-icon" size={18} />
+                    FAQ
+                </span>
+                <h2 className="mb-3 text-center">Common Questions</h2>
                 <p className="text-muted">
                     Everything you need to know before we start working together.
                 </p>
