@@ -5,25 +5,54 @@ import "../styles/Fqa.css";
 
 const faqData = [
     {
-        question: "How long does a typical project take?",
+        question: "What technologies do you work with?",
         answer:
-            "Most projects take between 1–4 weeks depending on complexity. A simple landing page can be done in 3–5 days, while a full-stack SaaS app may take 3–6 weeks.",
+            "I mainly work with HTML, CSS, JavaScript, React.js, PHP, Laravel, MySQL, and Bootstrap for building modern web applications.",
     },
     {
-        question: "Do you work with clients outside Bangladesh?",
-        answer: "Yes, I collaborate with international clients via online platforms.",
+        question: "Can you build responsive websites?",
+        answer:
+            "Yes, all of my websites are fully responsive and optimized for mobile, tablet, and desktop devices.",
     },
     {
-        question: "What do you need from me to get started?",
-        answer: "Clear requirements, design preferences, and any existing assets.",
+        question: "Do you convert designs into websites?",
+        answer:
+            "Yes, I can convert Figma, PSD, or other UI designs into clean and responsive websites.",
     },
     {
-        question: "Do you offer post-launch support?",
-        answer: "Yes, I provide ongoing support and maintenance packages.",
+        question: "Do you develop both frontend and backend?",
+        answer:
+            "Yes, I work on both frontend and backend development to create complete web solutions.",
     },
     {
-        question: "Can I request changes after the project is done?",
-        answer: "Of course, revisions can be requested with a change request.",
+        question: "Can you integrate APIs into a website?",
+        answer:
+            "Yes, I can integrate REST APIs and connect frontend applications with backend services.",
+    },
+    {
+        question: "Do you use Git and GitHub?",
+        answer:
+            "Yes, I use Git and GitHub for version control, collaboration, and project management.",
+    },
+    {
+        question: "Will my website be SEO friendly?",
+        answer:
+            "Yes, I follow basic SEO best practices including semantic HTML, meta tags, and performance optimization.",
+    },
+    {
+        question: "Do you provide website maintenance?",
+        answer:
+            "Yes, I can provide ongoing maintenance, bug fixes, and feature updates after project delivery.",
+    },
+    {
+        question: "Can you work on existing projects?",
+        answer:
+            "Yes, I can improve, fix, or add new features to existing websites and applications.",
+    },
+    {
+        question: "How can we communicate during the project?",
+        answer:
+            "We can communicate through email, WhatsApp, Zoom, Google Meet, or other preferred platforms.",
     },
 ];
 
