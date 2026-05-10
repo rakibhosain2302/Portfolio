@@ -3,87 +3,113 @@ export const portfolioItems = [
     id: 1,
     title: "UI/UX Redesign",
     category: "Design",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=400&fit=crop",
     description: "Modern dashboard redesign with improved UX",
     tags: ["UI Design", "Figma", "Prototyping"],
-    link: "#"
+    link: "#",
   },
   {
     id: 2,
     title: "Mobile App Design",
     category: "App",
-    image: "https://images.unsplash.com/photo-1512941691920-25bda36dc643?w=500&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1512941691920-25bda36dc643?w=500&h=400&fit=crop",
     description: "Full mobile application design system",
     tags: ["Mobile", "iOS", "Android"],
-    link: "#"
+    link: "#",
   },
   {
     id: 3,
     title: "E-commerce Website",
     category: "Web",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=400&fit=crop",
     description: "Complete e-commerce platform design",
     tags: ["Web Design", "React", "E-commerce"],
-    link: "#"
+    link: "#",
   },
   {
     id: 4,
     title: "Brand Identity",
     category: "Branding",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=400&fit=crop",
     description: "Complete brand identity system",
     tags: ["Branding", "Logo", "Guidelines"],
-    link: "#"
+    link: "#",
   },
   {
     id: 5,
     title: "Design System",
     category: "Design",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=400&fit=crop",
     description: "Comprehensive design system with components",
     tags: ["Design System", "Components", "Figma"],
-    link: "#"
+    link: "#",
   },
   {
     id: 6,
     title: "Dashboard Analytics",
     category: "Web",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=400&fit=crop",
     description: "Advanced analytics dashboard",
     tags: ["Dashboard", "Analytics", "React"],
-    link: "#"
-  }
+    link: "#",
+  },
 ];
 
 export const services = [
   {
     id: 1,
-    title: "UI/UX Design",
-    description: "Creating beautiful and intuitive user interfaces with focus on user experience.",
-    icon: "FiPenTool",
-    color: "#6366f1"
+    icon: "FiGlobe",
+    title: "Frontend Development",
+    description:
+      "I build modern, responsive, and user-friendly websites using React.js, JavaScript, HTML, CSS, and Bootstrap with clean UI and smooth user experience.",
+    color: "#6366F1",
   },
   {
     id: 2,
-    title: "Web Design",
-    description: "Modern, responsive web designs that engage users and drive conversions.",
-    icon: "FiGlobe",
-    color: "#06b6d4"
+    icon: "FiPenTool",
+    title: "Laravel Web Application",
+    description:
+      "I develop secure and scalable web applications using PHP and Laravel including authentication systems, dashboards, CRUD operations, and REST APIs.",
+    color: "#EC4899",
   },
   {
     id: 3,
-    title: "Mobile Design",
-    description: "Native and cross-platform mobile app designs for iOS and Android.",
     icon: "FiSmartphone",
-    color: "#ec4899"
+    title: "Responsive Web Design",
+    description:
+      "Every website I create is fully responsive and optimized for mobile, tablet, and desktop devices to ensure the best user experience everywhere.",
+    color: "#10B981",
   },
   {
     id: 4,
-    title: "Branding",
-    description: "Complete brand identity systems including logos, colors, and guidelines.",
     icon: "FiAward",
-    color: "#f59e0b"
-  }
+    title: "API Integration & Backend",
+    description:
+      "I integrate REST APIs, manage databases with MySQL, and connect frontend interfaces with backend systems for dynamic web applications.",
+    color: "#F59E0B",
+  },
+  {
+    id: 5,
+    icon: "FiGlobe",
+    title: "Website Maintenance",
+    description:
+      "I provide ongoing website maintenance, bug fixing, performance optimization, and feature updates to keep your website running smoothly.",
+    color: "#3B82F6",
+  },
+  {
+    id: 6,
+    icon: "FiPenTool",
+    title: "UI Implementation",
+    description:
+      "I convert Figma or design concepts into pixel-perfect, interactive, and clean frontend interfaces with modern animations and layouts.",
+    color: "#8B5CF6",
+  },
 ];
 
 export const testimonials = [
@@ -91,26 +117,32 @@ export const testimonials = [
     id: 1,
     name: "Sarah Anderson",
     role: "CEO, Tech Startup",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
-    message: "Amazing work! The design process was smooth and the results exceeded our expectations.",
-    rating: 5
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
+    message:
+      "Amazing work! The design process was smooth and the results exceeded our expectations.",
+    rating: 5,
   },
   {
     id: 2,
     name: "John Smith",
     role: "Product Manager, Digital Agency",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
-    message: "Incredible attention to detail and creative solutions. Highly recommended!",
-    rating: 5
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
+    message:
+      "Incredible attention to detail and creative solutions. Highly recommended!",
+    rating: 5,
   },
   {
     id: 3,
     name: "Emma Wilson",
     role: "Founder, Creative Studio",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop",
-    message: "Professional, creative, and delivers results. A pleasure to work with!",
-    rating: 5
-  }
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop",
+    message:
+      "Professional, creative, and delivers results. A pleasure to work with!",
+    rating: 5,
+  },
 ];
 
 export const blogPosts = [
@@ -118,50 +150,56 @@ export const blogPosts = [
     id: 1,
     title: "The Future of UI Design in 2025",
     category: "Design Trends",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
-    excerpt: "Exploring the latest trends and innovations in user interface design.",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
+    excerpt:
+      "Exploring the latest trends and innovations in user interface design.",
     date: "Jan 15, 2025",
-    readTime: "5 min read"
+    readTime: "5 min read",
   },
   {
     id: 2,
     title: "Web Design Best Practices",
     category: "Web Design",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
     excerpt: "Essential tips and tricks for creating stunning web experiences.",
     date: "Jan 10, 2025",
-    readTime: "7 min read"
+    readTime: "7 min read",
   },
   {
     id: 3,
     title: "Mobile-First Design Approach",
     category: "Mobile Design",
-    image: "https://images.unsplash.com/photo-1512941691920-25bda36dc643?w=500&h=300&fit=crop",
-    excerpt: "Why designing for mobile first leads to better overall experiences.",
+    image:
+      "https://images.unsplash.com/photo-1512941691920-25bda36dc643?w=500&h=300&fit=crop",
+    excerpt:
+      "Why designing for mobile first leads to better overall experiences.",
     date: "Jan 5, 2025",
-    readTime: "6 min read"
-  }
+    readTime: "6 min read",
+  },
 ];
 
 export const designSteps = [
   {
     step: "01",
     title: "Research & Discovery",
-    description: "Understanding client needs, target audience, and market landscape."
+    description:
+      "Understanding client needs, target audience, and market landscape.",
   },
   {
     step: "02",
     title: "Strategy & Planning",
-    description: "Developing design strategy and creating project roadmap."
+    description: "Developing design strategy and creating project roadmap.",
   },
   {
     step: "03",
     title: "Design & Prototyping",
-    description: "Creating wireframes, mockups, and interactive prototypes."
+    description: "Creating wireframes, mockups, and interactive prototypes.",
   },
   {
     step: "04",
     title: "Testing & Refinement",
-    description: "User testing and iterating based on feedback."
-  }
+    description: "User testing and iterating based on feedback.",
+  },
 ];

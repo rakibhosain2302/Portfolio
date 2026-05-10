@@ -45,10 +45,10 @@ function App() {
         <MySkill />
         <Milestones />
         <Project />
+        <Services />
         <FAQ />
         <Contact />
         <Portfolio />
-        <Services />
         <Testimonials />
         <Footer />
         <ScrollProgressBar />
