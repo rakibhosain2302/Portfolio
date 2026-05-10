@@ -1,5 +1,5 @@
-
-import { FaQuestionCircle } from "react-icons/fa";
+import { useState } from "react";
+import { FaQuestionCircle, FaPlus, FaMinus } from "react-icons/fa";
 import AuroraText from "./GradientText/AuroraText";
 import "../styles/Fqa.css";
 
@@ -28,6 +28,12 @@ const faqData = [
 ];
 
 function FAQ() {
+    const [expandedIndex, setExpandedIndex] = useState(null);
+
+    const toggleAccordion = (index) => {
+        setExpandedIndex(expandedIndex === index ? null : index);
+    };
+
     return (
         <section className="faq-section text-center text-light p-5">
             <div className="container">
@@ -39,26 +45,31 @@ function FAQ() {
                 <p className="text-white subtitle">
                     Answers to your most important questions before we begin.
                 </p>
-                <div className="accordion" id="faqAccordion">
+                <div className="accordion-custom" id="faqAccordion">
                     {faqData.map((item, index) => (
                         <div className="accordion-item custom-accordion" key={index}>
                             <h2 className="accordion-header" id={`heading${index}`}>
                                 <button
-                                    className="accordion-button collapsed custom-button"
+                                    className={`accordion-button custom-button ${expandedIndex === index ? '' : 'collapsed'}`}
                                     type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target={`#collapse${index}`}
-                                    aria-expanded="false"
+                                    onClick={() => toggleAccordion(index)}
+                                    aria-expanded={expandedIndex === index}
                                     aria-controls={`collapse${index}`}
                                 >
                                     {item.question}
+                                    <span className="accordion-icon">
+                                        {expandedIndex === index ? (
+                                            <FaMinus size={16} />
+                                        ) : (
+                                            <FaPlus size={16} />
+                                        )}
+                                    </span>
                                 </button>
                             </h2>
                             <div
                                 id={`collapse${index}`}
-                                className="accordion-collapse collapse"
+                                className={`accordion-collapse collapse ${expandedIndex === index ? 'show' : ''}`}
                                 aria-labelledby={`heading${index}`}
-                                data-bs-parent="#faqAccordion"
                             >
                                 <div className="accordion-body custom-body">{item.answer}</div>
                             </div>
