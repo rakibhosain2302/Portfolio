@@ -1,25 +1,22 @@
 import { motion } from 'framer-motion';
-import { FiPenTool, FiGlobe, FiSmartphone, FiAward } from 'react-icons/fi';
+import { FiGlobe, FiSmartphone } from 'react-icons/fi';
 import { staggerContainer, staggerItem, fadeInUp } from '../utils/animationVariants';
 import { TbApiApp } from "react-icons/tb";
 import { SiHeroui } from "react-icons/si";
 import { FaLaravel } from "react-icons/fa6";
 import { BsFront } from "react-icons/bs";
-
-
+import { RiServiceFill } from "react-icons/ri";
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { services } from '../data/portfolioData';
 import '../styles/Services.css';
 
 const iconMap = {
-  FiPenTool: FiPenTool,
   BsFront: BsFront,
   FaLaravel: FaLaravel,
   TbApiApp: TbApiApp,
   FiGlobe: FiGlobe,
   SiHeroui: SiHeroui,
   FiSmartphone: FiSmartphone,
-  FiAward: FiAward
 };
 
 export const Services = () => {
@@ -29,12 +26,13 @@ export const Services = () => {
     <section id="services" className="services" ref={ref}>
       <div className="services-container">
         <motion.div
-          className="services-header"
+          className="services-header text-center"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={fadeInUp}
         >
-          <h2 className="section-title">Services</h2>
+          <h1 className='header-title'><RiServiceFill className='me-2 pop-up-icon' size={20} />Services</h1>
+          <h2 className="section-title">Smart Solutions for Growing Businesses</h2>
           <p className="section-subtitle">What I can do for you</p>
         </motion.div>
 
