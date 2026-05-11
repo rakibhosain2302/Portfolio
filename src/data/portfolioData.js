@@ -76,7 +76,7 @@ export const services = [
     title: "Laravel Web Application",
     description:
       "I develop secure and scalable web applications using PHP, Laravel, MySQL, Blade Template, and REST APIs including authentication systems, dashboards, and CRUD operations.",
-    color: "#EC4899",
+    color: "#e40f0f",
   },
   {
     id: 3,

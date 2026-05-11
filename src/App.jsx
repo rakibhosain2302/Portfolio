@@ -9,6 +9,7 @@ import FAQ from './components/Fqa.jsx';
 import Contact from './components/Contact.jsx';
 import {Portfolio} from './components/Portfolio';
 import {Services} from './components/Services';
+import Plan from './components/Plan.jsx';
 import {Testimonials} from './components/Testimonials';
 import {Footer} from './components/Footer';
 import {ScrollProgressBar} from './components/ScrollProgressBar';
@@ -46,6 +47,7 @@ function App() {
         <Milestones />
         <Project />
         <Services />
+        <Plan />
         <FAQ />
         <Contact />
         <Portfolio />
