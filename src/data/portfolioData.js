@@ -64,7 +64,7 @@ export const portfolioItems = [
 export const services = [
   {
     id: 1,
-    icon: "FiGlobe",
+    icon: "BsFront",
     title: "Frontend Development",
     description:
       "I build modern, responsive, and user-friendly websites using React.js, JavaScript, HTML, CSS, and Bootstrap with clean UI and smooth user experience.",
@@ -72,7 +72,7 @@ export const services = [
   },
   {
     id: 2,
-    icon: "FiPenTool",
+    icon: "FaLaravel",
     title: "Laravel Web Application",
     description:
       "I develop secure and scalable web applications using PHP and Laravel including authentication systems, dashboards, CRUD operations, and REST APIs.",
@@ -88,7 +88,7 @@ export const services = [
   },
   {
     id: 4,
-    icon: "FiAward",
+    icon: "TbApiApp",
     title: "API Integration & Backend",
     description:
       "I integrate REST APIs, manage databases with MySQL, and connect frontend interfaces with backend systems for dynamic web applications.",
@@ -104,7 +104,7 @@ export const services = [
   },
   {
     id: 6,
-    icon: "FiPenTool",
+    icon: "SiHeroui",
     title: "UI Implementation",
     description:
       "I convert Figma or design concepts into pixel-perfect, interactive, and clean frontend interfaces with modern animations and layouts.",

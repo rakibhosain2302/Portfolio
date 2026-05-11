@@ -1,13 +1,23 @@
 import { motion } from 'framer-motion';
 import { FiPenTool, FiGlobe, FiSmartphone, FiAward } from 'react-icons/fi';
 import { staggerContainer, staggerItem, fadeInUp } from '../utils/animationVariants';
+import { TbApiApp } from "react-icons/tb";
+import { SiHeroui } from "react-icons/si";
+import { FaLaravel } from "react-icons/fa6";
+import { BsFront } from "react-icons/bs";
+
+
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { services } from '../data/portfolioData';
 import '../styles/Services.css';
 
 const iconMap = {
   FiPenTool: FiPenTool,
+  BsFront: BsFront,
+  FaLaravel: FaLaravel,
+  TbApiApp: TbApiApp,
   FiGlobe: FiGlobe,
+  SiHeroui: SiHeroui,
   FiSmartphone: FiSmartphone,
   FiAward: FiAward
 };
