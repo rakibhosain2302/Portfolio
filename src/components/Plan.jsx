@@ -1,3 +1,4 @@
+import { SiCountingworkspro } from "react-icons/si";
 
 import AuroraText from "./GradientText/AuroraText";
 
@@ -28,18 +29,20 @@ const MyProcess = () => {
     return (
         <section className="py-5 text-center text-light">
             <div className="container">
-                <h5 className="text-info">HOW I WORK</h5>
-                <h2 className="mb-4">My Process</h2>
-                <p className="mb-5">
-                    A clear, collaborative process that keeps you informed at every step.
+                <h5 className="header-title mt-5 mb-4"><SiCountingworkspro className="me-2 pop-up-icon" size={18}/>How It Work</h5>
+                <h2 className="mb-4">My <AuroraText>Workflow</AuroraText></h2>
+                <p className="mb-5 text-center">
+                    Every project goes through a smooth and transparent process 
+                    <br />
+                    from planning and design to development and final delivery.
                 </p>
                 <div className="row">
                     {steps.map((step, index) => (
                         <div key={index} className="col-md-3 mb-4">
-                            <div className="p-4 custom-card h-100">
+                            <div className="p-3 custom-card h-100">
                                 <h3 className="text-start"><AuroraText>{step.number}</AuroraText></h3>
                                 <h5 className="fw-bold text-start">{step.title}</h5>
-                                <p style={{ textAlign: "justify" }}>{step.desc}</p>
+                                <p style={{ textAlign: "left" }} className="text-white">{step.desc}</p>
                             </div>
                         </div>
                     ))}

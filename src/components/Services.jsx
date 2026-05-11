@@ -48,7 +48,7 @@ export const Services = () => {
             return (
               <motion.div
                 key={service.id}
-                className="service-card"
+                className="service-card custom-card"
                 variants={staggerItem}
                 whileHover={{ y: -10, transition: { duration: 0.3 } }}
               >
