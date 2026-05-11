@@ -1,50 +1,52 @@
 
+import AuroraText from "./GradientText/AuroraText";
+
 const steps = [
-  {
-    number: "01",
-    title: "Discovery Call",
-    desc: "We discuss your goals, requirements, timeline, and budget in a free 30-min call."
-  },
-  {
-    number: "02",
-    title: "Planning & Proposal",
-    desc: "I send a detailed proposal with scope, milestones, tech stack, and pricing."
-  },
-  {
-    number: "03",
-    title: "Design & Develop",
-    desc: "I build iteratively with regular updates and demos for your feedback."
-  },
-  {
-    number: "04",
-    title: "Review & Launch",
-    desc: "Final testing, refinements, and a smooth handoff or deployment."
-  }
+    {
+        number: "01",
+        title: "Project Discussion",
+        desc: "We discuss your project idea, requirements, design preferences, and the technologies needed for development."
+    },
+    {
+        number: "02",
+        title: "Planning & Setup",
+        desc: "I plan the project structure, choose the right tech stack like Laravel or React.js, and prepare the development workflow."
+    },
+    {
+        number: "03",
+        title: "Development Process",
+        desc: "I build the website or application step by step using clean code with regular updates and responsive design implementation."
+    },
+    {
+        number: "04",
+        title: "Testing & Deployment",
+        desc: "After complete testing, bug fixing, and optimization, I deploy the project and ensure everything runs smoothly."
+    }
 ];
 
 const MyProcess = () => {
-  return (
-    <section className="py-5 text-center text-light">
-      <div className="container">
-        <h5 className="text-info">HOW I WORK</h5>
-        <h2 className="mb-4">My Process</h2>
-        <p className="mb-5">
-          A clear, collaborative process that keeps you informed at every step.
-        </p>
-        <div className="row">
-          {steps.map((step, index) => (
-            <div key={index} className="col-md-3 mb-4">
-              <div className="p-4 custom-card h-100">
-                <h3 className="text-info text-start">{step.number}</h3>
-                <h5 className="fw-bold text-start">{step.title}</h5>
-                <p className="text-start">{step.desc}</p>
-              </div>
+    return (
+        <section className="py-5 text-center text-light">
+            <div className="container">
+                <h5 className="text-info">HOW I WORK</h5>
+                <h2 className="mb-4">My Process</h2>
+                <p className="mb-5">
+                    A clear, collaborative process that keeps you informed at every step.
+                </p>
+                <div className="row">
+                    {steps.map((step, index) => (
+                        <div key={index} className="col-md-3 mb-4">
+                            <div className="p-4 custom-card h-100">
+                                <h3 className="text-start"><AuroraText>{step.number}</AuroraText></h3>
+                                <h5 className="fw-bold text-start">{step.title}</h5>
+                                <p style={{ textAlign: "justify" }}>{step.desc}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default MyProcess;
