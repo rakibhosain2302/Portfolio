@@ -67,7 +67,7 @@ export const services = [
     icon: "BsFront",
     title: "Frontend Development",
     description:
-      "I build modern, responsive, and user-friendly websites using React.js, JavaScript, HTML, CSS, and Bootstrap with clean UI and smooth user experience.",
+      "I build modern, responsive, and user-friendly websites using HTML, CSS, JavaScript, Bootstrap, and React.js with clean UI and smooth user experience.",
     color: "#6366F1",
   },
   {
@@ -75,7 +75,7 @@ export const services = [
     icon: "FaLaravel",
     title: "Laravel Web Application",
     description:
-      "I develop secure and scalable web applications using PHP and Laravel including authentication systems, dashboards, CRUD operations, and REST APIs.",
+      "I develop secure and scalable web applications using PHP, Laravel, MySQL, Blade Template, and REST APIs including authentication systems, dashboards, and CRUD operations.",
     color: "#EC4899",
   },
   {
@@ -83,7 +83,7 @@ export const services = [
     icon: "FiSmartphone",
     title: "Responsive Web Design",
     description:
-      "Every website I create is fully responsive and optimized for mobile, tablet, and desktop devices to ensure the best user experience everywhere.",
+      "I create fully responsive websites using HTML, CSS, Bootstrap, Tailwind CSS, and Media Queries optimized for mobile, tablet, and desktop devices.",
     color: "#10B981",
   },
   {
@@ -91,7 +91,7 @@ export const services = [
     icon: "TbApiApp",
     title: "API Integration & Backend",
     description:
-      "I integrate REST APIs, manage databases with MySQL, and connect frontend interfaces with backend systems for dynamic web applications.",
+      "I integrate REST APIs using Laravel, PHP, JavaScript, Axios, Fetch API, and MySQL to build dynamic and connected web applications.",
     color: "#F59E0B",
   },
   {
@@ -99,7 +99,7 @@ export const services = [
     icon: "FiGlobe",
     title: "Website Maintenance",
     description:
-      "I provide ongoing website maintenance, bug fixing, performance optimization, and feature updates to keep your website running smoothly.",
+      "I provide website maintenance, bug fixing, performance optimization, and feature updates for Laravel, PHP, React.js, and JavaScript applications.",
     color: "#3B82F6",
   },
   {
@@ -107,7 +107,7 @@ export const services = [
     icon: "SiHeroui",
     title: "UI Implementation",
     description:
-      "I convert Figma or design concepts into pixel-perfect, interactive, and clean frontend interfaces with modern animations and layouts.",
+      "I convert Figma and design concepts into pixel-perfect interfaces using HTML, CSS, JavaScript, React.js, Bootstrap, and modern animations.",
     color: "#8B5CF6",
   },
 ];

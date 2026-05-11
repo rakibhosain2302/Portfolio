@@ -8,6 +8,7 @@ import { BsFront } from "react-icons/bs";
 import { RiServiceFill } from "react-icons/ri";
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { services } from '../data/portfolioData';
+import AuroraText from './GradientText/AuroraText';
 import '../styles/Services.css';
 
 const iconMap = {
@@ -31,9 +32,9 @@ export const Services = () => {
           animate={isInView ? "visible" : "hidden"}
           variants={fadeInUp}
         >
-          <h1 className='header-title'><RiServiceFill className='me-2 pop-up-icon' size={20} />Services</h1>
-          <h2 className="section-title">Smart Solutions for Growing Businesses</h2>
-          <p className="section-subtitle">What I can do for you</p>
+          <h1 className='header-title mb-4'><RiServiceFill className='me-2 pop-up-icon' size={20} />Services</h1>
+          <h2 className="section-title">Smart Solutions <AuroraText>for Growing Businesses</AuroraText></h2>
+          <p className="section-subtitle text-white">Modern web solutions crafted with performance, responsiveness, and user experience in mind.</p>
         </motion.div>
 
         <motion.div
