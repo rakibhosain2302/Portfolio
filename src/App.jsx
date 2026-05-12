@@ -7,7 +7,6 @@ import {Milestones} from './components/Milestones.jsx';
 import Project  from './components/Project.jsx';
 import FAQ from './components/Fqa.jsx';
 import Contact from './components/Contact.jsx';
-import {Portfolio} from './components/Portfolio';
 import {Services} from './components/Services';
 import Plan from './components/Plan.jsx';
 import {Footer} from './components/Footer';
@@ -49,7 +48,6 @@ function App() {
         <Plan />
         <FAQ />
         <Contact />
-        <Portfolio />
         <Footer />
         <ScrollProgressBar />
       </div>
