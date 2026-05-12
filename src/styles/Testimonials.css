@@ -121,19 +121,3 @@
   border-radius: 5px;
 }
 
-@media (max-width: 768px) {
-  .testimonial-card {
-    padding: 35px 25px;
-    min-height: auto;
-  }
-
-  .testimonial-message {
-    font-size: 1rem;
-  }
-
-  .slider-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
-  }
-}
