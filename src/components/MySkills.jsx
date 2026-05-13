@@ -30,8 +30,8 @@ export const MySkill = () => {
         <>
             <div className='myskills-section text-white text-center'>
                 <div className="container">
-                    <h1 className='header-title mb-3'><SiSecurityscorecard className='me-2 pop-up-icon' size={25} />My Tech Stack</h1>
-                    <h1 className="fw-bold mb-4">Skills & <AuroraText>Technologies</AuroraText></h1>
+                    <h1 className='header-title mb-3'><SiSecurityscorecard className='me-2 pop-up-icon' size={20} />My Tech Stack</h1>
+                    <h1 className="fw-bold mb-2">Skills & <AuroraText>Technologies</AuroraText></h1>
                     <p className='content'>Building dynamic and scalable web applications using modern technologies like Laravel, React, and JavaScript.</p>
                 </div>
             </div>

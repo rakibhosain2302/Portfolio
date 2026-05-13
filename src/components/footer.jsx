@@ -1,7 +1,7 @@
 import { FaInnosoft } from "react-icons/fa";
 import AuroraText from "./GradientText/AuroraText";
 import GlareHover from "./GlareHover/GlareHover";
-import { FiTwitter, FiLinkedin, FiGithub, FiMail } from 'react-icons/fi';
+import { FiLinkedin, FiGithub, FiMail, FiFacebook } from 'react-icons/fi';
 
 import "../styles/Footer.css"
 
@@ -9,7 +9,7 @@ import "../styles/Footer.css"
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
     const socialLinks = [
-        { icon: FiTwitter, link: '#', label: 'Twitter' },
+        { icon: FiFacebook, link: '#', label: 'Facebook' },
         { icon: FiLinkedin, link: '#', label: 'LinkedIn' },
         { icon: FiGithub, link: '#', label: 'GitHub' },
         { icon: FiMail, link: '#', label: 'Email' }

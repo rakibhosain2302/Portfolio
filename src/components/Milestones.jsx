@@ -39,7 +39,7 @@ export const Milestones = () => {
         <div className="container py-5">
             {/* Title */}
             <div className="text-center mb-5">
-                <h1 className="header-title"><PiPathBold className="me-2 pop-up-icon" size={20} />Milestones</h1>
+                <h1 className="header-title mb-4"><PiPathBold className="me-2 pop-up-icon" size={20} />Milestones</h1>
                 <h2>My <AuroraText className="fs-1 fw-bold">Career Timeline</AuroraText></h2>
                 <p className="text-white Career-text">
                     A combination of education and hands-on experience that defines my professional growth.

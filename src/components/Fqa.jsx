@@ -66,12 +66,12 @@ function FAQ() {
     return (
         <section className="faq-section text-center text-light p-5">
             <div className="container">
-                <span className="header-title">
+                <span className="header-title mb-4">
                     <FaQuestionCircle className="me-2 pop-up-icon" size={18} />
                     FAQ
                 </span>
-                <h2 className="mb-3 text-center">Frequently <AuroraText>Asked Questions (FAQ)</AuroraText></h2>
-                <p className="text-white subtitle">
+                <h2 className="mb-1 text-center">Frequently <AuroraText>Asked Questions (FAQ)</AuroraText></h2>
+                <p className="text-white subtitle mb-4">
                     Answers to your most important questions before we begin.
                 </p>
                 <div className="accordion-custom" id="faqAccordion">

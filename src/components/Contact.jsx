@@ -1,9 +1,9 @@
-import { Row, Col, Form, Button } from "react-bootstrap";
+import { Row, Col, Form } from "react-bootstrap";
 import { PiTargetBold } from "react-icons/pi";
 import { MdAttachEmail } from "react-icons/md";
 import { BsTelephoneForwardFill } from "react-icons/bs";
 import { IoLocation } from "react-icons/io5";
-
+import GlareHover from "./GlareHover/GlareHover";
 import AuroraText from "./GradientText/AuroraText";
 
 import "../styles/Contact.css";
@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <section className="contact-section text-center">
       <div className="container">
-        <h1 className="header-title">
+        <h1 className="header-title mb-4">
           <PiTargetBold className="me-2 pop-up-icon" size={20} />
           Get in Touch
         </h1>
@@ -76,9 +76,20 @@ const Contact = () => {
               <Form.Group className="mb-3">
                 <Form.Control as="textarea" rows={4} placeholder="Message" />
               </Form.Group>
-              <Button className="send-btn" type="submit">
-                Send Message
-              </Button>
+              <button className="send-btn mb-2" type="submit">
+                <GlareHover
+                  width="150px"
+                  height="100%"
+                  background="rgba(99, 102, 241, 0.6)"
+                  borderRadius="50px"
+                  borderColor="rgba(99, 102, 241, 0.6)"
+                  glareColor="#ffffff"
+                  className="p-2 fw-bold text-white"
+                >
+                  Send Message
+                </GlareHover>
+
+              </button>
             </Form>
           </Col>
         </Row>

@@ -30,7 +30,7 @@ const MyProcess = () => {
         <section className="py-5 text-center text-light">
             <div className="container">
                 <h5 className="header-title mt-5 mb-4"><SiCountingworkspro className="me-2 pop-up-icon" size={18}/>How It Work</h5>
-                <h2 className="mb-4">My <AuroraText>Workflow</AuroraText></h2>
+                <h2>My <AuroraText>Workflow</AuroraText></h2>
                 <p className="mb-5 text-center">
                     Every project goes through a smooth and transparent process 
                     <br />
