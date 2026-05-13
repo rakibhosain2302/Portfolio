@@ -1,7 +1,7 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import GradientText from "./GradientText/GradientText.jsx";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Typewriter } from "react-simple-typewriter";
 import { MdShareLocation } from "react-icons/md";
 import { TbCircleDotted } from "react-icons/tb";
@@ -28,7 +28,7 @@ export default function Rakib() {
                             <h3 className="text-success d-flex align-items-center gap-2">
                                 <span className="A">A</span>
                                 <GradientText
-                                    colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                                    colors={['#5227FF', '#FF9FFC', '#B497DF', '#4079ff', '#4079ff']}
                                     animationSpeed={10}
                                     direction="horizontal"
                                     pauseOnHover={true}
