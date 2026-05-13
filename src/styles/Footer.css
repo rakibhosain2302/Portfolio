@@ -3,6 +3,11 @@
   border-radius: 10px;
 }
 
+.subtitle{
+  width: 50%;
+  display: inline-block;
+  color: #fff;
+}
 
 .footer-links {
   display: flex;

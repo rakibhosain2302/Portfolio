@@ -1,5 +1,6 @@
 import { FaInnosoft } from "react-icons/fa";
 import AuroraText from "./GradientText/AuroraText";
+import GlareHover from "./GlareHover/GlareHover";
 import "../styles/Footer.css"
 
 
@@ -20,15 +21,28 @@ export const Footer = () => {
                     Have A <AuroraText>Project in Mind?</AuroraText>
                 </h2>
 
-                <p className="mt-3">
+                <p className="mt-1 subtitle">
                     I create responsive, scalable, and user-friendly web applications
                     using modern technologies like React, Laravel, and JavaScript.
                     Let’s turn your ideas into a powerful digital experience.
                 </p>
 
                 <div className="mt-4">
-                    <button className="btn btn-primary me-3">
-                        Hire Me
+                    <button className="me-3">
+                        <GlareHover
+                            width="100%"
+                            background="rgba(255,255,255,0.08)"
+                            borderRadius="20px"
+                            borderColor="rgba(255,255,255,0.1)"
+                            glareColor="#ffffff"
+                            glareOpacity={0.12}
+                            glareAngle={-30}
+                            glareSize={300}
+                            transitionDuration={1200}
+                            className="container p-5 text-center"
+                        >
+                            Hire Me
+                        </GlareHover>
                     </button>
 
                     <button className="btn btn-secondary">
