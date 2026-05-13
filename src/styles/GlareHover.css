@@ -56,3 +56,13 @@
     100% 100%,
     0 0;
 }
+
+.bTn-text{
+  color: var(--primary);
+  transition: all 0.4s ease;
+}
+
+.bTn-text:hover{
+  background-color: rgba(99, 102, 241, 0.6);
+  color: #fff;
+}

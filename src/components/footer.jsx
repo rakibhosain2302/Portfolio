@@ -1,20 +1,28 @@
 import { FaInnosoft } from "react-icons/fa";
 import AuroraText from "./GradientText/AuroraText";
 import GlareHover from "./GlareHover/GlareHover";
+import { FiTwitter, FiLinkedin, FiGithub, FiMail } from 'react-icons/fi';
+
 import "../styles/Footer.css"
 
 
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
+    const socialLinks = [
+        { icon: FiTwitter, link: '#', label: 'Twitter' },
+        { icon: FiLinkedin, link: '#', label: 'LinkedIn' },
+        { icon: FiGithub, link: '#', label: 'GitHub' },
+        { icon: FiMail, link: '#', label: 'Email' }
+    ];
 
     return (
         <div
-            className="footer d-flex justify-content-center align-items-center text-light pb-5"
+            className="footer d-flex justify-content-center align-items-center text-light pb-3"
             style={{
                 position: "relative"
             }}
         >
-            <div className="container custom-card text-center p-5">
+            <div className="container custom-card text-center pt-5">
                 <h5 className="header-title mb-4"><FaInnosoft className="me-2 pop-up-icon" size={18} />Build With Me</h5>
 
                 <h2 className="title">
@@ -27,31 +35,55 @@ export const Footer = () => {
                     Let’s turn your ideas into a powerful digital experience.
                 </p>
 
-                <div className="mt-4">
-                    <button className="me-3">
+                <div className="mt-2">
+                    <button className="me-3 fw-bold">
                         <GlareHover
-                            width="100%"
-                            background="rgba(255,255,255,0.08)"
-                            borderRadius="20px"
-                            borderColor="rgba(255,255,255,0.1)"
+                            width="150px"
+                            height="100%"
+                            background="rgba(99, 102, 241, 0.6)"
+                            borderRadius="50px"
+                            borderColor="rgba(99, 102, 241, 0.6)"
                             glareColor="#ffffff"
-                            glareOpacity={0.12}
-                            glareAngle={-30}
-                            glareSize={300}
-                            transitionDuration={1200}
-                            className="container p-5 text-center"
+                            className="p-2 text-white"
                         >
                             Hire Me
                         </GlareHover>
                     </button>
-
-                    <button className="btn btn-secondary">
-                        Contact Now
+                    <button className="me-3 fw-bold">
+                        <GlareHover
+                            width="150px"
+                            height="100%"
+                            background="rgba(255,255,255,0.02)"
+                            borderRadius="50px"
+                            borderColor="rgba(99, 102, 241, 0.6)"
+                            glareColor="#ffffff"
+                            className="p-2 bTn-text"
+                            padding="10px"
+                        >
+                            Contact Now
+                        </GlareHover>
                     </button>
+                    <div className="social-links">
+                        {socialLinks.map((social, index) => {
+                            const Icon = social.icon;
+                            return (
+                                <a
+                                    key={index}
+                                    href={social.link}
+                                    className="social-link neon-icon"
+                                    whileHover={{ scale: 1.3, rotate: 10 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    aria-label={social.label}
+                                >
+                                    <Icon size={22} />
+                                </a>
+                            );
+                        })}
+                    </div>
                 </div>
 
-                <p className="footer-copy mt-5">
-                    &copy; {currentYear} Rakib. Crafted with passion and clean code.
+                <p className="footer-copy mt-5 mb-0">
+                    &copy; {currentYear} Rakib Hosain. Crafted with passion and clean code.
                 </p>
             </div>
         </div>
