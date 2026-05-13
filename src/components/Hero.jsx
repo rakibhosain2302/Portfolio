@@ -11,6 +11,8 @@ import { MdOutlineChat } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 
+import GlareHover from "./GlareHover/GlareHover";
+
 
 
 export default function Rakib() {
@@ -86,18 +88,49 @@ export default function Rakib() {
 
                             {/* Buttons */}
                             <div className="mt-4 d-flex gap-3">
-                                <Button className="shine-button">
-                                    <MdOutlineCloudDownload size={20} className="me-2"/>
-                                    Download Resume
-                                </Button>
-                                <Button className="shine-button">
-                                    <MdOutlineVisibility size={20} className="me-2"/>
-                                    Explore My Work
-                                </Button>
-                                <Button className="shine-button">
-                                    <MdOutlineChat size={20}  className="me-2"/>
-                                    Let's Talk
-                                </Button>
+                                <button className="hro-btn">
+                                    <GlareHover
+                                        width="230px"
+                                        height="100%"
+                                        background="linear-gradient(120deg, #4e54c8, #8f94fb)"
+                                        borderRadius="8px"
+                                        borderColor="rgba(99, 102, 241, 0.6)"
+                                        glareColor="#ffffff"
+                                        className="p-2 d-block expolor-btn text-white"
+                                    >
+
+                                        <MdOutlineCloudDownload size={20} className="me-2" />
+                                        Download Resume
+                                    </GlareHover>
+                                </button>
+                                <button className="hro-btn">
+                                    <GlareHover
+                                        width="230px"
+                                        height="100%"
+                                        background="rgba(99, 102, 241, 0.1)"
+                                        borderRadius="8px"
+                                        borderColor="rgba(99, 102, 241, 0.6)"
+                                        glareColor="#ffffff"
+                                        className="p-2 d-block expolor-btn text-white"
+                                    >
+                                        <MdOutlineVisibility size={20} className="me-2" />
+                                        Explore My Work
+                                    </GlareHover>
+                                </button>
+                                <button className="hro-btn">
+                                    <GlareHover
+                                        width="230px"
+                                        height="100%"
+                                        background="rgba(99, 102, 241, 0.1)"
+                                        borderRadius="8px"
+                                        borderColor="rgba(99, 102, 241, 0.6)"
+                                        glareColor="#ffffff"
+                                        className="p-2 d-block expolor-btn text-white"
+                                    >
+                                        <MdOutlineChat size={20} className="me-2" />
+                                        Let's Talk
+                                    </GlareHover>
+                                </button>
                             </div>
 
 
