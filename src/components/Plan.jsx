@@ -41,8 +41,8 @@ const MyProcess = () => {
                         <div key={index} className="col-md-3 mb-4">
                             <div className="p-3 custom-card h-100">
                                 <h3 className="text-start"><AuroraText>{step.number}</AuroraText></h3>
-                                <h5 className="fw-bold text-start">{step.title}</h5>
-                                <p style={{ textAlign: "left" }} className="text-white">{step.desc}</p>
+                                <h5 className="text-start">{step.title}</h5>
+                                <p style={{ textAlign: "justify", fontSize:"16px" }} className="text-white">{step.desc}</p>
                             </div>
                         </div>
                     ))}

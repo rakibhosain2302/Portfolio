@@ -9,7 +9,7 @@ import FAQ from './components/Fqa.jsx';
 import Contact from './components/Contact.jsx';
 import {Services} from './components/Services';
 import Plan from './components/Plan.jsx';
-import {Footer} from './components/Footer';
+import {Footer} from './components/footer.jsx';
 import {ScrollProgressBar} from './components/ScrollProgressBar';
 import './styles/globals.css';
 import './styles/DotGrid.css';
