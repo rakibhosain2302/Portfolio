@@ -9,6 +9,7 @@ export default function GradientText({
   animationSpeed = 10,
   showBorder = false,
   direction = 'horizontal',
+  showCursor,
   pauseOnHover = false,
   yoyo = true
 }) {
@@ -86,7 +87,7 @@ export default function GradientText({
 
   return (
     <motion.div
-      className={`animated-gradient-text ${showBorder ? 'with-border' : ''} ${className}`}
+      className={`animated-gradient-text ${showBorder ? 'with-border' : ''} ${showCursor ? 'show-cursor' : ''} ${className}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

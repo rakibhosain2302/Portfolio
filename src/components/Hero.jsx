@@ -32,16 +32,17 @@ export default function Rakib() {
                                     pauseOnHover={true}
                                     yoyo={true}
                                     showBorder={false}
-                                    className="gradient-typewriter">
+                                    showCursor
+                                    className="gradient-typewriter fw-bold">
                                     <Typewriter
                                         words={[
                                             " Full Stack Developer",
                                             " PHP & Laravel Expert",
-                                            " JavaScript & React with API Integration",
+                                            " JavaScript & React.js with API Integration",
                                             " Building Scalable Web Applications",
                                             " Crafting Modern & Responsive UI",
                                             " Clean Code & Performance Focused",
-                                            " Building Dynamic UI with React",
+                                            " Building Dynamic UI with React.js",
                                         ]}
                                         loop={true}
                                         cursor

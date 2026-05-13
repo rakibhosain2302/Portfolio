@@ -51,3 +51,13 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+.animated-gradient-text.show-cursor {
+  cursor: text;
+  user-select: text;
+}
+
+.animated-gradient-text.show-cursor .text-content {
+  user-select: text;
+  -webkit-user-select: text;
+}
