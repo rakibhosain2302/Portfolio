@@ -1,0 +1,65 @@
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dock-container {
+    top: auto;
+    bottom: 16px;
+    left: 12px;
+    width: calc(100% - 24px);
+    transform: none;
+  }
+
+  .dock {
+    width: 100%;
+    padding: 10px 12px;
+    justify-content: space-between;
+  }
+
+  .hero .min-vh-100 {
+    min-height: auto !important;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
+
+  .right-col {
+    margin-top: 3rem;
+  }
+
+  .badge-work {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .location {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .about-intro,
+  .about-journey-text,
+  .content,
+  .Career-text,
+  .contact-subtitle,
+  .subtitle,
+  .text-center.p {
+    width: 100%;
+  }
+
+  .about-stats-wrap {
+    justify-content: center;
+  }
+
+  .stat-box {
+    margin-right: 0 !important;
+  }
+
+  .project-card .custom-card {
+    min-height: 100%;
+  }
+
+  .nav-pills {
+    width: min(100%, 34rem);
+  }
+
+  .nav-pills .nav-link {
+    min-width: 0;
+  }
+}
