@@ -49,7 +49,7 @@ export const Milestones = () => {
             <div className="row">
                 {/* Education Section */}
                 <div className="col-md-6">
-                    <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title w-25">
+                    <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title milestone-label">
                         <FaGraduationCap className="me-2 pop-up-icon" size={20} />
                         Education
                     </h3>
@@ -62,6 +62,7 @@ export const Milestones = () => {
                             </h5>
                             <p className="mb-1 card-title-edu">Northern University Bangladesh</p>
                             <p className="mb-1 card-gpa">2025 - Present</p>
+                            <br/>
                             <small className="text-white p">
                                 Currently pursuing a Bachelor’s degree in Computer Science and Engineering, focusing on software development, problem-solving, and modern web technologies.
                             </small>
@@ -85,7 +86,7 @@ export const Milestones = () => {
                 {/* Experience Section */}
                 <div className="col-md-6">
 
-                    <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title w-25">
+                    <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title milestone-label">
                         <FaBriefcase className="me-2 pop-up-icon" />
                         Experience
                     </h3>
@@ -95,7 +96,7 @@ export const Milestones = () => {
                             <h5 className="card-title fw-bold mb-1">Laravel Developer</h5>
                             <p className="mb-1 companey">Isotope IT Ltd.</p>
                             <p className="mb-1"><ImLocation color="#adb5bd" className="me-1"/>Dhaka, Bangladesh</p>
-                            <div className="d-flex">
+                            <div className="d-flex employment-tags">
                                 <p className="time me-2">Full-time</p>
                                 <p className="time">Hybrid</p>
                             </div>

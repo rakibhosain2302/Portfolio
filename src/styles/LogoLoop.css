@@ -188,7 +188,7 @@ li::marker {
 
 
 .content{
-  width: 50%;
+  width: min(100%, 42rem);
   display: inline-block;
   font-size: 18px;
   color: #fff;

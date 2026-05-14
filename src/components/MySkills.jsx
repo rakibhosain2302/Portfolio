@@ -35,7 +35,7 @@ export const MySkill = () => {
                     <p className='content'>Building dynamic and scalable web applications using modern technologies like Laravel, React, and JavaScript.</p>
                 </div>
             </div>
-            <div style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
+            <div className="skills-loop-wrapper" style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
                 {/* Basic horizontal loop */}
                 <LogoLoop
                     logos={techLogos}

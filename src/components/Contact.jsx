@@ -28,15 +28,15 @@ const Contact = () => {
           </Col>
         </Row>
 
-        <Row>
+        <Row className="contact-row g-4">
           <div className="col-md-6 contact-info text-start">
             <div className="cont-title">
               <strong>Need More Info?</strong>
               <h4>I'd Love to hear From You!</h4>
             </div>
             <div className="custom-card mb-3">
-              <div class="info-item">
-                <div class="info-icon"><MdAttachEmail className="me-4" /></div>
+              <div className="info-item">
+                <div className="info-icon"><MdAttachEmail className="me-4" /></div>
                 <div className="mt-1">
                   <strong>Email:</strong>
                   <p><a href="mailto:rakibhosain.webdev@gmail.com">rakibhosain.webdev@gmail.com</a></p>
@@ -44,8 +44,8 @@ const Contact = () => {
               </div>
             </div>
             <div className="custom-card mb-3">
-              <div class="info-item">
-                <div class="info-icon"><BsTelephoneForwardFill className="me-4" /></div>
+              <div className="info-item">
+                <div className="info-icon"><BsTelephoneForwardFill className="me-4" /></div>
                 <div className="mt-1">
                   <strong>Phone:</strong>
                   <p><a href="tel:+88 01648306577">+88 01648306577</a></p>
@@ -53,11 +53,11 @@ const Contact = () => {
               </div>
             </div>
             <div className="custom-card mb-3">
-              <div class="info-item">
-                <div class="info-icon"><IoLocation className="me-4" /></div>
+              <div className="info-item">
+                <div className="info-icon"><IoLocation className="me-4" /></div>
                 <div className="mt-1">
                   <strong>Address:</strong>
-                  <p><a href="">Hajj Camp, Airport, Dhaka, Bangladesh</a></p>
+                  <p><a href="#contact">Hajj Camp, Airport, Dhaka, Bangladesh</a></p>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@ const Contact = () => {
               <Form.Group className="mb-3">
                 <Form.Control as="textarea" rows={4} placeholder="Message" />
               </Form.Group>
-              <button className="send-btn mb-2" type="submit">
+              <button className="send-btn contact-submit-btn mb-2" type="submit">
                 <GlareHover
                   width="150px"
                   height="100%"

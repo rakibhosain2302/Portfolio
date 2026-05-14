@@ -15,6 +15,10 @@ import './styles/globals.css';
 import './styles/DotGrid.css';
 import './styles/Hero.css';
 import './styles/About.css';
+import './styles/Responsive/desktop.css';
+import './styles/Responsive/tablet.css';
+import './styles/Responsive/large-mobile.css';
+import './styles/Responsive/small-mobile.css';
 
 function App() {
   return (
@@ -37,7 +41,7 @@ function App() {
       <div className="overlay-layer"></div>
 
       {/* Foreground Content */}
-      <div className="position-relative content-layer">
+      <div className="position-relative content-layer container-fluid">
         <Navbar />
         <Hero />
         <About />

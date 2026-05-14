@@ -1,0 +1,14 @@
+@media (min-width: 1200px) {
+  .content-layer .container,
+  .content-layer .container-fluid,
+  .services-container,
+  .blog-container,
+  .process-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hero-actions {
+    gap: 1rem;
+  }
+}

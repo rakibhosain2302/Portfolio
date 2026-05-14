@@ -112,11 +112,23 @@
   font-weight: 600;
 }
 
+.hero-type-line {
+  flex-wrap: wrap;
+}
+
 .hro-btn {
   font-weight: 600 !important;
   color: #fff;
   box-shadow: 0 10px 30px rgba(6, 13, 31, 0.5) !important;
   transition: all 0.4s ease;
+}
+
+.hero-actions {
+  flex-wrap: wrap;
+}
+
+.hero-action-btn {
+  flex: 0 1 auto;
 }
 
 .hro-btn:hover {
@@ -127,10 +139,12 @@
 .social-container {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .social-container a {
   width: 120px;
+  min-width: 120px;
   display: flex;
   justify-content: center;
   align-items: center;

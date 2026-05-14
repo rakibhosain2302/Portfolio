@@ -15,10 +15,31 @@
 
 
 .stats-section {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: clamp(80px, 10vw, 150px);
+  margin-bottom: clamp(80px, 10vw, 150px);
 }
 
+.about-intro {
+  width: min(100%, 42rem);
+}
+
+.about-journey-text {
+  width: min(100%, 34rem);
+}
+
+.about-actions {
+  flex-wrap: wrap;
+}
+
+.about-stats-wrap {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stat-box {
+  flex: 1 1 220px;
+  min-width: 0;
+}
 
 .stats-card{
   width: 100%;
@@ -30,12 +51,12 @@
 }
 
 .stats-card h2{
-  font-size: 40px;
+  font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 900;
 }
 
 .stats-card p{
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 600;
 }
 

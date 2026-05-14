@@ -35,8 +35,8 @@ export const Footer = () => {
                     Let’s turn your ideas into a powerful digital experience.
                 </p>
 
-                <div className="mt-2">
-                    <button className="me-3 fw-bold">
+                <div className="mt-2 footer-actions">
+                    <button className="me-3 fw-bold footer-action-btn">
                         <GlareHover
                             width="150px"
                             height="100%"
@@ -49,7 +49,7 @@ export const Footer = () => {
                             Hire Me
                         </GlareHover>
                     </button>
-                    <button className="me-3 fw-bold">
+                    <button className="me-3 fw-bold footer-action-btn">
                         <GlareHover
                             width="150px"
                             height="100%"

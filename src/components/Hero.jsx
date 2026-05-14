@@ -25,7 +25,7 @@ export default function Rakib() {
                         <Col md={7}>
                             <p className="hello">👋 HELLO, I'M</p>
                             <h1 className="fw-bold">Rakib Hosain</h1>
-                            <h3 className="text-success d-flex align-items-center gap-2">
+                            <h3 className="text-success d-flex align-items-center gap-2 hero-type-line">
                                 <span className="A">A</span>
                                 <GradientText
                                     colors={['#5227FF', '#FF9FFC', '#B497DF', '#4079ff', '#4079ff']}
@@ -87,8 +87,8 @@ export default function Rakib() {
 
 
                             {/* Buttons */}
-                            <div className="mt-4 d-flex gap-3">
-                                <button className="hro-btn">
+                            <div className="mt-4 d-flex gap-3 hero-actions">
+                                <button className="hro-btn hero-action-btn">
                                     <GlareHover
                                         width="230px"
                                         height="100%"
@@ -103,7 +103,7 @@ export default function Rakib() {
                                         Download Resume
                                     </GlareHover>
                                 </button>
-                                <button className="hro-btn">
+                                <button className="hro-btn hero-action-btn">
                                     <GlareHover
                                         width="230px"
                                         height="100%"
@@ -117,7 +117,7 @@ export default function Rakib() {
                                         Explore My Work
                                     </GlareHover>
                                 </button>
-                                <button className="hro-btn">
+                                <button className="hro-btn hero-action-btn">
                                     <GlareHover
                                         width="230px"
                                         height="100%"
@@ -135,7 +135,7 @@ export default function Rakib() {
 
 
                             {/* Social Links */}
-                            <div className="social-container mt-4">
+                            <div className="social-container mt-4 hero-socials">
                                 <a href="#"><FaGithub size={30} className="github" /> github</a>
                                 <a href="#"><FiLinkedin size={40} className="linkedin" /> linkedIn</a>
                             </div>

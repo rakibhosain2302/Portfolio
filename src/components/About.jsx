@@ -28,10 +28,10 @@ export const About = () => {
             </h1>
           </div>
 
-          <p className="lead text-white w-50 mx-auto">
+          <p className="lead text-white about-intro mx-auto">
             Passionate full-stack developer crafting digital experiences with modern technologies and creative solutions.
           </p>
-          <div className="d-flex justify-content-center gap-3 mt-4">
+          <div className="d-flex justify-content-center gap-3 mt-4 about-actions">
             <button>
               <GlareHover
                 width="230px"
@@ -52,10 +52,10 @@ export const About = () => {
         <section className="container stats-section text-center">
           <h6 className="header-title mb-3"> <SiKnowledgebase className="me-1 pop-up-icon" /> <span className="">Get to Know Me</span></h6>
           <h1 className="fw-bold">Crafting <AuroraText>My Journey</AuroraText></h1>
-          <p className="text-white mx-auto" style={{ width: "40%" }}>
+          <p className="text-white mx-auto about-journey-text">
             Discover my journey and expertise through numbers that speak louder than words.
           </p>
-          <div className="d-flex justify-content-center align-items-center text-center mt-4">
+          <div className="d-flex justify-content-center align-items-center text-center mt-4 about-stats-wrap">
             <CountUp end={2} label="Years Of Experience" />
             <CountUp end={13} label="Completed Projects" />
             <CountUp end={8} label="Client Satisfaction" />

@@ -3,9 +3,21 @@
 }
 
 .subtitle {
-  width: 50%;
+  width: min(100%, 48rem);
   display: inline-block;
   color: #fff;
+}
+
+.footer-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-action-btn {
+  margin-right: 0 !important;
 }
 
 .social-links {
@@ -14,6 +26,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .social-link {
@@ -34,4 +47,3 @@
   border-color: transparent;
   color: white;
 }
-
