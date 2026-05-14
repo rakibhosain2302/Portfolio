@@ -1,0 +1,96 @@
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+  }
+
+  .header-title {
+    font-size: 13px;
+    padding: 8px 14px;
+    margin-bottom: 1rem;
+  }
+
+  .dock {
+    padding: 8px 10px;
+  }
+
+  .dock-container {
+    --icon-size: 34px !important;
+  }
+
+  .hello {
+    font-size: 12px;
+  }
+
+  .experience {
+    gap: 0.75rem !important;
+  }
+
+  .experience p {
+    font-size: 14px;
+  }
+
+  .social-container a {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-imageV2 {
+    border-radius: 16px;
+  }
+
+  .skills-loop-wrapper {
+    height: 150px !important;
+  }
+
+  .logoloop {
+    --logoloop-gap: 24px;
+    --logoloop-logoHeight: 24px;
+  }
+
+  .project-img {
+    height: 200px;
+  }
+
+  .image-card::before {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .nav-pills .nav-link {
+    min-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .card-gpa,
+  .duration,
+  .time {
+    font-size: 12px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-subtitle,
+  .cont-title {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    padding: 20px 16px;
+  }
+
+  .custom-button,
+  .custom-body {
+    text-align: left;
+  }
+
+  .footer .container.custom-card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
