@@ -25,7 +25,7 @@ export default function Rakib() {
                         <Col md={7}>
                             <p className="hello">👋 HELLO, I'M</p>
                             <h1 className="fw-bold">Rakib Hosain</h1>
-                            <h3 className="text-success d-flex align-items-center gap-2 hero-type-line">
+                            <h3 className="text-success d-flex align-items-center hero-type-line">
                                 <span className="A">A</span>
                                 <GradientText
                                     colors={['#5227FF', '#FF9FFC', '#B497DF', '#4079ff', '#4079ff']}
@@ -136,8 +136,8 @@ export default function Rakib() {
 
                             {/* Social Links */}
                             <div className="social-container mt-4 hero-socials">
-                                <a href="#"><FaGithub size={30} className="github" /> github</a>
-                                <a href="#"><FiLinkedin size={40} className="linkedin" /> linkedIn</a>
+                                <a href="#"><FaGithub className="github" /> <strong className="md-mt-2">github</strong></a>
+                                <a href="#"><FiLinkedin className="linkedin" /> <strong className="md-mt-2">linkedIn</strong></a>
                             </div>
                         </Col>
 
@@ -150,7 +150,7 @@ export default function Rakib() {
                             />
                             <div className="mt-3">
                                 <span className="badge-work">Available for Work</span>
-                                <p className="mt-2 location"><span className="l-icon"><MdShareLocation size={25} /></span> Dhaka, Bangladesh</p>
+                                <p className="mt-2 location"><span className="l-icon"><MdShareLocation className="location-icon" /></span> <strong className="md-mt-1">Dhaka, Bangladesh</strong></p>
                             </div>
                         </Col>
                     </Row>

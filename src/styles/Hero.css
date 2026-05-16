@@ -1,6 +1,10 @@
 
 /* V2 */
 
+.hero-type-line{
+  gap: 10px;
+}
+
 .hello {
   font-size: 14px;
   color: var(--text-primary);
@@ -71,8 +75,8 @@
   backdrop-filter: blur(10px);
   display: inline-block;
   position: absolute;
-  bottom: -10px;
-  left: -20px;
+  bottom: -20px;
+  left: 0px;
   transition: all 0.4s ease;
 }
 
@@ -174,3 +178,15 @@
   color: var(--text-primary);
   margin-right: 6px;
 }
+
+.hero-socials svg{
+    font-size: 25px;
+}
+
+.location svg{
+    font-size: 26px !important;
+  }
+
+  .location .md-mt-1{
+    margin-top: 2px;
+  }
