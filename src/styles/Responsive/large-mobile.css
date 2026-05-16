@@ -111,6 +111,10 @@
     font-size: 18px;
   }
 
+  .aurora-text {
+    font-size: 1.9rem;
+}
+
   .stats-card,
   .project-card .custom-card {
     min-height: auto;
