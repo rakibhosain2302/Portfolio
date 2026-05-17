@@ -125,8 +125,45 @@
   .logoloop__item {
     font-size: 45px;
   }
-  /* Skills Section End */
+  /* Milestons Section End */
 
+  .card-title {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .card-title-edu {
+    font-size: 18px;
+  }
+
+  .card-gpa {
+    font-size: 12px !important;
+    padding: 2px 12px;
+  }
+
+  .custom-card .edu-card .text-white.p {
+    text-align: justify;
+  }
+
+  .edu-label{
+    margin-bottom: 15px !important;
+  }
+
+  .ex-label {
+    margin-top: 30px;
+    margin-bottom: 15px !important;
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .Present{
+    margin-left: 4px;
+  }
+  /* Milestons Section Start */
+  .logoloop__item {
+    font-size: 45px;
+  }
+  /* Skills Section End */
   .stats-card,
   .project-card .custom-card {
     min-height: auto;

@@ -49,7 +49,7 @@ export const Milestones = () => {
             <div className="row">
                 {/* Education Section */}
                 <div className="col-md-6">
-                    <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title milestone-label">
+                    <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title milestone-label edu-label">
                         <FaGraduationCap className="me-2 pop-up-icon" size={20} />
                         Education
                     </h3>
@@ -70,12 +70,13 @@ export const Milestones = () => {
                     </div>
 
                     <div className="custom-card text-white mb-3">
-                        <div className="card-body">
+                        <div className="card-body edu-card">
                             <h5 className="card-title fw-bold mt-1 mb-2">
                                 Diploma in Engineering in Computer Science and Technology
                             </h5>
                             <p className="mb-1 card-title-edu">Chattogram Polytechnic Institute</p>
                             <p className="mb-1 card-gpa">CGPA: 3.43 / 4.00</p>
+                            <br />
                             <small className="text-white p">
                                 I completed my Diploma in Computer Science and Technology from Chattogram Polytechnic Institute, where I strengthened my core technical skills and developed a practical problem-solving approach.
                             </small>
@@ -86,7 +87,7 @@ export const Milestones = () => {
                 {/* Experience Section */}
                 <div className="col-md-6">
 
-                    <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title milestone-label">
+                    <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title milestone-label ex-label">
                         <FaBriefcase className="me-2 pop-up-icon" />
                         Experience
                     </h3>

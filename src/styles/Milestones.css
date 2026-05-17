@@ -56,6 +56,7 @@
 
 .Present{
   color: var(--bs-teal);
+  margin-left: 4px;
 }
 
 .time{
