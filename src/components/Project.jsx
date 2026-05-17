@@ -52,7 +52,7 @@ const ProjectCard = ({ project }) => (
 
             <div className="fw-bold text-start mt-4">{project.title}</div>
             <div className="d-flex align-items-center mt-1 tech-Section">
-                <HiOutlineDesktopComputer className="me-2 icons" size={22} />
+                <HiOutlineDesktopComputer className="me-2 icons" />
                 {project.tags.map((tag, idx) => (
                     <span key={idx} className="tech-badge me-2 mt-2 mb-2">{tag}</span>
                 ))}
