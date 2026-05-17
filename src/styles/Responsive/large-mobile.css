@@ -16,7 +16,7 @@
     transform: none;
   }
 
-  .md-mt-2{
+  .md-mt-2 {
     margin-top: 6px;
   }
 
@@ -33,9 +33,9 @@
     padding-bottom: 5rem;
   }
 
-  .hero-type-line{
+  .hero-type-line {
     font-size: 19px;
-    gap:6px;
+    gap: 6px;
   }
 
   .hero-actions,
@@ -87,11 +87,11 @@
     margin: 0;
   }
 
-  .location svg{
+  .location svg {
     font-size: 22px !important;
   }
 
-  .location .md-mt-1{
+  .location .md-mt-1 {
     margin-top: 2px;
   }
 
@@ -111,9 +111,21 @@
     font-size: 18px;
   }
 
+  .stats-section h1 {
+    font-size: 1.9rem;
+  }
+
   .aurora-text {
     font-size: 1.9rem;
-}
+  }
+
+  /* About Section End */
+
+  /* Skills Section Start */
+  .logoloop__item {
+    font-size: 45px;
+  }
+  /* Skills Section End */
 
   .stats-card,
   .project-card .custom-card {
