@@ -25,7 +25,7 @@ export const Services = () => {
 
   return (
     <section id="services" className="services" ref={ref}>
-      <div className="services-container">
+      <div className="container">
         <motion.div
           className="services-header text-center"
           initial="hidden"
@@ -33,42 +33,49 @@ export const Services = () => {
           variants={fadeInUp}
         >
           <h1 className='header-title mb-4'><RiServiceFill className='me-2 pop-up-icon' size={20} />Services</h1>
-          <h2 className="section-title">Smart Solutions <AuroraText>for Growing Businesses</AuroraText></h2>
+          <h1 className="section-title">Smart Solutions <AuroraText className='auroratext'>for Growing Businesses</AuroraText></h1>
           <p className="section-subtitle text-white">Modern web solutions crafted with performance, responsiveness, and user experience in mind.</p>
         </motion.div>
 
         <motion.div
-          className="services-grid"
+          className="services-grid row"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={staggerContainer}
         >
-          {services.map((service, index) => {
+          {services.map((service) => {
             const Icon = iconMap[service.icon];
+
             return (
-              <motion.div
-                key={service.id}
-                className="service-card custom-card"
-                variants={staggerItem}
-                whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              >
+              <div key={service.id} className="col-md-4 mb-4">
                 <motion.div
-                  className="service-icon"
-                  style={{ background: `${service.color}15`, color: service.color }}
-                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  className="service-card custom-card"
+                  variants={staggerItem}
+                  whileHover={{ y: -10, transition: { duration: 0.3 } }}
                 >
-                  <Icon size={32} />
+                  <motion.div
+                    className="service-icon"
+                    style={{ background: `${service.color}15`, color: service.color }}
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                  >
+                    <Icon size={32} />
+                  </motion.div>
+
+                  <h3 className="service-title">{service.title}</h3>
+
+                  <p className="service-description">
+                    {service.description}
+                  </p>
+
+                  <motion.div
+                    className="service-line"
+                    initial={{ width: '0%' }}
+                    whileHover={{ width: '100%' }}
+                    transition={{ duration: 0.3 }}
+                    style={{ background: service.color }}
+                  />
                 </motion.div>
-                <h3 className="service-title">{service.title}</h3>
-                <p className="service-description">{service.description}</p>
-                <motion.div
-                  className="service-line"
-                  initial={{ width: '0%' }}
-                  whileHover={{ width: '100%' }}
-                  transition={{ duration: 0.3 }}
-                  style={{ background: service.color }}
-                />
-              </motion.div>
+              </div>
             );
           })}
         </motion.div>

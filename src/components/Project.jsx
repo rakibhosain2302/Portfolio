@@ -83,7 +83,7 @@ const FeaturedProjects = () => {
     const [activeTab, setActiveTab] = useState("frontend");
 
     return (
-        <div fluid className="container text-light text-center py-5 mb-5">
+        <div fluid className="container text-light text-center py-5">
             <h1 className="header-title mb-4"><SiGooglecloudcomposer className="me-2 pop-up-icon" size={18} />Recent Work</h1>
             <h1 className="text-center mb-3">Project <AuroraText>Showcase</AuroraText></h1>
             <p className="text-center p mb-4">

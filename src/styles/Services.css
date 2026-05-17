@@ -1,19 +1,12 @@
 
 .services-container {
-  max-width: 1200px;
   margin: 0 auto;
-}
-
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
 }
 
 .services .custom-card {
   padding: 20px 20px;
   border-radius: 15px;
+  height: 300px;
   border: 1px solid rgba(99, 102, 241, 0.6);
   transition: all 0.4s ease;
   position: relative;
