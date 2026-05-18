@@ -1,4 +1,18 @@
 @media (max-width: 767.98px) {
+  /* navbar section start */
+
+  .dock {
+    width: 100%;
+    padding: 10px 12px;
+    gap: 6px;
+    justify-content: space-evenly;
+  }
+
+  .dock-icon {
+    width: 35px;
+    height: 35px;
+  }
+  /* navbar section end */
   /* hero section starts */
   .header-title {
     margin-bottom: 1.5rem;
@@ -9,6 +23,7 @@
   }
 
   .dock-container {
+    /* position: fixed; */
     /* top: 10px; */
     bottom: 12px;
     left: 12px;
@@ -20,13 +35,7 @@
     margin-top: 6px;
   }
 
-  .dock {
-    width: 100%;
-    padding: 10px 12px;
-    gap: 6px;
-    justify-content: space-between;
-  }
-
+  
   .hero .min-vh-100 {
     min-height: auto !important;
     padding-top: 6.5rem;
@@ -219,27 +228,26 @@
 
   /* My Workflow Section Start */
 
-  .m-plan-text{
+  .m-plan-text {
     text-align: justify !important;
     margin-bottom: 40px !important;
   }
 
   /* My Workflow Section Ends */
 
-   /* FAQ Section Start */
+  /* FAQ Section Start */
 
-  .m-fqa-text{
+  .m-fqa-text {
     text-align: justify !important;
   }
 
   /* FAQ Section Ends */
 
-
   .contact-section {
     padding-bottom: 5rem;
   }
 
-  .contact-title{
+  .contact-title {
     font-size: 1.9rem !important;
   }
 

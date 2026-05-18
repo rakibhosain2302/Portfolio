@@ -13,9 +13,9 @@
     margin-bottom: 1rem;
   }
 
-  .dock {
+  /* .dock {
     padding: 8px 10px;
-  }
+  } */
 
   .dock-container {
     --icon-size: 34px !important;
