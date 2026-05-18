@@ -217,6 +217,14 @@
 
   /* service Section ends */
 
+  /* My Workflow Section Start */
+
+  .m-plan-text{
+    text-align: justify !important;
+    margin-bottom: 40px !important;
+  }
+
+  /* My Workflow Section Ends */
   .contact-section {
     padding-bottom: 5rem;
   }
