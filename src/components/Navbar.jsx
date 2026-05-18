@@ -6,8 +6,6 @@ import { SiWikimediafoundation } from "react-icons/si"
 import { PiToolboxFill } from "react-icons/pi";
 import { IoIosMailUnread } from "react-icons/io";
 
-
-
 import '../styles/dock.css'
 
 export default function MyDock() {
@@ -19,23 +17,23 @@ export default function MyDock() {
         iconDistance={120}
         direction="middle"
       >
-        <DockIcon label="Home">
+        <DockIcon label="Home" href="#home">
           <FaHome size={20}/>
         </DockIcon>
 
-        <DockIcon label="About Me">
+        <DockIcon label="About" href="#about">
           <SiWikimediafoundation size={20} />
         </DockIcon>
 
-        <DockIcon label="Project">
+        <DockIcon label="Project" href="#project">
           <PiToolboxFill size={20} />
         </DockIcon>
 
-        <DockIcon label="Github">
+        <DockIcon label="Github" href="#github">
           <FaGithub size={20} />
         </DockIcon>
 
-        <DockIcon label="Contact">
+        <DockIcon label="Contact" href="#contact">
           <IoIosMailUnread size={20} />
         </DockIcon>
       </Dock>

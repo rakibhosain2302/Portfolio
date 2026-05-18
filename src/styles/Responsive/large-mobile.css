@@ -9,7 +9,7 @@
   }
 
   .dock-container {
-    top: auto;
+    /* top: 10px; */
     bottom: 12px;
     left: 12px;
     width: calc(100% - 24px);
@@ -225,8 +225,22 @@
   }
 
   /* My Workflow Section Ends */
+
+   /* FAQ Section Start */
+
+  .m-fqa-text{
+    text-align: justify !important;
+  }
+
+  /* FAQ Section Ends */
+
+
   .contact-section {
     padding-bottom: 5rem;
+  }
+
+  .contact-title{
+    font-size: 1.9rem !important;
   }
 
   .contact-form {
@@ -234,7 +248,7 @@
   }
 
   .faq-section {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
   }
 }

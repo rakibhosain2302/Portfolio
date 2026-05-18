@@ -25,9 +25,9 @@ export const Footer = () => {
             <div className="container custom-card text-center pt-5">
                 <h5 className="header-title mb-4"><FaInnosoft className="me-2 pop-up-icon" size={18} />Build With Me</h5>
 
-                <h2 className="title">
+                <h1 className="title">
                     Have A <AuroraText>Project in Mind?</AuroraText>
-                </h2>
+                </h1>
 
                 <p className="mt-1 subtitle">
                     I create responsive, scalable, and user-friendly web applications

@@ -70,7 +70,7 @@ function FAQ() {
                     <FaQuestionCircle className="me-2 pop-up-icon" size={18} />
                     FAQ
                 </span>
-                <h2 className="mb-1 text-center">Frequently <AuroraText>Asked Questions (FAQ)</AuroraText></h2>
+                <h1 className="mb-1 text-center">Frequently <AuroraText>Asked Questions (FAQ)</AuroraText></h1>
                 <p className="text-white subtitle mb-4">
                     Answers to your most important questions before we begin.
                 </p>
@@ -100,7 +100,7 @@ function FAQ() {
                                 className={`accordion-collapse collapse ${expandedIndex === index ? 'show' : ''}`}
                                 aria-labelledby={`heading${index}`}
                             >
-                                <div className="accordion-body custom-body">{item.answer}</div>
+                                <div className="accordion-body custom-body m-fqa-text">{item.answer}</div>
                             </div>
                         </div>
                     ))}
