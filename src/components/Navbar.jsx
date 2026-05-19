@@ -17,6 +17,8 @@ export default function MyDock() {
         iconDistance={120}
         direction="middle"
       >
+        <a href="#" className="hire-me">Rakib.dev</a>
+
         <DockIcon label="Home" href="#home">
           <FaHome size={20}/>
         </DockIcon>

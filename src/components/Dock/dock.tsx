@@ -14,7 +14,7 @@ interface DockIconProps {
 export function Dock({ 
   children, 
   direction = 'middle',
-  iconSize = 40,
+  iconSize = 45,
   iconMagnification = 70,
   iconDistance = 120 
 }: { 
