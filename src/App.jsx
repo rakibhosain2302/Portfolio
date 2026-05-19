@@ -41,7 +41,7 @@ function App() {
       <div className="overlay-layer"></div>
 
       {/* Foreground Content */}
-      <div className="position-relative content-layer container">
+      <div className="position-relative content-layer container-fluid">
         <Navbar />
         <Hero />
         <About />
