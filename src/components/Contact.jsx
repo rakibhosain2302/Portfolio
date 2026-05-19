@@ -18,12 +18,12 @@ const Contact = () => {
         </h1>
         <Row className="text-center mb-5">
           <Col>
-            <h1 className="contact-title">
+            <h1 className="contact-title head-text">
               Let’s <AuroraText>Contract Me</AuroraText>
             </h1>
-            <p className="contact-subtitle">
+            <p className="contact-subtitle p-text serv-mb">
               Ready to build something great? Let’s collaborate and turn your
-              ideas into powerful digital solutions.{" "}
+              ideas into powerful digital solutions.
             </p>
           </Col>
         </Row>
@@ -38,8 +38,10 @@ const Contact = () => {
               <div className="info-item">
                 <div className="info-icon"><MdAttachEmail className="me-4" /></div>
                 <div className="mt-1">
-                  <strong>Email:</strong>
-                  <p><a href="mailto:rakibhosain.webdev@gmail.com">rakibhosain.webdev@gmail.com</a></p>
+                  <strong className="con-title">Email:</strong>
+                  <p>
+                    <a href="mailto:rakibhosain.webdev@gmail.com" className="con-info">rakibhosain.webdev@gmail.com</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -47,8 +49,8 @@ const Contact = () => {
               <div className="info-item">
                 <div className="info-icon"><BsTelephoneForwardFill className="me-4" /></div>
                 <div className="mt-1">
-                  <strong>Phone:</strong>
-                  <p><a href="tel:+88 01648306577">+88 01648306577</a></p>
+                  <strong className="con-title">Phone:</strong>
+                  <p><a href="tel:+88 01648306577" className="con-info">+88 01648306577</a></p>
                 </div>
               </div>
             </div>
@@ -56,8 +58,8 @@ const Contact = () => {
               <div className="info-item">
                 <div className="info-icon"><IoLocation className="me-4" /></div>
                 <div className="mt-1">
-                  <strong>Address:</strong>
-                  <p><a href="#contact">Hajj Camp, Airport, Dhaka, Bangladesh</a></p>
+                  <strong className="con-title">Address:</strong>
+                  <p className="con-info"><a href="#contact" className="con-info">Hajj Camp, Airport, Dhaka, Bangladesh</a></p>
                 </div>
               </div>
             </div>

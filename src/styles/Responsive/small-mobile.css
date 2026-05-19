@@ -135,6 +135,18 @@
   .serv-mb{
     margin-bottom: 8px !important;
   }
+
+  .con-title{
+    font-size: 14px !important;
+  }
+
+  .con-info{
+    font-size: 14px !important;
+  }
+
+  .info-item p{
+    line-height: 1;
+  }
 }
 
 @media (max-width: 480px) {
