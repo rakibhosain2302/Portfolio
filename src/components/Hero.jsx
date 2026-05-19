@@ -24,7 +24,7 @@ export default function Rakib() {
                         {/* Left Side - Text */}
                         <Col md={7}>
                             <p className="hello">👋 HELLO, I'M</p>
-                            <h1 className="fw-bold">Rakib Hosain</h1>
+                            <h1 className="fw-bold name">Rakib Hosain</h1>
                             <h3 className="text-success d-flex align-items-center hero-type-line">
                                 <span className="A">A</span>
                                 <GradientText
@@ -36,7 +36,7 @@ export default function Rakib() {
                                     showBorder={false}
                                     showCursor
                                     className="gradient-typewriter fw-bold">
-                                    <Typewriter
+                                    {/* <Typewriter
                                         words={[
                                             " Full Stack Developer",
                                             " PHP & Laravel Expert",
@@ -52,11 +52,11 @@ export default function Rakib() {
                                         typeSpeed={70}
                                         deleteSpeed={50}
                                         delaySpeed={1500}
-                                    />
+                                    /> */}
                                 </GradientText>
                             </h3>
 
-                            <p className="mt-3">
+                            <p className="mt-3 hr-subtitle p-text">
                                 Full Stack Developer specializing in React.js and Laravel, focused on building fast, secure, and scalable web solutions.
                             </p>
 

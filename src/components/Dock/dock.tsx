@@ -13,12 +13,14 @@ interface DockIconProps {
 
 export function Dock({ 
   children, 
+  className = '',
   direction = 'middle',
   iconSize = 45,
   iconMagnification = 70,
   iconDistance = 120 
 }: { 
   children: React.ReactNode
+  className?: string
   direction?: string
   iconSize?: number
   iconMagnification?: number
@@ -28,7 +30,7 @@ export function Dock({
 
   return (
     <div 
-      className="dock-container"
+      className={`dock-container ${className}`.trim()}
       data-direction={direction}
       style={{
         '--icon-size': `${iconSize}px`,

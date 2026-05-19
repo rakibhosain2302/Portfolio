@@ -13,7 +13,7 @@ export const About = () => {
       <div className="container">
         {/* Hero Section */}
         <section className="text-center about-section">
-          <h2 className="header-title mb-4"> <FaInfoCircle className="me-2 pop-up-icon" /> <span className="">About Me</span></h2>
+          <h2 className="header-title mb-4"> <FaInfoCircle className="me-1 pop-up-icon" /> <span className="">About Me</span></h2>
           <div className="d-flex justify-content-center align-items-center">
             <h1 className="fw-bold display-5">
               <GradientText
@@ -49,10 +49,10 @@ export const About = () => {
         </section>
 
         {/* Stats Section */}
-        <section className="container stats-section text-center">
+        <section className="stats-section text-center">
           <h6 className="header-title mb-3"> <SiKnowledgebase className="me-1 pop-up-icon" /> <span className="">Get to Know Me</span></h6>
-          <h1 className="fw-bold">Crafting <AuroraText>My Journey</AuroraText></h1>
-          <p className="text-white mx-auto about-journey-text">
+          <h1 className="fw-bold head-text">Crafting <AuroraText>My Journey</AuroraText></h1>
+          <p className="text-white mx-auto about-journey-text p-text">
             Discover my journey and expertise through numbers that speak louder than words.
           </p>
           <div className="d-flex justify-content-center align-items-center text-center mt-4 about-stats-wrap">

@@ -33,8 +33,8 @@ const projectsData = {
 
     ],
     static: [
-        { gitlink:"https://github.com/rakibhosain2302/Analog_and_Digital_Clock",liveLink:"https://rakibhosain2302.github.io/Analog_and_Digital_Clock/", image: ClockImg, title: "Analog & Digital Clock", tags: ["HTML", "CSS", "JavaScript"], desc: "A simple and responsive Analog & Digital Clock built using HTML, CSS, and JavaScript, displaying real-time updates with both classic analog design and modern digital format." },
-        { gitlink:"https://github.com/rakibhosain2302/JS-Simple-Calculators",liveLink:"https://rakibhosain2302.github.io/JS-Simple-Calculators/", image: CalculatorImg, title: "Simple Scientific Calculator", tags: ["HTML", "CSS", "JavaScript"], desc: "A modern and responsive Scientific Calculator developed using HTML, CSS, and JavaScript, supporting advanced mathematical operations such as trigonometric functions, logarithms, factorials, powers, and real-time expression evaluation with an intuitive user interface." },
+        { gitlink: "https://github.com/rakibhosain2302/Analog_and_Digital_Clock", liveLink: "https://rakibhosain2302.github.io/Analog_and_Digital_Clock/", image: ClockImg, title: "Analog & Digital Clock", tags: ["HTML", "CSS", "JavaScript"], desc: "A simple and responsive Analog & Digital Clock built using HTML, CSS, and JavaScript, displaying real-time updates with both classic analog design and modern digital format." },
+        { gitlink: "https://github.com/rakibhosain2302/JS-Simple-Calculators", liveLink: "https://rakibhosain2302.github.io/JS-Simple-Calculators/", image: CalculatorImg, title: "Simple Scientific Calculator", tags: ["HTML", "CSS", "JavaScript"], desc: "A modern and responsive Scientific Calculator developed using HTML, CSS, and JavaScript, supporting advanced mathematical operations such as trigonometric functions, logarithms, factorials, powers, and real-time expression evaluation with an intuitive user interface." },
 
     ],
 };
@@ -50,12 +50,19 @@ const ProjectCard = ({ project }) => (
                 />
             </div>
 
-            <div className="fw-bold text-start mt-4">{project.title}</div>
-            <div className="d-flex align-items-center mt-1 tech-Section">
-                <HiOutlineDesktopComputer className="me-2 icons" />
-                {project.tags.map((tag, idx) => (
-                    <span key={idx} className="tech-badge me-2 mt-2 mb-2">{tag}</span>
-                ))}
+            <div className="fw-bold text-start mt-3"><a href={project.liveLink}>{project.title}</a></div>
+            <div className="d-flex align-items-center mt-2 tech-Section">
+                <div className="tech-icon">
+                    <HiOutlineDesktopComputer className="me-1 icons" />
+                </div>
+
+                <div className="tech-tags">
+                    {project.tags.map((tag, idx) => (
+                        <span key={idx} className="tech-badge">
+                            {tag}
+                        </span>
+                    ))}
+                </div>
             </div>
 
 
@@ -85,12 +92,12 @@ const FeaturedProjects = () => {
     return (
         <div fluid className="container text-light text-center py-5">
             <h1 className="header-title mb-4"><SiGooglecloudcomposer className="me-2 pop-up-icon" size={18} />Recent Work</h1>
-            <h1 className="text-center mb-3">Project <AuroraText>Showcase</AuroraText></h1>
-            <p className="text-center p mb-4">
+            <h1 className="text-center head-text mb-3">Project <AuroraText>Showcase</AuroraText></h1>
+            <p className="text-center p mb-4 p-text">
                 Passionate about exploring new technologies. Every project is a unique challenge that helps me push boundaries and grow as a developer.
             </p>
 
-            <Nav variant="pills" className="justify-content-center mb-5">
+            <Nav variant="pills" className="nv-pill mb-5">
                 <Nav.Item>
                     <Nav.Link active={activeTab === "frontend"} onClick={() => setActiveTab("frontend")}>Front-End</Nav.Link>
                 </Nav.Item>

@@ -3,7 +3,7 @@
 
   .dock {
     width: 100%;
-    padding: 10px 12px;
+    padding: 9px 12px;
     gap: 6px;
     justify-content: space-evenly;
   }
@@ -11,6 +11,16 @@
   .dock-icon {
     width: 35px;
     height: 35px;
+  }
+
+  .dock-label-inline {
+    font-size: 14px;
+  }
+
+  .hire-me {
+    font-size: 14px;
+    padding-right: 10px;
+    border-right: 2px solid var(--primary);
   }
   /* navbar section end */
   /* hero section starts */
@@ -23,9 +33,7 @@
   }
 
   .dock-container {
-    /* position: fixed; */
-    /* top: 10px; */
-    bottom: 12px;
+    top: 10px;
     left: 12px;
     width: calc(100% - 24px);
     transform: none;
@@ -35,7 +43,6 @@
     margin-top: 6px;
   }
 
-  
   .hero .min-vh-100 {
     min-height: auto !important;
     padding-top: 6.5rem;

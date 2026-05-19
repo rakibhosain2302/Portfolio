@@ -36,19 +36,19 @@ export const Milestones = () => {
 
 
     return (
-        <div className="container py-5">
+        <div className="container py-5 career-section">
             {/* Title */}
-            <div className="text-center mb-5">
-                <h1 className="header-title mb-4"><PiPathBold className="me-2 pop-up-icon" size={20} />Milestones</h1>
-                <h2>My <AuroraText className="fs-1 fw-bold">Career Timeline</AuroraText></h2>
-                <p className="text-white Career-text">
+            <div className="text-center mb-5 mr-bottom">
+                <h1 className="header-title mb-4"><PiPathBold className="me-2 pop-up-icon" size={18} />Milestones</h1>
+                <h2 className="head-text">My <AuroraText className="fs-1 fw-bold">Career Timeline</AuroraText></h2>
+                <p className="text-white Career-text p-text">
                     A combination of education and hands-on experience that defines my professional growth.
                 </p>
             </div>
 
             <div className="row">
                 {/* Education Section */}
-                <div className="col-md-6">
+                <div className="col-md-6 edu">
                     <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title milestone-label edu-label">
                         <FaGraduationCap className="me-2 pop-up-icon" size={20} />
                         Education
@@ -63,7 +63,7 @@ export const Milestones = () => {
                             <p className="mb-1 card-title-edu">Northern University Bangladesh</p>
                             <p className="mb-1 card-gpa">2025 - Present</p>
                             <br/>
-                            <small className="text-white p">
+                            <small className="text-white p p-text">
                                 Currently pursuing a Bachelor’s degree in Computer Science and Engineering, focusing on software development, problem-solving, and modern web technologies.
                             </small>
                         </div>
@@ -77,7 +77,7 @@ export const Milestones = () => {
                             <p className="mb-1 card-title-edu">Chattogram Polytechnic Institute</p>
                             <p className="mb-1 card-gpa">CGPA: 3.43 / 4.00</p>
                             <br />
-                            <small className="text-white p">
+                            <small className="text-white p p-text">
                                 I completed my Diploma in Computer Science and Technology from Chattogram Polytechnic Institute, where I strengthened my core technical skills and developed a practical problem-solving approach.
                             </small>
                         </div>
