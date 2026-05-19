@@ -130,7 +130,7 @@
   background: linear-gradient(
     to right,
     var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(0, 0, 0, 0) 60%
   );
 }
 
@@ -139,7 +139,7 @@
   background: linear-gradient(
     to left,
     var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(0, 0, 0, 0) 80%
   );
 }
 
@@ -159,6 +159,7 @@
     var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+  /* background: none !important; */
 }
 
 .logoloop--vertical.logoloop--fade::after {
@@ -169,6 +170,7 @@
     var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+  /* background: none !important; */
 }
 
 @media (prefers-reduced-motion: reduce) {

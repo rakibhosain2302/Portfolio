@@ -36,8 +36,8 @@ const Contact = () => {
             </div>
             <div className="custom-card mb-3">
               <div className="info-item">
-                <div className="info-icon"><MdAttachEmail className="me-4" /></div>
-                <div className="mt-1">
+                <h5 className="info-icon"><MdAttachEmail className="me-4 icon-info" /></h5>
+                <div>
                   <strong className="con-title">Email:</strong>
                   <p>
                     <a href="mailto:rakibhosain.webdev@gmail.com" className="con-info">rakibhosain.webdev@gmail.com</a>
@@ -47,8 +47,8 @@ const Contact = () => {
             </div>
             <div className="custom-card mb-3">
               <div className="info-item">
-                <div className="info-icon"><BsTelephoneForwardFill className="me-4" /></div>
-                <div className="mt-1">
+                <h4 className="info-icon"><BsTelephoneForwardFill className="me-4 icon-info" /></h4>
+                <div>
                   <strong className="con-title">Phone:</strong>
                   <p><a href="tel:+88 01648306577" className="con-info">+88 01648306577</a></p>
                 </div>
@@ -56,8 +56,8 @@ const Contact = () => {
             </div>
             <div className="custom-card mb-3">
               <div className="info-item">
-                <div className="info-icon"><IoLocation className="me-4" /></div>
-                <div className="mt-1">
+                <h4 className="info-icon"><IoLocation className="me-4 icon-info" /></h4>
+                <div>
                   <strong className="con-title">Address:</strong>
                   <p className="con-info"><a href="#contact" className="con-info">Hajj Camp, Airport, Dhaka, Bangladesh</a></p>
                 </div>

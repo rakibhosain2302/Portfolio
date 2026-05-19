@@ -1,6 +1,11 @@
-import LogoLoop from './Logo/LogoLoop';
-import AuroraText from './GradientText/AuroraText';
-import { SiReact, SiLaravel, SiPhp, SiBootstrap, SiJquery, SiJavascript, SiMysql, SiHtml5, SiCss, SiUbuntu, SiMariadb, SiGithub, SiGithubcopilot, SiSecurityscorecard } from 'react-icons/si';
+import { useEffect, useState } from "react";
+import LogoLoop from "./Logo/LogoLoop";
+import AuroraText from "./GradientText/AuroraText";
+import {
+    SiReact, SiLaravel, SiPhp, SiBootstrap, SiJquery,
+    SiJavascript, SiMysql, SiHtml5, SiCss, SiUbuntu,
+    SiMariadb, SiGithub, SiGithubcopilot, SiSecurityscorecard
+} from "react-icons/si";
 
 const techLogos = [
     { node: <SiGithub color="#ffffff" />, title: "GitHub", href: "https://github.com" },
@@ -18,56 +23,116 @@ const techLogos = [
     { node: <SiUbuntu color="#E95420" />, title: "Ubuntu", href: "https://ubuntu.com" },
 ];
 
-// Alternative with image sources
-// const imageLogos = [
-//   { src: "/logos/company1.png", alt: "Company 1", href: "https://company1.com" },
-//   { src: "/logos/company2.png", alt: "Company 2", href: "https://company2.com" },
-//   { src: "/logos/company3.png", alt: "Company 3", href: "https://company3.com" },
-// ];
-
 export const MySkill = () => {
+    const [config, setConfig] = useState({
+        logoHeight: 60,
+        gap: 60,
+        speed: 100,
+    });
+
+    useEffect(() => {
+        const updateSize = () => {
+            const width = window.innerWidth;
+
+            if (width < 480) {
+                setConfig({ logoHeight: 32, gap: 25, speed: 60 });
+            } else if (width < 768) {
+                setConfig({ logoHeight: 40, gap: 35, speed: 80 });
+            } else if (width < 1024) {
+                setConfig({ logoHeight: 50, gap: 50, speed: 90 });
+            } else {
+                setConfig({ logoHeight: 60, gap: 60, speed: 100 });
+            }
+        };
+
+        updateSize();
+        window.addEventListener("resize", updateSize);
+
+        return () => window.removeEventListener("resize", updateSize);
+    }, []);
+
     return (
         <>
-            <div className='myskills-section text-white text-center'>
+            {/* HEADER */}
+            <div className="myskills-section text-white text-center">
                 <div className="container">
-                    <h1 className='header-title mb-3'><SiSecurityscorecard className='me-2 pop-up-icon' size={20} />My Tech Stack</h1>
-                    <h1 className="fw-bold mb-2 head-text">Skills & <AuroraText>Technologies</AuroraText></h1>
-                    <p className='content p-text'>Building dynamic and scalable web applications using modern technologies like Laravel, React, and JavaScript.</p>
+                    <h1 className="header-title mb-3">
+                        <SiSecurityscorecard className="me-2 pop-up-icon" size={20} />
+                        My Tech Stack
+                    </h1>
+
+                    <h1 className="fw-bold mb-2 head-text">
+                        Skills & <AuroraText>Technologies</AuroraText>
+                    </h1>
+
+                    <p className="content p-text">
+                        Building dynamic and scalable web applications using modern technologies like Laravel, React, and JavaScript.
+                    </p>
                 </div>
             </div>
-            <div className="skills-loop-wrapper" style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
-                {/* Basic horizontal loop */}
+
+            {/* TOP LOOP (LEFT → RIGHT) */}
+            <div
+                className="skills-loop-wrapper"
+                style={{
+                    height: "120px",
+                    overflow: "hidden",
+                    position: "relative",
+                }}
+            >
                 <LogoLoop
                     logos={techLogos}
-                    speed={0}
+                    speed={config.speed}
                     direction="left"
-                    logoHeight={60}
-                    gap={60}
+                    logoHeight={config.logoHeight}
+                    gap={config.gap}
                     hoverSpeed={0}
                     scaleOnHover
                     fadeOut
                     fadeOutColor="#ffffff"
-                    ariaLabel="Technology partners"
+                    ariaLabel="Technology stack left loop"
                     renderItem={(item, key) => (
                         <li key={key} className="relative group">
                             <a href={item.href} target="_blank" rel="noreferrer">
                                 {item.node}
                             </a>
-
-                            {/* Tooltip */}
-                            <span className="tooltip">
-                                {item.title}
-                            </span>
+                            <span className="tooltip">{item.title}</span>
                         </li>
                     )}
                 />
+            </div>
 
-                {/* Vertical loop with deceleration on hover */}
-                {/* <LogoLoop
-        logos={techLogos}
-  useCustomRender={true}
-/> */}
+            {/* BOTTOM LOOP (RIGHT → LEFT / REVERSE) */}
+            <div
+                className="skills-loop-wrapper"
+                style={{
+                    height: "120px",
+                    overflow: "hidden",
+                    position: "relative",
+                    marginTop: "20px",
+                }}
+            >
+                <LogoLoop
+                    logos={techLogos}
+                    speed={config.speed}
+                    direction="right"
+                    logoHeight={config.logoHeight}
+                    gap={config.gap}
+                    hoverSpeed={0}
+                    scaleOnHover
+                    fadeOut
+                    fadeOutColor="#ffffff"
+                    ariaLabel="Technology stack right loop"
+                    renderItem={(item, key) => (
+                        <li key={key} className="relative group">
+                            <a href={item.href} target="_blank" rel="noreferrer">
+                                {item.node}
+                            </a>
+                            <span className="tooltip">{item.title}</span>
+                        </li>
+                    )}
+                />
             </div>
         </>
     );
-}
+};

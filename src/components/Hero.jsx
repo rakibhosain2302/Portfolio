@@ -10,12 +10,13 @@ import { MdOutlineVisibility } from "react-icons/md";
 import { MdOutlineChat } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
-
 import GlareHover from "./GlareHover/GlareHover";
 
+import heroImg from "../assets/hero.png";
 
 
-export default function Rakib() {
+
+export default function hero() {
     return (
         <section id="home" className="hero">
             <div className="text-light min-vh-100 d-flex align-items-center" >
@@ -36,15 +37,16 @@ export default function Rakib() {
                                     showBorder={false}
                                     showCursor
                                     className="gradient-typewriter fw-bold">
-                                    {/* <Typewriter
+                                    <Typewriter
                                         words={[
                                             " Full Stack Developer",
                                             " PHP & Laravel Expert",
-                                            " JavaScript & React.js with API Integration",
+                                            " JavaScript (ES6+)",
+                                            " React.Js with API Integration",
                                             " Building Scalable Web Applications",
                                             " Crafting Modern & Responsive UI",
                                             " Clean Code & Performance Focused",
-                                            " Building Dynamic UI with React.js",
+                                            " Building Dynamic UI with React.Js",
                                         ]}
                                         loop={true}
                                         cursor
@@ -52,7 +54,7 @@ export default function Rakib() {
                                         typeSpeed={70}
                                         deleteSpeed={50}
                                         delaySpeed={1500}
-                                    /> */}
+                                    />
                                 </GradientText>
                             </h3>
 
@@ -144,7 +146,7 @@ export default function Rakib() {
                         {/* Right Side - Image */}
                         <Col md={5} className="text-center right-col">
                             <img
-                                src="/src/assets/hero.png"
+                                src={heroImg}
                                 alt="Rakib Hosain"
                                 className="hero-imageV2"
                             />
