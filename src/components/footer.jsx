@@ -25,11 +25,11 @@ export const Footer = () => {
             <div className="container custom-card text-center pt-5">
                 <h5 className="header-title mb-4"><FaInnosoft className="me-2 pop-up-icon" size={18} />Build With Me</h5>
 
-                <h1 className="title">
+                <h1 className="title head-text">
                     Have A <AuroraText>Project in Mind?</AuroraText>
                 </h1>
 
-                <p className="mt-1 subtitle">
+                <p className="mt-1 subtitle p-text">
                     I create responsive, scalable, and user-friendly web applications
                     using modern technologies like React, Laravel, and JavaScript.
                     Let’s turn your ideas into a powerful digital experience.
@@ -82,7 +82,7 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                <p className="footer-copy mt-5 mb-0">
+                <p className="footer-copy mt-5 mb-0 p-text">
                     &copy; {currentYear} Rakib Hosain. Crafted with passion and clean code.
                 </p>
             </div>

@@ -147,6 +147,10 @@
   .info-item p{
     line-height: 1;
   }
+
+  .bTn-text{
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 480px) {
