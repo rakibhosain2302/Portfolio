@@ -33,8 +33,8 @@ export const Services = () => {
           variants={fadeInUp}
         >
           <h1 className='header-title mb-4'><RiServiceFill className='me-2 pop-up-icon' size={20} />Services</h1>
-          <h1 className="section-title">Smart Solutions <AuroraText className='auroratext'>for Growing Businesses</AuroraText></h1>
-          <p className="section-subtitle text-white">Modern web solutions crafted with performance, responsiveness, and user experience in mind.</p>
+          <h1 className="section-title head-text">Smart Solutions <AuroraText className='auroratext'>for Growing Businesses</AuroraText></h1>
+          <p className="section-subtitle text-white p-text">Modern web solutions crafted with performance, responsiveness, and user experience in mind.</p>
         </motion.div>
 
         <motion.div
@@ -47,7 +47,7 @@ export const Services = () => {
             const Icon = iconMap[service.icon];
 
             return (
-              <div key={service.id} className="col-md-4 mb-4">
+              <div key={service.id} className="col-md-4 mb-4 serv-mb">
                 <motion.div
                   className="service-card custom-card"
                   variants={staggerItem}

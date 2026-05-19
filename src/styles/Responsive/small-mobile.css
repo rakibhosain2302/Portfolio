@@ -131,6 +131,10 @@
   .tech-tags {
     gap: 2px;
   }
+
+  .serv-mb{
+    margin-bottom: 8px !important;
+  }
 }
 
 @media (max-width: 480px) {

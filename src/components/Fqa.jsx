@@ -65,13 +65,13 @@ function FAQ() {
 
     return (
         <section className="faq-section text-center text-light p-5">
-            <div className="container">
+            <div>
                 <span className="header-title mb-4">
                     <FaQuestionCircle className="me-2 pop-up-icon" size={18} />
                     FAQ
                 </span>
-                <h1 className="mb-1 text-center">Frequently <AuroraText>Asked Questions (FAQ)</AuroraText></h1>
-                <p className="text-white subtitle mb-4">
+                <h1 className="mb-1 text-center head-text">Frequently <AuroraText>Asked Questions (FAQ)</AuroraText></h1>
+                <p className="text-white subtitle mb-4 p-text">
                     Answers to your most important questions before we begin.
                 </p>
                 <div className="accordion-custom" id="faqAccordion">
@@ -79,7 +79,7 @@ function FAQ() {
                         <div className="accordion-item custom-accordion" key={index}>
                             <h2 className="accordion-header" id={`heading${index}`}>
                                 <button
-                                    className={`accordion-button custom-button ${expandedIndex === index ? '' : 'collapsed'}`}
+                                    className={`accordion-button custom-button p-text ${expandedIndex === index ? '' : 'collapsed'}`}
                                     type="button"
                                     onClick={() => toggleAccordion(index)}
                                     aria-expanded={expandedIndex === index}
@@ -100,7 +100,7 @@ function FAQ() {
                                 className={`accordion-collapse collapse ${expandedIndex === index ? 'show' : ''}`}
                                 aria-labelledby={`heading${index}`}
                             >
-                                <div className="accordion-body custom-body m-fqa-text">{item.answer}</div>
+                                <div className="accordion-body custom-body m-fqa-text p-text">{item.answer}</div>
                             </div>
                         </div>
                     ))}
