@@ -92,7 +92,7 @@ export default function hero() {
                             <div className="mt-4 d-flex gap-3 hero-actions">
                                 <button className="hro-btn hero-action-btn">
                                     <GlareHover
-                                        width="230px"
+                                        width="220px"
                                         height="100%"
                                         background="linear-gradient(120deg, #4e54c8, #8f94fb)"
                                         borderRadius="8px"
@@ -107,7 +107,7 @@ export default function hero() {
                                 </button>
                                 <button className="hro-btn hero-action-btn">
                                     <GlareHover
-                                        width="230px"
+                                        width="220px"
                                         height="100%"
                                         background="rgba(99, 102, 241, 0.1)"
                                         borderRadius="8px"
@@ -121,7 +121,7 @@ export default function hero() {
                                 </button>
                                 <button className="hro-btn hero-action-btn">
                                     <GlareHover
-                                        width="230px"
+                                        width="220px"
                                         height="100%"
                                         background="rgba(99, 102, 241, 0.1)"
                                         borderRadius="8px"
