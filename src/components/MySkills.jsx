@@ -35,11 +35,11 @@ export const MySkill = () => {
             const width = window.innerWidth;
 
             if (width < 480) {
-                setConfig({ logoHeight: 32, gap: 25, speed: 60 });
+                setConfig({ logoHeight: 20, gap: 25, speed: 100 });
             } else if (width < 768) {
-                setConfig({ logoHeight: 40, gap: 35, speed: 80 });
+                setConfig({ logoHeight: 40, gap: 35, speed: 100 });
             } else if (width < 1024) {
-                setConfig({ logoHeight: 50, gap: 50, speed: 90 });
+                setConfig({ logoHeight: 50, gap: 50, speed: 100 });
             } else {
                 setConfig({ logoHeight: 60, gap: 60, speed: 100 });
             }

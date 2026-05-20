@@ -159,6 +159,10 @@
   .bTn-text {
     font-size: 15px;
   }
+
+  .iframe-wrapper {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -262,7 +266,7 @@
     font-size: 22px;
   }
 
-  .icon-info{
+  .icon-info {
     margin-right: 20px !important;
   }
 
