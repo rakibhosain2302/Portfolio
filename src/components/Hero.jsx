@@ -12,7 +12,7 @@ import { FaGithub } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import GlareHover from "./GlareHover/GlareHover";
 
-import heroImg from "../assets/hero.png";
+import heroImg from "../assets/hero.webp";
 
 
 
@@ -149,6 +149,8 @@ export default function hero() {
                                 src={heroImg}
                                 alt="Rakib Hosain"
                                 className="hero-imageV2"
+                                loading="lazy"
+                                fetchPriority="high"
                             />
                             <div className="mt-3">
                                 <span className="badge-work">Available for Work</span>
