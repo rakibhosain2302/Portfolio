@@ -1,16 +1,7 @@
+import { lazy, Suspense } from 'react';
 import DotGrid from './components/Dotgrid/DotGrid.jsx';
-import Hero from './components/Hero.jsx';
 import Navbar from './components/Navbar.jsx';
-import {About} from './components/About';
-import { MySkill } from './components/MySkills.jsx';
-import {Milestones} from './components/Milestones.jsx';
-import Project  from './components/Project.jsx';
-import FAQ from './components/Fqa.jsx';
-import Contact from './components/Contact.jsx';
-import {Services} from './components/Services';
-import Plan from './components/Plan.jsx';
-import {Footer} from './components/footer.jsx';
-import {ScrollProgressBar} from './components/ScrollProgressBar';
+import ScrollProgressBar from './components/ScrollProgressBar.jsx';
 import './styles/globals.css';
 import './styles/DotGrid.css';
 import './styles/Hero.css';
@@ -19,6 +10,30 @@ import './styles/Responsive/desktop.css';
 import './styles/Responsive/tablet.css';
 import './styles/Responsive/large-mobile.css';
 import './styles/Responsive/small-mobile.css';
+
+// Lazy load components (handling both default and named exports)
+const Hero = lazy(() => import('./components/Hero.jsx'));
+const About = lazy(() => import('./components/About.jsx').then(module => ({ default: module.About })));
+const MySkill = lazy(() => import('./components/MySkills.jsx').then(module => ({ default: module.MySkill })));
+const Milestones = lazy(() => import('./components/Milestones.jsx').then(module => ({ default: module.Milestones })));
+const Project = lazy(() => import('./components/Project.jsx'));
+const Services = lazy(() => import('./components/Services.jsx').then(module => ({ default: module.Services })));
+const Plan = lazy(() => import('./components/Plan.jsx'));
+const FAQ = lazy(() => import('./components/Fqa.jsx'));
+const Contact = lazy(() => import('./components/Contact.jsx'));
+const Footer = lazy(() => import('./components/footer.jsx').then(module => ({ default: module.Footer })));
+
+// Loading fallback component
+const LoadingFallback = () => (
+  <div style={{ 
+    padding: '40px 20px', 
+    textAlign: 'center', 
+    color: '#888',
+    fontSize: '14px'
+  }}>
+    Loading...
+  </div>
+);
 
 function App() {
   return (
@@ -43,16 +58,47 @@ function App() {
       {/* Foreground Content */}
       <div className="position-relative content-layer container">
         <Navbar />
-        <Hero />
-        <About />
-        <MySkill />
-        <Milestones />
-        <Project />
-        <Services />
-        <Plan />
-        <FAQ />
-        <Contact />
-        <Footer />
+        
+        <Suspense fallback={<LoadingFallback />}>
+          <Hero />
+        </Suspense>
+
+        <Suspense fallback={<LoadingFallback />}>
+          <About />
+        </Suspense>
+
+        <Suspense fallback={<LoadingFallback />}>
+          <MySkill />
+        </Suspense>
+
+        <Suspense fallback={<LoadingFallback />}>
+          <Milestones />
+        </Suspense>
+
+        <Suspense fallback={<LoadingFallback />}>
+          <Project />
+        </Suspense>
+
+        <Suspense fallback={<LoadingFallback />}>
+          <Services />
+        </Suspense>
+
+        <Suspense fallback={<LoadingFallback />}>
+          <Plan />
+        </Suspense>
+
+        <Suspense fallback={<LoadingFallback />}>
+          <FAQ />
+        </Suspense>
+
+        <Suspense fallback={<LoadingFallback />}>
+          <Contact />
+        </Suspense>
+
+        <Suspense fallback={<LoadingFallback />}>
+          <Footer />
+        </Suspense>
+
         <ScrollProgressBar />
       </div>
     </div>

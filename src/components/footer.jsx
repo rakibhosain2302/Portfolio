@@ -32,7 +32,7 @@ export const Footer = () => {
                 <p className="mt-1 subtitle p-text">
                     I create responsive, scalable, and user-friendly web applications
                     using modern technologies like React, Laravel, and JavaScript.
-                    Let’s turn your ideas into a powerful digital experience.
+                    Let's turn your ideas into a powerful digital experience.
                 </p>
 
                 <div className="mt-2 footer-actions">
@@ -71,8 +71,6 @@ export const Footer = () => {
                                     key={index}
                                     href={social.link}
                                     className="social-link neon-icon"
-                                    whileHover={{ scale: 1.3, rotate: 10 }}
-                                    whileTap={{ scale: 0.9 }}
                                     aria-label={social.label}
                                 >
                                     <Icon size={22} />
@@ -81,11 +79,10 @@ export const Footer = () => {
                         })}
                     </div>
                 </div>
-
-                <p className="footer-copy mt-5 mb-0 p-text">
-                    &copy; {currentYear} Rakib Hosain. Crafted with passion and clean code.
-                </p>
+                <div className="footer-bottom">
+                    <p className="mt-5 footer-bottom-text">© {currentYear} Developed by Rakib Haasan. All rights reserved</p>
+                </div>
             </div>
         </div>
     );
-}
+};

@@ -91,13 +91,13 @@ export const MySkill = () => {
                     fadeOut
                     fadeOutColor="#ffffff"
                     ariaLabel="Technology stack left loop"
-                    renderItem={(item, key) => (
-                        <li key={key} className="relative group">
-                            <a href={item.href} target="_blank" rel="noreferrer">
+                    renderItem={(item) => (
+                        <>
+                            <a href={item.href} target="_blank" rel="noreferrer" className="relative group">
                                 {item.node}
                             </a>
                             <span className="tooltip">{item.title}</span>
-                        </li>
+                        </>
                     )}
                 />
             </div>
@@ -123,13 +123,13 @@ export const MySkill = () => {
                     fadeOut
                     fadeOutColor="#ffffff"
                     ariaLabel="Technology stack right loop"
-                    renderItem={(item, key) => (
-                        <li key={key} className="relative group">
-                            <a href={item.href} target="_blank" rel="noreferrer">
+                    renderItem={(item) => (
+                        <>
+                            <a href={item.href} target="_blank" rel="noreferrer" className="relative group">
                                 {item.node}
                             </a>
                             <span className="tooltip">{item.title}</span>
-                        </li>
+                        </>
                     )}
                 />
             </div>

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useScrollProgress } from '../hooks/useScrollAnimation';
 import '../styles/ScrollProgressBar.css';
 
-export const ScrollProgressBar = () => {
+const ScrollProgressBar = () => {
   const progress = useScrollProgress();
 
   return (
@@ -15,3 +15,5 @@ export const ScrollProgressBar = () => {
     />
   );
 };
+
+export default ScrollProgressBar
