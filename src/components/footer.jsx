@@ -23,7 +23,7 @@ export const Footer = () => {
             }}
         >
             <div className="container custom-card text-center pt-5">
-                <h5 className="header-title mb-4"><FaInnosoft className="me-2 pop-up-icon" size={18} />Build With Me</h5>
+                <h5 className="header-title mb-4"><FaInnosoft className="me-2 pop-up-icon" size={18} loading="lazy"/>Build With Me</h5>
 
                 <h1 className="title head-text">
                     Have A <AuroraText>Project in Mind?</AuroraText>
@@ -72,8 +72,9 @@ export const Footer = () => {
                                     href={social.link}
                                     className="social-link neon-icon"
                                     aria-label={social.label}
+                                    loading="lazy"
                                 >
-                                    <Icon size={22} />
+                                    <Icon size={22} loading="lazy" />
                                 </a>
                             );
                         })}
