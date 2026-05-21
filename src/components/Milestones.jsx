@@ -39,7 +39,7 @@ export const Milestones = () => {
         <div className="container py-5 career-section">
             {/* Title */}
             <div className="text-center mb-5 mr-bottom">
-                <h1 className="header-title mb-4"><PiPathBold className="me-2 pop-up-icon" size={18} />Milestones</h1>
+                <h1 className="header-title mb-4"><PiPathBold className="me-2 pop-up-icon" size={18} loading="lazy" />Milestones</h1>
                 <h2 className="head-text">My <AuroraText className="fs-1 fw-bold">Career Timeline</AuroraText></h2>
                 <p className="text-white Career-text p-text">
                     A combination of education and hands-on experience that defines my professional growth.
@@ -50,7 +50,7 @@ export const Milestones = () => {
                 {/* Education Section */}
                 <div className="col-md-6 edu">
                     <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title milestone-label edu-label">
-                        <FaGraduationCap className="me-2 pop-up-icon" size={20} />
+                        <FaGraduationCap className="me-2 pop-up-icon" size={20}  loading="lazy" />
                         Education
                     </h3>
 
@@ -88,7 +88,7 @@ export const Milestones = () => {
                 <div className="col-md-6">
 
                     <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title milestone-label ex-label">
-                        <FaBriefcase className="me-2 pop-up-icon" />
+                        <FaBriefcase className="me-2 pop-up-icon"  loading="lazy"/>
                         Experience
                     </h3>
 
@@ -96,7 +96,7 @@ export const Milestones = () => {
                         <div className="card-body">
                             <h5 className="card-title fw-bold mb-1">Laravel Developer</h5>
                             <p className="mb-1 companey">Isotope IT Ltd.</p>
-                            <p className="mb-1"><ImLocation color="#adb5bd" className="me-1"/>Dhaka, Bangladesh</p>
+                            <p className="mb-1"><ImLocation color="#adb5bd" className="me-1" loading="lazy"/>Dhaka, Bangladesh</p>
                             <div className="d-flex employment-tags">
                                 <p className="time me-2">Full-time</p>
                                 <p className="time">Hybrid</p>
