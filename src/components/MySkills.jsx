@@ -8,19 +8,19 @@ import {
 } from "react-icons/si";
 
 const techLogos = [
-    { node: <SiGithub color="#ffffff" />, title: "GitHub", href: "https://github.com" },
-    { node: <SiGithubcopilot color="#ffffff" />, title: "Copilot", href: "https://copilot.microsoft.com" },
-    { node: <SiPhp color="#777BB4" />, title: "PHP", href: "https://www.php.net" },
-    { node: <SiLaravel color="#FF2D20" />, title: "Laravel", href: "https://laravel.com" },
-    { node: <SiReact color="#61DAFB" />, title: "React", href: "https://react.dev" },
-    { node: <SiJquery color="#0769AD" />, title: "jQuery", href: "https://jquery.com" },
-    { node: <SiJavascript color="#F7DF1E" />, title: "JavaScript", href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-    { node: <SiMysql color="#4479A1" />, title: "MySQL", href: "https://www.mysql.com" },
-    { node: <SiMariadb color="#003545" />, title: "MariaDB", href: "https://mariadb.org" },
-    { node: <SiBootstrap color="#7952B3" />, title: "Bootstrap", href: "https://getbootstrap.com" },
-    { node: <SiHtml5 color="#E34F26" />, title: "HTML5", href: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
-    { node: <SiCss color="#1572B6" />, title: "CSS3", href: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
-    { node: <SiUbuntu color="#E95420" />, title: "Ubuntu", href: "https://ubuntu.com" },
+    { node: <SiGithub color="#ffffff" loading="lazy" />, title: "GitHub", href: "https://github.com" },
+    { node: <SiGithubcopilot color="#ffffff" loading="lazy" />, title: "Copilot", href: "https://copilot.microsoft.com" },
+    { node: <SiPhp color="#777BB4" loading="lazy" />, title: "PHP", href: "https://www.php.net" },
+    { node: <SiLaravel color="#FF2D20" loading="lazy" />, title: "Laravel", href: "https://laravel.com" },
+    { node: <SiReact color="#61DAFB" loading="lazy" />, title: "React", href: "https://react.dev" },
+    { node: <SiJquery color="#0769AD" loading="lazy" />, title: "jQuery", href: "https://jquery.com" },
+    { node: <SiJavascript color="#F7DF1E" loading="lazy" />, title: "JavaScript", href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+    { node: <SiMysql color="#4479A1" loading="lazy" />, title: "MySQL", href: "https://www.mysql.com" },
+    { node: <SiMariadb color="#003545" loading="lazy" />, title: "MariaDB", href: "https://mariadb.org" },
+    { node: <SiBootstrap color="#7952B3" loading="lazy" />, title: "Bootstrap", href: "https://getbootstrap.com" },
+    { node: <SiHtml5 color="#E34F26" loading="lazy" />, title: "HTML5", href: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+    { node: <SiCss color="#1572B6" loading="lazy" />, title: "CSS3", href: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+    { node: <SiUbuntu color="#E95420" loading="lazy" />, title: "Ubuntu", href: "https://ubuntu.com" },
 ];
 
 export const MySkill = () => {
@@ -57,7 +57,7 @@ export const MySkill = () => {
             <div className="myskills-section text-white text-center">
                 <div className="container">
                     <h1 className="header-title mb-3">
-                        <SiSecurityscorecard className="me-2 pop-up-icon" size={20} />
+                        <SiSecurityscorecard className="me-2 pop-up-icon" size={20} loading="lazy" />
                         My Tech Stack
                     </h1>
 
@@ -93,7 +93,7 @@ export const MySkill = () => {
                     ariaLabel="Technology stack left loop"
                     renderItem={(item) => (
                         <>
-                            <a href={item.href} target="_blank" rel="noreferrer" className="relative group">
+                            <a href={item.href} target="_blank" rel="noreferrer" loading="lazy" className="relative group">
                                 {item.node}
                             </a>
                             <span className="tooltip">{item.title}</span>
@@ -125,7 +125,7 @@ export const MySkill = () => {
                     ariaLabel="Technology stack right loop"
                     renderItem={(item) => (
                         <>
-                            <a href={item.href} target="_blank" rel="noreferrer" className="relative group">
+                            <a href={item.href} target="_blank" rel="noreferrer" loading="lazy" className="relative group">
                                 {item.node}
                             </a>
                             <span className="tooltip">{item.title}</span>

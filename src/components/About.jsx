@@ -12,8 +12,8 @@ export const About = () => {
     <div className="text-light">
       <div className="container">
         {/* Hero Section */}
-        <section className="text-center about-section">
-          <h2 className="header-title mb-4"> <FaInfoCircle className="me-1 pop-up-icon" /> <span className="">About Me</span></h2>
+        <section className="text-center about-section"> 
+          <h2 className="header-title mb-4"> <FaInfoCircle className="me-1 pop-up-icon" loading="lazy" /> <span className="">About Me</span></h2>
           <div className="d-flex justify-content-center align-items-center">
             <h1 className="fw-bold display-5">
               <GradientText
@@ -42,7 +42,7 @@ export const About = () => {
                 glareColor="#ffffff"
                 className="p-2 d-block expolor-btn text-white"
               >
-                < GoProjectSymlink className="me-2 pop-up-icon" color="white" size={20} /> Explore My Projects
+                < GoProjectSymlink className="me-2 pop-up-icon" color="white" size={20} loading="lazy" /> Explore My Projects
               </GlareHover>
             </button>
           </div>
@@ -50,7 +50,7 @@ export const About = () => {
 
         {/* Stats Section */}
         <section className="stats-section text-center">
-          <h6 className="header-title mb-3"> <SiKnowledgebase className="me-1 pop-up-icon" /> <span className="">Get to Know Me</span></h6>
+          <h6 className="header-title mb-3"> <SiKnowledgebase className="me-1 pop-up-icon" loading="lazy" /> <span className="">Get to Know Me</span></h6>
           <h1 className="fw-bold head-text">Crafting <AuroraText>My Journey</AuroraText></h1>
           <p className="text-white mx-auto about-journey-text p-text">
             Discover my journey and expertise through numbers that speak louder than words.
