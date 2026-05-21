@@ -67,7 +67,7 @@ function FAQ() {
         <section className="faq-section text-center text-light p-5">
             <div>
                 <span className="header-title mb-4">
-                    <FaQuestionCircle className="me-2 pop-up-icon" size={18} />
+                    <FaQuestionCircle className="me-2 pop-up-icon" size={18}  loading="lazy" />
                     FAQ
                 </span>
                 <h1 className="mb-1 text-center head-text">Frequently <AuroraText>Asked Questions (FAQ)</AuroraText></h1>
@@ -84,6 +84,7 @@ function FAQ() {
                                     onClick={() => toggleAccordion(index)}
                                     aria-expanded={expandedIndex === index}
                                     aria-controls={`collapse${index}`}
+                                    loading="lazy"
                                 >
                                     {item.question}
                                     <span className="accordion-icon">

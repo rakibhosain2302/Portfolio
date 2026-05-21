@@ -13,7 +13,7 @@ const Contact = () => {
     <section className="contact-section text-center">
       <div className="container">
         <h1 className="header-title mb-4">
-          <PiTargetBold className="me-2 pop-up-icon" size={20} />
+          <PiTargetBold className="me-2 pop-up-icon" size={20} loading="lazy" />
           Get in Touch
         </h1>
         <Row className="text-center mb-5">
@@ -36,7 +36,7 @@ const Contact = () => {
             </div>
             <div className="custom-card mb-3">
               <div className="info-item">
-                <h5 className="info-icon"><MdAttachEmail className="me-4 icon-info" /></h5>
+                <h5 className="info-icon"><MdAttachEmail className="me-4 icon-info" loading="lazy" /></h5>
                 <div>
                   <strong className="con-title">Email:</strong>
                   <p>
@@ -47,7 +47,7 @@ const Contact = () => {
             </div>
             <div className="custom-card mb-3">
               <div className="info-item">
-                <h4 className="info-icon"><BsTelephoneForwardFill className="me-4 icon-info" /></h4>
+                <h4 className="info-icon"><BsTelephoneForwardFill className="me-4 icon-info" loading="lazy" /></h4>
                 <div>
                   <strong className="con-title">Phone:</strong>
                   <p><a href="tel:+88 01648306577" className="con-info">+88 01648306577</a></p>
@@ -56,7 +56,7 @@ const Contact = () => {
             </div>
             <div className="custom-card mb-3">
               <div className="info-item">
-                <h4 className="info-icon"><IoLocation className="me-4 icon-info" /></h4>
+                <h4 className="info-icon"><IoLocation className="me-4 icon-info" loading="lazy" /></h4>
                 <div>
                   <strong className="con-title">Address:</strong>
                   <p className="con-info"><a href="#contact" className="con-info">Hajj Camp, Airport, Dhaka, Bangladesh</a></p>
