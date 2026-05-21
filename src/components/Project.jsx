@@ -47,6 +47,7 @@ const ProjectCard = ({ project }) => (
                     src={project.image}
                     alt={project.title}
                     className="img-fluid project-img"
+                    loading="lazy"
                 />
             </div>
 
@@ -69,13 +70,13 @@ const ProjectCard = ({ project }) => (
             <div className="link-section mt-3 d-flex gap-2">
                 <div className="flex-fill">
                     <a className="link-button" href={project.gitlink}>
-                        <FaGithub className="me-2" size={25} />
+                        <FaGithub className="me-2" size={25} loading="lazy" />
                         Github
                     </a>
                 </div>
                 <div className="flex-fill">
                     <a className="link-button" href={project.liveLink}>
-                        <FaExternalLinkAlt className="me-2" size={18} />
+                        <FaExternalLinkAlt className="me-2" size={18} loading="lazy" />
                         Live
                     </a>
                 </div>
@@ -91,7 +92,7 @@ const FeaturedProjects = () => {
 
     return (
         <div className="container text-light text-center py-5">
-            <h1 className="header-title mb-4"><SiGooglecloudcomposer className="me-2 pop-up-icon" size={18} />Recent Work</h1>
+            <h1 className="header-title mb-4"><SiGooglecloudcomposer className="me-2 pop-up-icon" size={18} loading="lazy" />Recent Work</h1>
             <h1 className="text-center head-text mb-3">Project <AuroraText>Showcase</AuroraText></h1>
             <p className="text-center p mb-4 p-text">
                 Passionate about exploring new technologies. Every project is a unique challenge that helps me push boundaries and grow as a developer.
@@ -112,7 +113,7 @@ const FeaturedProjects = () => {
             <Row>
                 {projectsData[activeTab].map((project, idx) => (
                     <Col md={4} key={idx}>
-                        <ProjectCard project={project} />
+                        <ProjectCard project={project}  loading="lazy"/>
                     </Col>
                 ))}
             </Row>
