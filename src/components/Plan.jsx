@@ -29,7 +29,7 @@ const MyProcess = () => {
     return (
         <section className="py-5 text-center text-light">
             <div className="container">
-                <h5 className="header-title mt-5 mb-4"><SiCountingworkspro className="me-2 pop-up-icon" size={18}/>How It Work</h5>
+                <h5 className="header-title mt-5 mb-4"><SiCountingworkspro className="me-2 pop-up-icon" size={18} loading="lazy" />How It Work</h5>
                 <h1 className="head-text">My <AuroraText>Workflow</AuroraText></h1>
                 <p className="mb-5 text-center m-plan-text p-text">
                     Every project goes through a smooth and transparent process 

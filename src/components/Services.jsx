@@ -32,7 +32,7 @@ export const Services = () => {
           animate={isInView ? "visible" : "hidden"}
           variants={fadeInUp}
         >
-          <h1 className='header-title mb-4'><RiServiceFill className='me-2 pop-up-icon' size={20} />Services</h1>
+          <h1 className='header-title mb-4'><RiServiceFill className='me-2 pop-up-icon' size={20} loading="lazy" />Services</h1>
           <h1 className="section-title head-text">Smart Solutions <AuroraText className='auroratext'>for Growing Businesses</AuroraText></h1>
           <p className="section-subtitle text-white p-text">Modern web solutions crafted with performance, responsiveness, and user experience in mind.</p>
         </motion.div>
