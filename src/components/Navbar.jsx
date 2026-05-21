@@ -67,23 +67,23 @@ export default function MyDock() {
         </a>
 
         <DockIcon label="Home" href="#home">
-          <FaHome size={20} />
+          <FaHome size={20} loading="lazy"/>
         </DockIcon>
 
         <DockIcon label="About" href="#about">
-          <SiWikimediafoundation size={20} />
+          <SiWikimediafoundation size={20} loading="lazy"/>
         </DockIcon>
 
         <DockIcon label="Project" href="#project">
-          <PiToolboxFill size={20} />
+          <PiToolboxFill size={20} loading="lazy"/>
         </DockIcon>
 
         <DockIcon label="Github" href="#github">
-          <FaGithub size={20} />
+          <FaGithub size={20} loading="lazy"/>
         </DockIcon>
 
         <DockIcon label="Contact" href="#contact">
-          <IoIosMailUnread size={20} />
+          <IoIosMailUnread size={20} loading="lazy"/>
         </DockIcon>
       </Dock>
     </div>
