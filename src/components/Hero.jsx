@@ -11,7 +11,6 @@ import { MdOutlineChat } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import GlareHover from "./GlareHover/GlareHover";
-
 import heroImg from "../assets/hero.webp";
 
 
@@ -54,6 +53,7 @@ export default function hero() {
                                         typeSpeed={70}
                                         deleteSpeed={50}
                                         delaySpeed={1500}
+                                        loading="lazy"
                                     />
                                 </GradientText>
                             </h3>
@@ -66,21 +66,21 @@ export default function hero() {
                             <div className="d-flex gap-4 mt-3 align-items-center flex-wrap experience">
                                 <div className="d-flex align-items-center gap-2">
                                     <span className="rotate-icon icon-box">
-                                        <TbCircleDotted color="var(--bs-success)" size={20} />
+                                        <TbCircleDotted color="var(--bs-success)" size={20} loading="lazy" />
                                     </span>
                                     <p className="mb-0">2+ Years Experience</p>
                                 </div>
 
                                 <div className="d-flex align-items-center gap-2">
                                     <span className="rotate-icon icon-box">
-                                        <TbCircleDotted color="var(--bs-blue)" size={20} />
+                                        <TbCircleDotted color="var(--bs-blue)" size={20} loading="lazy" />
                                     </span>
                                     <p className="mb-0">12+ Projects Completed</p>
                                 </div>
 
                                 <div className="d-flex align-items-center gap-2">
                                     <span className="rotate-icon icon-box">
-                                        <TbCircleDotted color="var(--bs-purple)" size={20} />
+                                        <TbCircleDotted color="var(--bs-purple)" size={20} loading="lazy" />
                                     </span>
                                     <p className="mb-0">Remote Friendly</p>
                                 </div>
@@ -101,7 +101,7 @@ export default function hero() {
                                         className="p-2 d-block expolor-btn text-white"
                                     >
 
-                                        <MdOutlineCloudDownload size={20} className="me-2" />
+                                        <MdOutlineCloudDownload size={20} className="me-2" loading="lazy" />
                                         Download Resume
                                     </GlareHover>
                                 </button>
@@ -115,7 +115,7 @@ export default function hero() {
                                         glareColor="#ffffff"
                                         className="p-2 d-block expolor-btn text-white"
                                     >
-                                        <MdOutlineVisibility size={20} className="me-2" />
+                                        <MdOutlineVisibility size={20} className="me-2" loading="lazy" />
                                         Explore My Work
                                     </GlareHover>
                                 </button>
@@ -129,7 +129,7 @@ export default function hero() {
                                         glareColor="#ffffff"
                                         className="p-2 d-block expolor-btn text-white"
                                     >
-                                        <MdOutlineChat size={20} className="me-2" />
+                                        <MdOutlineChat size={20} className="me-2" loading="lazy" />
                                         Let's Talk
                                     </GlareHover>
                                 </button>
@@ -138,8 +138,8 @@ export default function hero() {
 
                             {/* Social Links */}
                             <div className="social-container mt-4 hero-socials">
-                                <a href="#"><FaGithub className="github" /> <strong className="md-mt-2">github</strong></a>
-                                <a href="#"><FiLinkedin className="linkedin" /> <strong className="md-mt-2">linkedIn</strong></a>
+                                <a href="#"><FaGithub className="github" loading="lazy" /> <strong className="md-mt-2">github</strong></a>
+                                <a href="#"><FiLinkedin className="linkedin"  loading="lazy" /> <strong className="md-mt-2">linkedIn</strong></a>
                             </div>
                         </Col>
 
@@ -154,7 +154,7 @@ export default function hero() {
                             />
                             <div className="mt-3">
                                 <span className="badge-work">Available for Work</span>
-                                <p className="mt-2 location"><span className="l-icon"><MdShareLocation className="location-icon" /></span> <strong className="md-mt-1">Dhaka, Bangladesh</strong></p>
+                                <p className="mt-2 location"><span className="l-icon"><MdShareLocation className="location-icon"  loading="lazy" /></span> <strong className="md-mt-1">Dhaka, Bangladesh</strong></p>
                             </div>
                         </Col>
                     </Row>
