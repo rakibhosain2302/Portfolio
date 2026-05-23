@@ -1,4 +1,8 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
+  section {
+    padding: 0px !important;
+  }
+
   .dock-container {
     top: auto;
     bottom: 16px;
@@ -17,6 +21,10 @@
     min-height: auto !important;
     padding-top: 7rem;
     padding-bottom: 5rem;
+  }
+
+  .gap-3 {
+    gap: 6px !important;
   }
 
   .right-col {
@@ -61,5 +69,13 @@
 
   .nav-pills .nav-link {
     min-width: 0;
+  }
+
+  .card-gpa {
+    padding: 6px 12px !important;
+  }
+
+  .exp{
+    margin-top: 10px;
   }
 }

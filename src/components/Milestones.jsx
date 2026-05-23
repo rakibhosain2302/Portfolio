@@ -48,7 +48,7 @@ export const Milestones = () => {
 
             <div className="row">
                 {/* Education Section */}
-                <div className="col-md-6 edu">
+                <div className="col-md-order-1 col-lg-6 col-12 edu">
                     <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title milestone-label edu-label">
                         <FaGraduationCap className="me-2 pop-up-icon" size={20}  loading="lazy" />
                         Education
@@ -85,7 +85,7 @@ export const Milestones = () => {
                 </div>
 
                 {/* Experience Section */}
-                <div className="col-md-6">
+                <div className="col-md-order-2 col-lg-6 col-12 exp">
 
                     <h3 className="text-white fw-bold mb-4 d-flex align-items-center header-title milestone-label ex-label">
                         <FaBriefcase className="me-2 pop-up-icon"  loading="lazy"/>
