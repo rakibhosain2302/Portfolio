@@ -22,7 +22,7 @@ export default function hero() {
                 <Container>
                     <Row className="align-items-center">
                         {/* Left Side - Text */}
-                        <div className="col-md-8 col-lg-6 col-7">
+                        <div className="col-lg-7 col-12 col-md-order-1">
                             <p className="hello">👋 HELLO, I'M</p>
                             <h1 className="fw-bold name">Rakib Hosain</h1>
                             <h3 className="text-success d-flex align-items-center hero-type-line">
@@ -144,7 +144,7 @@ export default function hero() {
                         </div>
 
                         {/* Right Side - Image */}
-                        <div className="col-md-4 col-lg-6 col-7 text-center right-col">
+                        <div className="col-lg-6 col-7 text-center right-col col-md-order-2">
                             <img
                                 src={heroImg}
                                 alt="Rakib Hosain"
