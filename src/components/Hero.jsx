@@ -144,7 +144,7 @@ export default function hero() {
                         </div>
 
                         {/* Right Side - Image */}
-                        <div className="col-lg-6 col-7 text-center right-col col-md-order-2">
+                        <div className="col-lg-5 col-12 text-center right-col col-md-order-2">
                             <img
                                 src={heroImg}
                                 alt="Rakib Hosain"

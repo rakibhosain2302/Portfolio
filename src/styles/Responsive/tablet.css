@@ -24,13 +24,13 @@
   }
 
   .badge-work {
-    top: 1rem;
-    right: 1rem;
+    top: -5px;
+    right: 10px;
   }
 
   .location {
-    left: 1rem;
-    bottom: 1rem;
+    left: 10px;
+    bottom: -20px !important;
   }
 
   .about-intro,
