@@ -75,7 +75,36 @@
     padding: 6px 12px !important;
   }
 
-  .exp{
+  .exp {
     margin-top: 10px;
+  }
+
+  .project-img {
+    height: 380px !important;
+  }
+
+  .project-card .custom-card {
+    padding: 24px;
+  }
+
+  .project-name {
+    font-size: 1.25rem;
+  }
+
+  .tech-Section svg {
+    font-size: 24px;
+  }
+
+  .tech-badge {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+
+  .link-button {
+    font-size: 20px;
+  }
+
+  .tech-icon svg {
+    font-size: 20px !important;
   }
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Row, Col, Nav } from "react-bootstrap";
+import { Row, Nav } from "react-bootstrap";
 import AuroraText from "./GradientText/AuroraText";
 import { SiGooglecloudcomposer } from "react-icons/si";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
@@ -51,7 +51,7 @@ const ProjectCard = ({ project }) => (
                 />
             </div>
 
-            <div className="fw-bold text-start mt-3"><a href={project.liveLink}>{project.title}</a></div>
+            <div className="fw-bold text-start mt-3"><a href={project.liveLink} className="project-name">{project.title}</a></div>
             <div className="d-flex align-items-center mt-2 tech-Section">
                 <div className="tech-icon">
                     <HiOutlineDesktopComputer className="me-1 icons" />
@@ -112,9 +112,9 @@ const FeaturedProjects = () => {
 
             <Row>
                 {projectsData[activeTab].map((project, idx) => (
-                    <Col md={4} key={idx}>
+                    <div className="col-md-12 col-lg-4 col-12" key={idx}>
                         <ProjectCard project={project}  loading="lazy"/>
-                    </Col>
+                    </div>
                 ))}
             </Row>
         </div>
