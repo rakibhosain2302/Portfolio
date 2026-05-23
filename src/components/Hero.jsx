@@ -1,7 +1,7 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import GradientText from "./GradientText/GradientText.jsx";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { Typewriter } from "react-simple-typewriter";
 import { MdShareLocation } from "react-icons/md";
 import { TbCircleDotted } from "react-icons/tb";
@@ -22,7 +22,7 @@ export default function hero() {
                 <Container>
                     <Row className="align-items-center">
                         {/* Left Side - Text */}
-                        <Col md={7}>
+                        <div className="col-md-8 col-lg-6 col-7">
                             <p className="hello">👋 HELLO, I'M</p>
                             <h1 className="fw-bold name">Rakib Hosain</h1>
                             <h3 className="text-success d-flex align-items-center hero-type-line">
@@ -141,10 +141,10 @@ export default function hero() {
                                 <a href="#"><FaGithub className="github" loading="lazy" /> <strong className="md-mt-2">github</strong></a>
                                 <a href="#"><FiLinkedin className="linkedin"  loading="lazy" /> <strong className="md-mt-2">linkedIn</strong></a>
                             </div>
-                        </Col>
+                        </div>
 
                         {/* Right Side - Image */}
-                        <Col md={5} className="text-center right-col">
+                        <div className="col-md-4 col-lg-6 col-7 text-center right-col">
                             <img
                                 src={heroImg}
                                 alt="Rakib Hosain"
@@ -156,7 +156,7 @@ export default function hero() {
                                 <span className="badge-work">Available for Work</span>
                                 <p className="mt-2 location"><span className="l-icon"><MdShareLocation className="location-icon"  loading="lazy" /></span> <strong className="md-mt-1">Dhaka, Bangladesh</strong></p>
                             </div>
-                        </Col>
+                        </div>
                     </Row>
                 </Container>
             </div>
