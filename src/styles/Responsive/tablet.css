@@ -113,4 +113,13 @@
     border-radius: 10px;
     height: 100%;
   }
+
+  .p-5 {
+    padding: 0rem !important;
+  }
+
+  .contact-form-col{
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+  }
 }
