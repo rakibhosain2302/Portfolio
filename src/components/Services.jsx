@@ -47,7 +47,7 @@ export const Services = () => {
             const Icon = iconMap[service.icon];
 
             return (
-              <div key={service.id} className="col-md-4 mb-4 serv-mb">
+              <div key={service.id} className="col-md-12 col-lg-4 col-12 mb-4 serv-mb">
                 <motion.div
                   className="service-card custom-card"
                   variants={staggerItem}

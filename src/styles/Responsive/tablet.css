@@ -107,4 +107,10 @@
   .tech-icon svg {
     font-size: 20px !important;
   }
+
+  .services .custom-card {
+    padding: 20px 20px;
+    border-radius: 10px;
+    height: 100%;
+  }
 }
