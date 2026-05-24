@@ -4,40 +4,58 @@
   }
 
   .dock-container {
-    top: auto;
-    bottom: 16px;
+    top: 16px;
     left: 12px;
     width: calc(100% - 24px);
     transform: none;
   }
 
+  .dock-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .dock-icon svg {
+    font-size: 24px !important;
+  }
+
   .dock {
     width: 100%;
-    padding: 10px 12px;
+    padding: 14px 20px;
+    gap: 10px;
     justify-content: space-between;
   }
 
   .hero .min-vh-100 {
     min-height: auto !important;
-    padding-top: 7rem;
+    padding-top: 8.5rem;
     padding-bottom: 5rem;
   }
 
+  .hero-top {
+    padding: 0px !important;
+  }
+
+  .experience {
+    padding: 0px !important;
+  }
+
   .gap-3 {
-    gap: 6px !important;
+    gap: 12px !important;
   }
 
   .right-col {
     margin-top: 3rem;
+    padding: 0px !important;
   }
 
   .badge-work {
     top: -5px;
-    right: 10px;
+    right: -5px;
   }
 
   .location {
-    left: 10px;
+    left: -8px;
     bottom: -20px !important;
   }
 
@@ -71,12 +89,26 @@
     min-width: 0;
   }
 
+  .ab-pad {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .edu {
+    padding: 0px !important;
+  }
+
   .card-gpa {
     padding: 6px 12px !important;
   }
 
   .exp {
     margin-top: 10px;
+    padding: 0px !important;
+  }
+
+  .project-pad {
+    padding: 0px !important;
   }
 
   .project-img {
@@ -114,12 +146,25 @@
     height: 100% !important;
   }
 
+  .serv-mb {
+    padding: 0px !important;
+  }
+
+  .plan-pad {
+    padding: 0px !important;
+  }
+
   .p-5 {
     padding: 0rem !important;
   }
 
-  .contact-form-col{
+  .contact-info {
+    padding: 0px !important;
+  }
+
+  .contact-form-col {
     margin-top: 0px !important;
     margin-bottom: 30px !important;
+    padding: 0px !important;
   }
 }

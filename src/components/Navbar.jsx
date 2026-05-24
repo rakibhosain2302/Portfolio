@@ -66,23 +66,23 @@ export default function MyDock() {
           Rakib.dev
         </a>
 
-        <DockIcon label="Home" href="#home">
+        <DockIcon label="Home" className="dock-icon" href="#home">
           <FaHome size={20} loading="lazy"/>
         </DockIcon>
 
-        <DockIcon label="About" href="#about">
+        <DockIcon label="About" className="dock-icon" href="#about">
           <SiWikimediafoundation size={20} loading="lazy"/>
         </DockIcon>
 
-        <DockIcon label="Project" href="#project">
+        <DockIcon label="Project" className="dock-icon" href="#project">
           <PiToolboxFill size={20} loading="lazy"/>
         </DockIcon>
 
-        <DockIcon label="Github" href="#github">
+        <DockIcon label="Github" className="dock-icon" href="#github">
           <FaGithub size={20} loading="lazy"/>
         </DockIcon>
 
-        <DockIcon label="Contact" href="#contact">
+        <DockIcon label="Contact" className="dock-icon" href="#contact">
           <IoIosMailUnread size={20} loading="lazy"/>
         </DockIcon>
       </Dock>

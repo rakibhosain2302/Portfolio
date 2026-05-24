@@ -112,7 +112,7 @@ const FeaturedProjects = () => {
 
             <Row>
                 {projectsData[activeTab].map((project, idx) => (
-                    <div className="col-md-12 col-lg-4 col-12" key={idx}>
+                    <div className="col-md-12 col-lg-4 col-12 project-pad" key={idx}>
                         <ProjectCard project={project}  loading="lazy"/>
                     </div>
                 ))}

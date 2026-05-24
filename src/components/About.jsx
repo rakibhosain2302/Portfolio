@@ -10,7 +10,7 @@ import { SiKnowledgebase } from "react-icons/si";
 export const About = () => {
   return (
     <div className="text-light">
-      <div className="container">
+      <div className="container ab-pad">
         {/* Hero Section */}
         <section className="text-center about-section"> 
           <h2 className="header-title mb-4"> <FaInfoCircle className="me-1 pop-up-icon" loading="lazy" /> <span className="">About Me</span></h2>

@@ -22,7 +22,7 @@ export default function hero() {
                 <Container>
                     <Row className="align-items-center">
                         {/* Left Side - Text */}
-                        <div className="col-lg-7 col-12 col-md-order-1">
+                        <div className="col-lg-7 col-12 col-md-order-1 hero-top">
                             <p className="hello">👋 HELLO, I'M</p>
                             <h1 className="fw-bold name">Rakib Hosain</h1>
                             <h3 className="text-success d-flex align-items-center hero-type-line">

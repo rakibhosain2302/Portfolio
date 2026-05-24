@@ -38,7 +38,7 @@ const MyProcess = () => {
                 </p>
                 <div className="row">
                     {steps.map((step, index) => (
-                        <div key={index} className="col-md-12 col-lg-3 col-12 mb-4">
+                        <div key={index} className="col-md-12 col-lg-3 col-12 mb-4 plan-pad">
                             <div className="p-3 custom-card h-100">
                                 <h3 className="text-start"><AuroraText>{step.number}</AuroraText></h3>
                                 <h5 className="text-start">{step.title}</h5>
