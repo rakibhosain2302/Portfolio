@@ -36,6 +36,14 @@
     padding: 0px !important;
   }
 
+  .hero-type-line .A{
+    font-size: 2rem;
+  }
+
+  .gradient-typewriter{
+    font-size: 2rem !important;
+  }
+
   .experience {
     padding: 0px !important;
   }
@@ -69,17 +77,30 @@
     width: 100%;
   }
 
-  .text-content {
-    font-size: 2.5rem;
+  /* .text-content {
+    font-size: 2rem;
     font-weight: 600;
-  }
+  } */
 
   .stats-section h1 {
     font-size: 2.5rem;
   }
 
+  .text-gradient {
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+  }
+
   .aurora-text {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
+  }
+
+  .head-text{
+    font-size: 2.5rem !important;
+  }
+
+  .contact-section{
+    margin-top: 80px !important;
   }
 
   .about-stats-wrap {
@@ -157,6 +178,14 @@
     padding: 20px 20px !important;
     border-radius: 10px !important;
     height: 100% !important;
+  }
+
+  .service-title{
+    font-size: 1.25rem !important;
+  }
+
+  .service-description{
+    font-size: 1rem !important;
   }
 
   .serv-mb {
