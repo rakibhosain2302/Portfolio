@@ -29,7 +29,7 @@ const Contact = () => {
         </Row>
 
         <Row className="contact-row g-4">
-          <div className="col-md-12 col-lg-4 col-12 contact-info text-start">
+          <div className="col-md-12 col-lg-6 col-12 contact-info text-start">
             <div className="cont-title">
               <strong>Need More Info?</strong>
               <h4>I'd Love to hear From You!</h4>
@@ -64,7 +64,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-12 col-lg-4 col-12 contact-form-col">
+          <div className="col-md-12 col-lg-6 col-12 contact-form-col">
             <Form className="contact-form">
               <Form.Group className="mb-3">
                 <Form.Control type="text" placeholder="Your Name" />
