@@ -32,7 +32,7 @@ const Contact = () => {
           <div className="col-md-12 col-lg-6 col-12 contact-info text-start">
             <div className="cont-title">
               <strong>Need More Info?</strong>
-              <h4>I'd Love to hear From You!</h4>
+              <h4>I&apos;d Love to hear From You!</h4>
             </div>
             <div className="custom-card mb-3">
               <div className="info-item">

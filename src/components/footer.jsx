@@ -32,7 +32,7 @@ export const Footer = () => {
                 <p className="mt-1 subtitle p-text">
                     I create responsive, scalable, and user-friendly web applications
                     using modern technologies like React, Laravel, and JavaScript.
-                    Let's turn your ideas into a powerful digital experience.
+                    Let&apos;s turn your ideas into a powerful digital experience.
                 </p>
 
                 <div className="mt-2 footer-actions">

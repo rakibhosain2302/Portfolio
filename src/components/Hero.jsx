@@ -1,5 +1,6 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import Image from "next/image";
 import GradientText from "./GradientText/GradientText.jsx";
 import { Container, Row } from "react-bootstrap";
 import { Typewriter } from "react-simple-typewriter";
@@ -23,7 +24,7 @@ export default function hero() {
                     <Row className="align-items-center">
                         {/* Left Side - Text */}
                         <div className="col-lg-7 col-12 col-md-order-1 hero-top">
-                            <p className="hello">👋 HELLO, I'M</p>
+                            <p className="hello">👋 HELLO, I&apos;M</p>
                             <h1 className="fw-bold name">Rakib Hosain</h1>
                             <h3 className="text-success d-flex align-items-center hero-type-line">
                                 <span className="A">A</span>
@@ -130,7 +131,7 @@ export default function hero() {
                                         className="p-2 d-block expolor-btn text-white"
                                     >
                                         <MdOutlineChat size={20} className="me-2" loading="lazy" />
-                                        Let's Talk
+                                        Let&apos;s Talk
                                     </GlareHover>
                                 </button>
                             </div>
@@ -145,12 +146,11 @@ export default function hero() {
 
                         {/* Right Side - Image */}
                         <div className="col-lg-5 col-12 text-center right-col col-md-order-2">
-                            <img
+                            <Image
                                 src={heroImg}
                                 alt="Rakib Hosain"
                                 className="hero-imageV2"
-                                loading="lazy"
-                                fetchPriority="high"
+                                priority
                             />
                             <div className="mt-3">
                                 <span className="badge-work">Available for Work</span>

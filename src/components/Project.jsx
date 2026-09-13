@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import { Row, Nav } from "react-bootstrap";
 import AuroraText from "./GradientText/AuroraText";
 import { SiGooglecloudcomposer } from "react-icons/si";
@@ -43,11 +44,12 @@ const ProjectCard = ({ project }) => (
     <div className="mb-5 project-card">
         <div className="custom-card">
             <div className="image-card" data-desc={project.desc}>
-                <img
+                <Image
                     src={project.image}
                     alt={project.title}
-                    className="img-fluid project-img"
-                    loading="lazy"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="project-img"
                 />
             </div>
 
