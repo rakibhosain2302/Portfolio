@@ -132,6 +132,10 @@
   }
 
   .aurora-text {
+    font-size: 1.9rem !important;
+  }
+
+  .head-text {
     font-size: 1.9rem;
   }
 

@@ -8,12 +8,12 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 
 // Import images
-import AytorImg from "../assets/Project/Aytor.png";
-import JikerAppImg from "../assets/Project/Jiker-app.png";
-import RestaurantImg from "../assets/Project/Restaurant.png";
-import CompanyImg from "../assets/Project/Company.png";
-import ClockImg from "../assets/Project/Clock.png";
-import CalculatorImg from "../assets/Project/Calculator.png";
+import AytorImg from "../assets/Project/Aytor.webp";
+import JikerAppImg from "../assets/Project/Jiker-app.webp";
+import RestaurantImg from "../assets/Project/Restaurant.webp";
+import CompanyImg from "../assets/Project/Company.webp";
+import ClockImg from "../assets/Project/Clock.webp";
+import CalculatorImg from "../assets/Project/Calculator.webp";
 
 import "../styles/Project.css";
 
